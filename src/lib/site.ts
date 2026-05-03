@@ -1,4 +1,4 @@
-export const SITE_URL = "https://chinaheritageguide.netlify.app";
+export const SITE_URL = "https://chinaheritageguide.com";
 export const SITE_NAME = "AncientEchoes";
 
 export function absoluteUrl(path = "/") {
