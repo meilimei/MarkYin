@@ -7,7 +7,7 @@ import dns from "node:dns";
 dns.setDefaultResultOrder("ipv4first");
 
 const USER_AGENT =
-  "AncientEchoes/1.0 (https://chinaheritageguide.com; sync-bot)";
+  "ChinaHeritage/1.0 (https://chinaheritageguide.com; sync-bot)";
 
 interface Candidate {
   id: string;

@@ -12,14 +12,14 @@ import {
 import { absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Methodology — How AncientEchoes Researches and Sources Content",
+  title: "Methodology — How China Heritage Researches and Sources Content",
   description:
     "Our editorial standards: how we cite Wikipedia, Wikidata, and museum primary sources; how we handle pop culture connections; image licensing; and how to report errors.",
   alternates: { canonical: "/methodology" },
   openGraph: {
-    title: "Methodology — How AncientEchoes Sources Content",
+    title: "Methodology — How China Heritage Sources Content",
     description:
-      "Editorial standards, sourcing tiers, and image licensing for AncientEchoes.",
+      "Editorial standards, sourcing tiers, and image licensing for China Heritage.",
     url: absoluteUrl("/methodology"),
     type: "article",
   },
@@ -37,7 +37,7 @@ export default function MethodologyPage() {
             How We Research and Source
           </h1>
           <p className="text-lg text-ink-600 leading-relaxed">
-            AncientEchoes is a small editorial project. We don&apos;t hold
+            China Heritage is a small editorial project. We don&apos;t hold
             artifacts in our hands. What we can do is read carefully, cite
             rigorously, and link you back to the people who do the primary
             scholarship — so you can verify anything we say.
@@ -52,7 +52,7 @@ export default function MethodologyPage() {
             Source tiers
           </h2>
           <p className="text-ink-600 leading-relaxed mb-5">
-            Every factual claim on AncientEchoes draws from at least one of the
+            Every factual claim on China Heritage draws from at least one of the
             following tiers, in order of preference:
           </p>
           <ol className="space-y-4">
@@ -173,10 +173,10 @@ export default function MethodologyPage() {
             explicit license. If you see an image you believe is misused,
             email{" "}
             <a
-              href="mailto:contact@ancientechoes.com"
+              href="mailto:contact@chinaheritageguide.com"
               className="text-primary-600 hover:text-primary-700"
             >
-              contact@ancientechoes.com
+              contact@chinaheritageguide.com
             </a>{" "}
             and we&apos;ll review immediately.
           </p>
@@ -228,7 +228,7 @@ export default function MethodologyPage() {
             contributors who flag substantive issues.
           </p>
           <p className="text-primary-700 font-medium text-sm">
-            contact@ancientechoes.com
+            contact@chinaheritageguide.com
           </p>
         </section>
 

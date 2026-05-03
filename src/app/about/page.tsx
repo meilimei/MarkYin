@@ -4,12 +4,12 @@ import { Landmark, Sparkles, Layers, Globe, ArrowRight } from "lucide-react";
 import { absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About AncientEchoes — Pop Culture Meets Real Artifacts",
+  title: "About China Heritage — Pop Culture Meets Real Artifacts",
   description:
-    "AncientEchoes connects modern Chinese myths — Black Myth: Wukong, Genshin Impact, blockbuster films — to the real museum artifacts that inspired them.",
+    "China Heritage connects modern Chinese myths — Black Myth: Wukong, Genshin Impact, blockbuster films — to the real museum artifacts that inspired them.",
   alternates: { canonical: "/about" },
   openGraph: {
-    title: "About AncientEchoes — Pop Culture Meets Real Artifacts",
+    title: "About China Heritage — Pop Culture Meets Real Artifacts",
     description:
       "Connecting Black Myth: Wukong, Genshin Liyue, and Chinese cinema to the real artifacts in museums worldwide.",
     url: absoluteUrl("/about"),
@@ -61,7 +61,7 @@ export default function AboutPage() {
               Our Bridge
             </h2>
             <p className="text-ink-600 leading-relaxed">
-              Every page on AncientEchoes does one of three things:
+              Every page on China Heritage does one of three things:
             </p>
             <ul className="mt-4 space-y-3">
               <li className="flex gap-3">
@@ -167,7 +167,7 @@ export default function AboutPage() {
             <p className="text-ink-600 leading-relaxed">
               We write for the curious — not for academics. No paywalls, no
               required logins, no PhD required. If you can play{" "}
-              <em>Black Myth</em>, you can read AncientEchoes.
+              <em>Black Myth</em>, you can read China Heritage.
             </p>
           </div>
 
@@ -180,7 +180,7 @@ export default function AboutPage() {
               works to feature. Cultural accuracy matters to us.
             </p>
             <p className="text-primary-700 font-medium">
-              contact@ancientechoes.com
+              contact@chinaheritageguide.com
             </p>
           </div>
         </div>

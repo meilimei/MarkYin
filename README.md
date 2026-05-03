@@ -1,4 +1,4 @@
-# AncientEchoes (MarkYin)
+# China Heritage (MarkYin)
 
 Multilingual Chinese cultural artifact & museum encyclopedia. Next.js 14 + Tailwind CSS + TypeScript. SEO-first, AdSense-ready.
 

@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     "cultural heritage",
   ],
   openGraph: {
-    title: "AncientEchoes — Discover China's Greatest Cultural Treasures",
+    title: "China Heritage — Discover China's Greatest Cultural Treasures",
     description:
       "Explore the stories behind China's most extraordinary artifacts and museums.",
     type: "website",

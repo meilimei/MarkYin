@@ -1,6 +1,6 @@
 # Sync Scripts
 
-Trusted-source sync pipeline for AncientEchoes. Pulls structured data from
+Trusted-source sync pipeline for China Heritage. Pulls structured data from
 Wikidata + The Met API + Wikimedia Commons into `scripts/generated/`. Output is
 **read-only reference data** — manual review still decides what lands in the
 canonical content under `src/data/`.

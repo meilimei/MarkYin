@@ -117,7 +117,7 @@ export default function Footer() {
 
         <div className="border-t border-ink-800 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-ink-500">
-            &copy; {new Date().getFullYear()} AncientEchoes. Educational
+            &copy; {new Date().getFullYear()} China Heritage. Educational
             content. All third-party trademarks belong to their owners.
           </p>
           <p className="text-xs text-ink-500">

@@ -31,7 +31,7 @@ const WIKIDATA_DIR = path.resolve(__dirname, "../generated/wikidata");
 const OUT_DIR = path.resolve(__dirname, "../generated/met");
 const MET_API = "https://collectionapi.metmuseum.org/public/collection/v1";
 const USER_AGENT =
-  "AncientEchoes/1.0 (https://chinaheritageguide.com; sync-bot)";
+  "ChinaHeritage/1.0 (https://chinaheritageguide.com; sync-bot)";
 
 interface MetObject {
   objectID: number;

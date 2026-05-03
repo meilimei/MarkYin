@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: `/museums/${museum.slug}`,
     },
     openGraph: {
-      title: `${museum.name} | AncientEchoes`,
+      title: `${museum.name} | China Heritage`,
       description: museum.description,
       url: absoluteUrl(`/museums/${museum.slug}`),
       type: "article",

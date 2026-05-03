@@ -23,7 +23,7 @@ const __dirname = path.dirname(__filename);
 const SEEDS_PATH = path.resolve(__dirname, "../seeds/museums.json");
 const OUT_DIR = path.resolve(__dirname, "../generated/museums");
 const USER_AGENT =
-  "AncientEchoes/1.0 (https://chinaheritageguide.com; sync-bot)";
+  "ChinaHeritage/1.0 (https://chinaheritageguide.com; sync-bot)";
 
 const LANGS = ["en", "zh", "ja", "ko", "fr", "es"];
 

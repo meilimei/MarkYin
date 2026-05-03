@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: `/artifacts/${artifact.slug}`,
     },
     openGraph: {
-      title: `${artifact.name} — ${artifact.dynasty} | AncientEchoes`,
+      title: `${artifact.name} — ${artifact.dynasty} | China Heritage`,
       description: artifact.description,
       url: absoluteUrl(`/artifacts/${artifact.slug}`),
       type: "article",
@@ -94,11 +94,11 @@ export default function ArtifactDetailPage({ params }: PageProps) {
     mainEntityOfPage: absoluteUrl(`/artifacts/${artifact.slug}`),
     author: {
       "@type": "Organization",
-      name: "AncientEchoes",
+      name: "China Heritage",
     },
     publisher: {
       "@type": "Organization",
-      name: "AncientEchoes",
+      name: "China Heritage",
     },
     about: {
       "@type": "Thing",

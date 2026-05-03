@@ -26,7 +26,7 @@ const __dirname = path.dirname(__filename);
 const SEEDS_PATH = path.resolve(__dirname, "../seeds/artifacts.json");
 const OUT_DIR = path.resolve(__dirname, "../generated/wikidata");
 const USER_AGENT =
-  "AncientEchoes/1.0 (https://chinaheritageguide.com; sync-bot)";
+  "ChinaHeritage/1.0 (https://chinaheritageguide.com; sync-bot)";
 
 type Seed = { slug: string; wikidataId?: string };
 
