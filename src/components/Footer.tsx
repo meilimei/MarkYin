@@ -99,6 +99,7 @@ export default function Footer() {
               {[
                 { name: "Our Approach", href: "/about" },
                 { name: "Methodology", href: "/methodology" },
+                { name: "Contact", href: "/contact" },
                 { name: "Privacy Policy", href: "/privacy" },
                 { name: "Terms of Use", href: "/terms" },
               ].map((link) => (

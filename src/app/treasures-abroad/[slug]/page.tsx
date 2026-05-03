@@ -11,7 +11,9 @@ import {
   Palette,
   Info,
   ScrollText,
+  HelpCircle,
 } from "lucide-react";
+import type { AbroadArtifact } from "@/data/abroadArtifacts";
 import {
   abroadArtifacts,
   getAbroadArtifactBySlug,
@@ -60,10 +62,26 @@ export default function AbroadArtifactPage({ params }: PageProps) {
   const art = getAbroadArtifactBySlug(params.slug);
   if (!art) notFound();
 
-  const related = abroadArtifacts
-    .filter((a) => a.slug !== art.slug)
-    .filter((a) => a.tags.some((t) => art.tags.includes(t)))
+  // Same museum: deepens topical authority (`Treasures at the Met`, etc.).
+  const sameMuseum = abroadArtifacts
+    .filter(
+      (a) => a.slug !== art.slug && a.sourceMuseum.id === art.sourceMuseum.id,
+    )
     .slice(0, 3);
+
+  // Same era / theme: anything sharing at least one tag, excluding pieces
+  // already shown in the same-museum block.
+  const sameMuseumSlugs = new Set(sameMuseum.map((a) => a.slug));
+  const sameEra = abroadArtifacts
+    .filter(
+      (a) =>
+        a.slug !== art.slug &&
+        !sameMuseumSlugs.has(a.slug) &&
+        a.tags.some((t) => art.tags.includes(t)),
+    )
+    .slice(0, 3);
+
+  const faqs = buildFaqs(art);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -95,11 +113,25 @@ export default function AbroadArtifactPage({ params }: PageProps) {
         : undefined,
   };
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
       {/* Breadcrumb */}
@@ -262,6 +294,36 @@ export default function AbroadArtifactPage({ params }: PageProps) {
           <p className="text-ink-600 leading-relaxed">{art.journey}</p>
         </section>
 
+        {/* FAQ — visible HTML matched 1:1 with FAQPage JSON-LD above */}
+        {faqs.length > 0 && (
+          <section className="mb-12">
+            <h2 className="font-display text-2xl font-bold text-ink-900 mb-5 flex items-center gap-2">
+              <HelpCircle className="h-6 w-6 text-primary-500" />
+              Frequently asked questions
+            </h2>
+            <div className="space-y-3">
+              {faqs.map((f) => (
+                <details
+                  key={f.q}
+                  className="group bg-white border border-ink-100 rounded-xl px-5 py-4 open:shadow-sm transition-shadow"
+                >
+                  <summary className="cursor-pointer list-none flex items-start justify-between gap-3">
+                    <span className="font-display text-base font-semibold text-ink-900">
+                      {f.q}
+                    </span>
+                    <span className="text-ink-400 group-open:rotate-45 transition-transform select-none text-xl leading-none mt-0.5">
+                      +
+                    </span>
+                  </summary>
+                  <p className="text-ink-600 leading-relaxed text-sm mt-3">
+                    {f.a}
+                  </p>
+                </details>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* Tags */}
         <div className="mb-12 flex flex-wrap gap-2">
           {art.tags.map((t) => (
@@ -274,14 +336,34 @@ export default function AbroadArtifactPage({ params }: PageProps) {
           ))}
         </div>
 
-        {/* Related */}
-        {related.length > 0 && (
-          <section>
-            <h2 className="font-display text-2xl font-bold text-ink-900 mb-6">
-              Related pieces abroad
+        {/* Same-museum block — keeps users browsing within {museum} */}
+        {sameMuseum.length > 0 && (
+          <section className="mb-12">
+            <h2 className="font-display text-2xl font-bold text-ink-900 mb-2">
+              More Chinese pieces at {art.sourceMuseum.shortName}
             </h2>
+            <p className="text-sm text-ink-500 mb-6">
+              Other Chinese works in the {art.sourceMuseum.name} collection.
+            </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {related.map((r) => (
+              {sameMuseum.map((r) => (
+                <AbroadCard key={r.slug} artifact={r} />
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Same-era / same-tag block — encourages dynastic browsing */}
+        {sameEra.length > 0 && (
+          <section className="mb-4">
+            <h2 className="font-display text-2xl font-bold text-ink-900 mb-2">
+              From the same era
+            </h2>
+            <p className="text-sm text-ink-500 mb-6">
+              Other treasures abroad sharing themes or period with this work.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {sameEra.map((r) => (
                 <AbroadCard key={r.slug} artifact={r} />
               ))}
             </div>
@@ -290,6 +372,55 @@ export default function AbroadArtifactPage({ params }: PageProps) {
       </div>
     </>
   );
+}
+
+/**
+ * Build 4–5 frequently-asked questions from the artifact's structured data.
+ * The strings are emitted both as visible HTML (for users) and as FAQPage
+ * JSON-LD (for Google rich results). Per Google's guidelines, both must
+ * match — that is why we generate them in one place.
+ */
+function buildFaqs(art: AbroadArtifact): { q: string; a: string }[] {
+  const faqs: { q: string; a: string }[] = [];
+
+  faqs.push({
+    q: `Where can I see ${art.title}?`,
+    a: `${art.title} is held by the ${art.sourceMuseum.name} in ${art.sourceMuseum.city}, ${art.sourceMuseum.country}. Accession number ${art.accessionNumber}. Online catalogue record: ${art.sourceUrl}.`,
+  });
+
+  faqs.push({
+    q: `When was ${art.title} created?`,
+    a: `${art.title} dates to ${art.date}, during the ${art.period}.`,
+  });
+
+  if (art.artist) {
+    faqs.push({
+      q: `Who made ${art.title}?`,
+      a: `${art.title} is attributed to ${art.artist}. The work is a ${art.objectName.toLowerCase()} executed in ${art.medium.toLowerCase()}.`,
+    });
+  } else {
+    faqs.push({
+      q: `What is ${art.title} made of?`,
+      a: `${art.title} is a ${art.objectName.toLowerCase()} executed in ${art.medium.toLowerCase()}, measuring ${art.dimensions}.`,
+    });
+  }
+
+  faqs.push({
+    q: `How did ${art.title} end up at the ${art.sourceMuseum.shortName}?`,
+    a: art.journey,
+  });
+
+  faqs.push({
+    q: `Can I reuse the photograph of ${art.title}?`,
+    a:
+      art.license === "CC0"
+        ? `Yes. The ${art.sourceMuseum.shortName} has released the image under Creative Commons Zero (CC0), so it is free for any use, commercial or non-commercial, with no attribution required (though attribution is appreciated).`
+        : art.license.startsWith("CC BY-SA")
+          ? `Yes, with conditions. The image is licensed ${art.license}: free to share and adapt with attribution to the ${art.sourceMuseum.shortName}, and any derivative works must use the same licence.`
+          : `The image is in the public domain and free for any use. Crediting the ${art.sourceMuseum.shortName} is encouraged but not required.`,
+  });
+
+  return faqs;
 }
 
 function FactRow({

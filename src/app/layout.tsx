@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ConsentBanner from "@/components/ConsentBanner";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
+
+const ADSENSE_PUB_ID = process.env.NEXT_PUBLIC_ADSENSE_PUB_ID; // e.g. "ca-pub-1234567890123456"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -69,13 +73,24 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
-        {/* Google AdSense - Replace with your actual publisher ID */}
-        {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossOrigin="anonymous" /> */}
+        {ADSENSE_PUB_ID ? (
+          <meta name="google-adsense-account" content={ADSENSE_PUB_ID} />
+        ) : null}
       </head>
       <body className="bg-paper text-ink-900 font-sans min-h-screen flex flex-col antialiased selection:bg-imperial-500 selection:text-white">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <ConsentBanner />
+        {ADSENSE_PUB_ID ? (
+          <Script
+            id="adsense-init"
+            async
+            strategy="afterInteractive"
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUB_ID}`}
+            crossOrigin="anonymous"
+          />
+        ) : null}
       </body>
     </html>
   );
