@@ -1,6 +1,57 @@
+export interface SourceCitation {
+  label: string;
+  url: string;
+  type:
+    | "wiki"
+    | "wikidata"
+    | "commons"
+    | "met"
+    | "smithsonian"
+    | "british-museum"
+    | "cleveland"
+    | "harvard"
+    | "mfa-boston"
+    | "official-cn"
+    | "academic";
+  license?: string;
+}
+
+export interface ExternalCollectionRef {
+  museum: string;
+  country: string;
+  inventoryNumber?: string;
+  collectionUrl: string;
+  isPrimaryHolder?: boolean;
+  note?: string;
+}
+
+export interface PopCultureRef {
+  workSlug: string;
+  workTitle: string;
+  medium: "game" | "film" | "tv" | "anime" | "music" | "book";
+  connection: string;
+}
+
+export interface ImageCredit {
+  author?: string;
+  license: string;
+  sourceUrl?: string;
+  source:
+    | "commons"
+    | "met"
+    | "smithsonian"
+    | "british-museum"
+    | "cleveland"
+    | "harvard"
+    | "mfa-boston"
+    | "unsplash"
+    | "other";
+}
+
 export interface Artifact {
   slug: string;
   name: string;
+  nameZh?: string;
   dynasty: string;
   period: string;
   museumSlug: string;
@@ -12,8 +63,15 @@ export interface Artifact {
   significance: string;
   dimensions?: string;
   image: string;
+  imageCredit?: ImageCredit;
   funFacts: string[];
   relatedSlugs: string[];
+  wikidataId?: string;
+  wikipediaUrl?: string;
+  externalCollections?: ExternalCollectionRef[];
+  popCultureRefs?: PopCultureRef[];
+  sources?: SourceCitation[];
+  topicSlugs?: string[];
 }
 
 export const artifacts: Artifact[] = [
@@ -41,6 +99,39 @@ export const artifacts: Artifact[] = [
       "Modern scholars have used it to study Song Dynasty economics and urban planning",
     ],
     relatedSlugs: ["da-ke-ding", "jade-burial-suit"],
+    nameZh: "清明上河图",
+    wikidataId: "Q1018865",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Along_the_River_During_the_Qingming_Festival",
+    topicSlugs: [],
+    externalCollections: [
+      {
+        museum: "The Palace Museum, Beijing",
+        country: "China",
+        collectionUrl: "https://www.dpm.org.cn/collection/paint/228226.html",
+        isPrimaryHolder: true,
+        note: "Original Zhang Zeduan scroll",
+      },
+      {
+        museum: "National Palace Museum, Taipei",
+        country: "Taiwan",
+        collectionUrl: "https://www.npm.gov.tw",
+        isPrimaryHolder: false,
+        note: "Qing Court reproduction (Qingyuan version)",
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Along_the_River_During_the_Qingming_Festival",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "Palace Museum Official",
+        url: "https://www.dpm.org.cn",
+        type: "official-cn",
+      },
+    ],
   },
   {
     slug: "bronze-standing-figure-sanxingdui",
@@ -66,6 +157,31 @@ export const artifacts: Artifact[] = [
       "The bronze-casting technique used was more advanced than contemporary Shang methods",
     ],
     relatedSlugs: ["gold-mask-sanxingdui", "sacred-bronze-tree"],
+    nameZh: "青铜大立人像",
+    wikidataId: "Q10898847",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Sanxingdui",
+    topicSlugs: ["sanxingdui-mysteries"],
+    externalCollections: [
+      {
+        museum: "Sanxingdui Museum",
+        country: "China",
+        collectionUrl: "https://www.sxd.cn",
+        isPrimaryHolder: true,
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Sanxingdui",
+        url: "https://en.wikipedia.org/wiki/Sanxingdui",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "Sanxingdui Museum Official",
+        url: "https://www.sxd.cn",
+        type: "official-cn",
+      },
+    ],
   },
   {
     slug: "gold-mask-sanxingdui",
@@ -91,6 +207,25 @@ export const artifacts: Artifact[] = [
       "No writing has ever been found at Sanxingdui, deepening the mystery",
     ],
     relatedSlugs: ["bronze-standing-figure-sanxingdui", "sacred-bronze-tree"],
+    nameZh: "三星堆金面具",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Sanxingdui",
+    topicSlugs: ["sanxingdui-mysteries"],
+    externalCollections: [
+      {
+        museum: "Sanxingdui Museum",
+        country: "China",
+        collectionUrl: "https://www.sxd.cn",
+        isPrimaryHolder: true,
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Sanxingdui",
+        url: "https://en.wikipedia.org/wiki/Sanxingdui",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
   },
   {
     slug: "sacred-bronze-tree",
@@ -119,6 +254,26 @@ export const artifacts: Artifact[] = [
       "bronze-standing-figure-sanxingdui",
       "gold-mask-sanxingdui",
     ],
+    nameZh: "青铜神树",
+    wikidataId: "Q10898847",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Sanxingdui",
+    topicSlugs: ["sanxingdui-mysteries"],
+    externalCollections: [
+      {
+        museum: "Sanxingdui Museum",
+        country: "China",
+        collectionUrl: "https://www.sxd.cn",
+        isPrimaryHolder: true,
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Sanxingdui",
+        url: "https://en.wikipedia.org/wiki/Sanxingdui",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
   },
   {
     slug: "simuwu-ding",
@@ -144,6 +299,31 @@ export const artifacts: Artifact[] = [
       "The casting process needed 200-300 workers operating simultaneously",
     ],
     relatedSlugs: ["da-ke-ding", "bianzhong-marquis-yi"],
+    nameZh: "司母戊鼎（后母戊鼎）",
+    wikidataId: "Q875825",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Houmuwu_ding",
+    topicSlugs: ["bronze-dings-through-the-ages"],
+    externalCollections: [
+      {
+        museum: "National Museum of China",
+        country: "China",
+        collectionUrl: "https://www.chnmuseum.cn",
+        isPrimaryHolder: true,
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Houmuwu ding",
+        url: "https://en.wikipedia.org/wiki/Houmuwu_ding",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "National Museum of China",
+        url: "https://www.chnmuseum.cn",
+        type: "official-cn",
+      },
+    ],
   },
   {
     slug: "jade-burial-suit",
@@ -169,6 +349,33 @@ export const artifacts: Artifact[] = [
       "The practice was eventually banned by later emperors as too extravagant",
     ],
     relatedSlugs: ["simuwu-ding", "along-the-river-during-qingming-festival"],
+    nameZh: "金缕玉衣",
+    wikidataId: "Q1245062",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Jade_burial_suit",
+    topicSlugs: ["jade-and-immortality"],
+    externalCollections: [
+      {
+        museum: "National Museum of China",
+        country: "China",
+        collectionUrl: "https://www.chnmuseum.cn",
+        isPrimaryHolder: true,
+      },
+      {
+        museum: "Hebei Museum",
+        country: "China",
+        collectionUrl: "https://www.hebeimuseum.org",
+        isPrimaryHolder: false,
+        note: "Other jade burial suits from Mancheng tombs",
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Jade burial suit",
+        url: "https://en.wikipedia.org/wiki/Jade_burial_suit",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
   },
   {
     slug: "bianzhong-marquis-yi",
@@ -194,6 +401,26 @@ export const artifacts: Artifact[] = [
       "China demonstrated a 12-tone musical system 2,000 years before Europe",
     ],
     relatedSlugs: ["sword-of-goujian", "simuwu-ding"],
+    nameZh: "曾侯乙编钟",
+    wikidataId: "Q1124836",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Bianzhong_of_Marquis_Yi_of_Zeng",
+    topicSlugs: [],
+    externalCollections: [
+      {
+        museum: "Hubei Provincial Museum",
+        country: "China",
+        collectionUrl: "https://www.hbww.org",
+        isPrimaryHolder: true,
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Bianzhong of Marquis Yi of Zeng",
+        url: "https://en.wikipedia.org/wiki/Bianzhong_of_Marquis_Yi_of_Zeng",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
   },
   {
     slug: "sword-of-goujian",
@@ -219,6 +446,26 @@ export const artifacts: Artifact[] = [
       "The sword was found alongside 20+ other weapons, but only this one was pristine",
     ],
     relatedSlugs: ["bianzhong-marquis-yi", "simuwu-ding"],
+    nameZh: "越王勾践剑",
+    wikidataId: "Q707267",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Sword_of_Goujian",
+    topicSlugs: [],
+    externalCollections: [
+      {
+        museum: "Hubei Provincial Museum",
+        country: "China",
+        collectionUrl: "https://www.hbww.org",
+        isPrimaryHolder: true,
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Sword of Goujian",
+        url: "https://en.wikipedia.org/wiki/Sword_of_Goujian",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
   },
   {
     slug: "beast-head-agate-cup",
@@ -246,6 +493,31 @@ export const artifacts: Artifact[] = [
     relatedSlugs: [
       "dancing-horse-cup",
       "along-the-river-during-qingming-festival",
+    ],
+    nameZh: "镶金兽首玛瑙杯",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Shaanxi_History_Museum",
+    topicSlugs: ["tang-silk-road-treasures"],
+    externalCollections: [
+      {
+        museum: "Shaanxi History Museum",
+        country: "China",
+        collectionUrl: "https://www.sxhm.com",
+        isPrimaryHolder: true,
+      },
+      {
+        museum: "The Metropolitan Museum of Art (comparative Tang rhyton)",
+        country: "USA",
+        collectionUrl: "https://www.metmuseum.org/art/collection/search#!?material=Agate",
+        isPrimaryHolder: false,
+        note: "The Met holds related Tang-era silver rhyta for comparison",
+      },
+    ],
+    sources: [
+      {
+        label: "Shaanxi History Museum",
+        url: "https://www.sxhm.com",
+        type: "official-cn",
+      },
     ],
   },
   {
@@ -275,6 +547,25 @@ export const artifacts: Artifact[] = [
       "simuwu-ding",
       "along-the-river-during-qingming-festival",
     ],
+    nameZh: "大克鼎",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Da_Ke_ding",
+    topicSlugs: ["bronze-dings-through-the-ages"],
+    externalCollections: [
+      {
+        museum: "Shanghai Museum",
+        country: "China",
+        collectionUrl: "https://www.shanghaimuseum.net",
+        isPrimaryHolder: true,
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Da Ke ding",
+        url: "https://en.wikipedia.org/wiki/Da_Ke_ding",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
   },
   {
     slug: "terracotta-warriors",
@@ -300,6 +591,45 @@ export const artifacts: Artifact[] = [
       "Ancient texts claim the tomb contains rivers of liquid mercury — soil tests confirm elevated mercury levels",
     ],
     relatedSlugs: ["simuwu-ding", "sword-of-goujian"],
+    nameZh: "秦始皇陵兵马俑",
+    wikidataId: "Q133132",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Terracotta_Army",
+    topicSlugs: [],
+    externalCollections: [
+      {
+        museum: "Emperor Qinshihuang's Mausoleum Site Museum",
+        country: "China",
+        collectionUrl: "https://www.bmy.com.cn",
+        isPrimaryHolder: true,
+      },
+      {
+        museum: "The Metropolitan Museum of Art",
+        country: "USA",
+        collectionUrl: "https://www.metmuseum.org",
+        isPrimaryHolder: false,
+        note: "Tours and loans of select warriors",
+      },
+      {
+        museum: "British Museum",
+        country: "UK",
+        collectionUrl: "https://www.britishmuseum.org",
+        isPrimaryHolder: false,
+        note: "Hosted major Terracotta Army exhibitions (2007-2008, 2018)",
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Terracotta Army",
+        url: "https://en.wikipedia.org/wiki/Terracotta_Army",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "UNESCO World Heritage: Mausoleum of the First Qin Emperor",
+        url: "https://whc.unesco.org/en/list/441/",
+        type: "academic",
+      },
+    ],
   },
   {
     slug: "blue-white-porcelain-plum-vase",
@@ -325,6 +655,39 @@ export const artifacts: Artifact[] = [
       "Yuan blue-and-white porcelain was originally made primarily for Middle Eastern export markets",
     ],
     relatedSlugs: ["beast-head-agate-cup", "da-ke-ding"],
+    nameZh: "青花萧何月下追韩信梅瓶",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Blue_and_white_pottery",
+    topicSlugs: ["blue-and-white-porcelain"],
+    externalCollections: [
+      {
+        museum: "Nanjing Museum",
+        country: "China",
+        collectionUrl: "https://www.njmuseum.com",
+        isPrimaryHolder: true,
+      },
+      {
+        museum: "The Metropolitan Museum of Art",
+        country: "USA",
+        collectionUrl: "https://www.metmuseum.org/art/collection/search?department=6&q=Yuan+blue+white",
+        isPrimaryHolder: false,
+        note: "Extensive Yuan-Ming blue-and-white collection",
+      },
+      {
+        museum: "British Museum",
+        country: "UK",
+        collectionUrl: "https://www.britishmuseum.org/collection/search?material=porcelain&place=China",
+        isPrimaryHolder: false,
+        note: "Percival David Foundation Chinese ceramics collection",
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Blue and white pottery",
+        url: "https://en.wikipedia.org/wiki/Blue_and_white_pottery",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
   },
 ];
 

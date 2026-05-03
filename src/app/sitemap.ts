@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { artifacts } from "@/data/artifacts";
 import { museums } from "@/data/museums";
+import { popCultureWorks } from "@/data/popCultureWorks";
+import { topics } from "@/data/topics";
 import { absoluteUrl } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -12,6 +14,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "weekly",
       priority: 1,
+    },
+    {
+      url: absoluteUrl("/inspirations"),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: absoluteUrl("/topics"),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
     },
     {
       url: absoluteUrl("/artifacts"),
@@ -39,6 +53,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  const inspirationRoutes: MetadataRoute.Sitemap = popCultureWorks.map(
+    (work) => ({
+      url: absoluteUrl(`/inspirations/${work.slug}`),
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    }),
+  );
+
+  const topicRoutes: MetadataRoute.Sitemap = topics.map((topic) => ({
+    url: absoluteUrl(`/topics/${topic.slug}`),
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.9,
+  }));
+
   const artifactRoutes: MetadataRoute.Sitemap = artifacts.map((artifact) => ({
     url: absoluteUrl(`/artifacts/${artifact.slug}`),
     lastModified: now,
@@ -53,5 +83,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticRoutes, ...artifactRoutes, ...museumRoutes];
+  return [
+    ...staticRoutes,
+    ...inspirationRoutes,
+    ...topicRoutes,
+    ...artifactRoutes,
+    ...museumRoutes,
+  ];
 }

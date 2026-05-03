@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
-  MapPin,
   Clock,
   Ruler,
   ArrowLeft,
@@ -10,13 +9,24 @@ import {
   Landmark,
   Share2,
   BookOpen,
+  ExternalLink,
+  Sparkles,
+  Layers,
+  Globe,
 } from "lucide-react";
 import {
   artifacts,
   getArtifactBySlug,
   getRelatedArtifacts,
 } from "@/data/artifacts";
+import {
+  getWorksForArtifactSlug,
+  getTopicsForArtifactSlug,
+} from "@/lib/content";
+import { getArtifactConnectionFromWork } from "@/data/popCultureWorks";
 import ArtifactCard from "@/components/ArtifactCard";
+import WorkCard from "@/components/WorkCard";
+import TopicCard from "@/components/TopicCard";
 import AdBanner from "@/components/AdBanner";
 import { absoluteUrl } from "@/lib/site";
 
@@ -66,6 +76,14 @@ export default function ArtifactDetailPage({ params }: PageProps) {
   if (!artifact) notFound();
 
   const relatedArtifacts = getRelatedArtifacts(artifact.relatedSlugs);
+  const works = getWorksForArtifactSlug(artifact.slug);
+  const topics = getTopicsForArtifactSlug(artifact.slug);
+
+  const sameAs: string[] = [];
+  if (artifact.wikipediaUrl) sameAs.push(artifact.wikipediaUrl);
+  if (artifact.wikidataId)
+    sameAs.push(`https://www.wikidata.org/wiki/${artifact.wikidataId}`);
+
   const artifactJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -85,7 +103,11 @@ export default function ArtifactDetailPage({ params }: PageProps) {
       "@type": "Thing",
       name: artifact.name,
       description: artifact.significance,
+      ...(sameAs.length > 0 && { sameAs }),
     },
+    ...(artifact.sources && artifact.sources.length > 0 && {
+      citation: artifact.sources.map((s) => s.url),
+    }),
     keywords: [
       artifact.name,
       artifact.dynasty,
@@ -155,16 +177,48 @@ export default function ArtifactDetailPage({ params }: PageProps) {
             </div>
 
             {/* Artifact Image */}
-            <div className="aspect-[16/10] bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl mb-10 overflow-hidden relative">
-              {artifact.image.startsWith("http") ? (
-                <img src={artifact.image} alt={artifact.name} className="object-cover w-full h-full" />
-              ) : (
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <BookOpen className="h-16 w-16 text-primary-200 mx-auto mb-3" />
-                  <p className="text-sm text-primary-400">Artifact Illustration</p>
-                </div>
+            <figure className="mb-10">
+              <div className="aspect-[16/10] bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl overflow-hidden relative">
+                {artifact.image.startsWith("http") ? (
+                  <img
+                    src={artifact.image}
+                    alt={artifact.name}
+                    className="object-cover w-full h-full"
+                  />
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <BookOpen className="h-16 w-16 text-primary-200 mx-auto mb-3" />
+                    <p className="text-sm text-primary-400">
+                      Artifact Illustration
+                    </p>
+                  </div>
+                )}
+              </div>
+              {artifact.imageCredit && (
+                <figcaption className="text-xs text-ink-400 mt-2 px-1">
+                  Photo:{" "}
+                  {artifact.imageCredit.author
+                    ? `${artifact.imageCredit.author} · `
+                    : ""}
+                  <span className="font-medium text-ink-500">
+                    {artifact.imageCredit.license}
+                  </span>
+                  {" · "}
+                  {artifact.imageCredit.sourceUrl ? (
+                    <a
+                      href={artifact.imageCredit.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-primary-600"
+                    >
+                      {artifact.imageCredit.source}
+                    </a>
+                  ) : (
+                    artifact.imageCredit.source
+                  )}
+                </figcaption>
               )}
-            </div>
+            </figure>
 
             {/* Ad */}
             <AdBanner
@@ -218,6 +272,113 @@ export default function ArtifactDetailPage({ params }: PageProps) {
               </div>
             </section>
 
+            {/* Where to See It */}
+            {artifact.externalCollections &&
+              artifact.externalCollections.length > 0 && (
+                <section className="mb-10">
+                  <h2 className="font-display text-2xl font-bold text-ink-900 mb-2 flex items-center gap-2">
+                    <Globe className="h-6 w-6 text-primary-500" />
+                    Where to See It
+                  </h2>
+                  <p className="text-sm text-ink-500 mb-5">
+                    Public collections holding this artifact or closely related
+                    pieces.
+                  </p>
+                  <div className="space-y-3">
+                    {artifact.externalCollections.map((col) => (
+                      <a
+                        key={col.collectionUrl}
+                        href={col.collectionUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block bg-white border border-ink-100 rounded-xl p-5 hover:border-primary-300 hover:shadow-sm transition-all"
+                      >
+                        <div className="flex items-start justify-between gap-4">
+                          <div className="flex-1">
+                            <div className="flex items-center gap-2 mb-1">
+                              <p className="font-display font-bold text-ink-900">
+                                {col.museum}
+                              </p>
+                              {col.isPrimaryHolder && (
+                                <span className="text-[10px] uppercase tracking-wider bg-primary-100 text-primary-700 px-1.5 py-0.5 rounded font-semibold">
+                                  Primary
+                                </span>
+                              )}
+                            </div>
+                            <p className="text-xs text-ink-500">
+                              {col.country}
+                              {col.inventoryNumber && ` · #${col.inventoryNumber}`}
+                            </p>
+                            {col.note && (
+                              <p className="text-sm text-ink-600 mt-2">
+                                {col.note}
+                              </p>
+                            )}
+                          </div>
+                          <ExternalLink className="h-4 w-4 text-ink-400 mt-1 flex-shrink-0" />
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                </section>
+              )}
+
+            {/* In Popular Culture */}
+            {works.length > 0 && (
+              <section className="mb-10">
+                <h2 className="font-display text-2xl font-bold text-ink-900 mb-2 flex items-center gap-2">
+                  <Sparkles className="h-6 w-6 text-primary-500" />
+                  In Popular Culture
+                </h2>
+                <p className="text-sm text-ink-500 mb-5">
+                  Modern games, films, and TV shows that draw on this artifact.
+                </p>
+                <div className="space-y-4">
+                  {works.map((work) => {
+                    const connection = getArtifactConnectionFromWork(
+                      work,
+                      artifact.slug,
+                    );
+                    return (
+                      <div
+                        key={work.slug}
+                        className="grid grid-cols-1 sm:grid-cols-3 gap-5 bg-white border border-ink-100 rounded-xl p-5"
+                      >
+                        <div className="sm:col-span-1">
+                          <WorkCard work={work} />
+                        </div>
+                        {connection && (
+                          <div className="sm:col-span-2 flex flex-col justify-center">
+                            <p className="text-xs uppercase tracking-wider text-primary-600 font-semibold mb-2">
+                              The Connection
+                            </p>
+                            <p className="text-sm text-ink-700 leading-relaxed">
+                              {connection}
+                            </p>
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </section>
+            )}
+
+            {/* Themes */}
+            {topics.length > 0 && (
+              <section className="mb-10">
+                <h2 className="font-display text-2xl font-bold text-ink-900 mb-5 flex items-center gap-2">
+                  <Layers className="h-6 w-6 text-primary-500" />
+                  Part of These Themes
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  {topics.map((topic) => (
+                    <TopicCard key={topic.slug} topic={topic} />
+                  ))}
+                </div>
+              </section>
+            )}
+
             {/* Ad */}
             <AdBanner
               slot="artifact-detail-bottom"
@@ -227,7 +388,7 @@ export default function ArtifactDetailPage({ params }: PageProps) {
 
             {/* Related Artifacts */}
             {relatedArtifacts.length > 0 && (
-              <section>
+              <section className="mb-10">
                 <h2 className="font-display text-2xl font-bold text-ink-900 mb-6">
                   Related Artifacts
                 </h2>
@@ -236,6 +397,42 @@ export default function ArtifactDetailPage({ params }: PageProps) {
                     <ArtifactCard key={related.slug} artifact={related} />
                   ))}
                 </div>
+              </section>
+            )}
+
+            {/* Sources & References */}
+            {artifact.sources && artifact.sources.length > 0 && (
+              <section className="bg-ink-50 border border-ink-100 rounded-xl p-6">
+                <h2 className="font-display text-lg font-bold text-ink-900 mb-4">
+                  Sources &amp; References
+                </h2>
+                <ul className="space-y-2 text-sm">
+                  {artifact.sources.map((src) => (
+                    <li key={src.url} className="flex items-start gap-2">
+                      <span className="text-ink-400 mt-0.5">·</span>
+                      <span>
+                        <a
+                          href={src.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-ink-700 hover:text-primary-600 inline-flex items-center gap-1"
+                        >
+                          {src.label}
+                          <ExternalLink className="h-3 w-3" />
+                        </a>
+                        {src.license && (
+                          <span className="text-xs text-ink-400 ml-1">
+                            ({src.license})
+                          </span>
+                        )}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-xs text-ink-400 mt-4 leading-relaxed">
+                  Content informed by the sources above. Where Wikipedia text is
+                  used, it is licensed under CC-BY-SA 3.0.
+                </p>
               </section>
             )}
           </div>

@@ -6,10 +6,11 @@ import { Menu, X, Landmark, Globe } from "lucide-react";
 
 const navigation = [
   { name: "Home", href: "/" },
+  { name: "Inspirations", href: "/inspirations" },
+  { name: "Themes", href: "/topics" },
   { name: "Artifacts", href: "/artifacts" },
   { name: "Museums", href: "/museums" },
   { name: "Dynasties", href: "/dynasties" },
-  { name: "About", href: "/about" },
 ];
 
 const languages = [

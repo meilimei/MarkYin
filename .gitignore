@@ -31,3 +31,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# sync script output (regenerable; commit hand-edited overrides instead)
+/scripts/generated/
+/.cache/
