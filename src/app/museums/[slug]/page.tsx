@@ -15,6 +15,7 @@ import { getArtifactsByMuseum } from "@/data/artifacts";
 import ArtifactCard from "@/components/ArtifactCard";
 import AdBanner from "@/components/AdBanner";
 import { absoluteUrl } from "@/lib/site";
+import { getImageSourceLabel } from "@/lib/content";
 
 interface PageProps {
   params: { slug: string };
@@ -118,6 +119,39 @@ export default function MuseumDetailPage({ params }: PageProps) {
           <ArrowLeft className="h-4 w-4" />
           All Museums
         </Link>
+
+        {/* Hero image */}
+        <figure className="mb-10 rounded-2xl overflow-hidden border border-ink-100 bg-ink-50 shadow-sm">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={museum.image}
+            alt={museum.name}
+            className="w-full h-[280px] md:h-[420px] object-cover"
+          />
+          {museum.imageCredit && (
+            <figcaption className="px-4 py-2 text-xs text-ink-400 bg-white border-t border-ink-100">
+              {museum.imageCredit.author
+                ? `${museum.imageCredit.author} · `
+                : ""}
+              <span className="font-medium text-ink-500">
+                {museum.imageCredit.license}
+              </span>
+              {" · "}
+              {museum.imageCredit.sourceUrl ? (
+                <a
+                  href={museum.imageCredit.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary-600"
+                >
+                  {getImageSourceLabel(museum.imageCredit.source)}
+                </a>
+              ) : (
+                getImageSourceLabel(museum.imageCredit.source)
+              )}
+            </figcaption>
+          )}
+        </figure>
 
         {/* Hero */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-12">

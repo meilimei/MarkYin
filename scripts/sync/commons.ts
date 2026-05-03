@@ -88,7 +88,12 @@ async function fetchCommonsImage(
 }
 
 function stripHtml(s: string): string {
-  return s.replace(/<[^>]+>/g, "").trim();
+  let cleaned = s.replace(/<[^>]+>/g, "").trim();
+  const noAuthorMatch = cleaned.match(
+    /No machine-readable author provided\.\s+(.+?)\s+assumed/i,
+  );
+  if (noAuthorMatch) cleaned = noAuthorMatch[1];
+  return cleaned;
 }
 
 interface WikidataResult {

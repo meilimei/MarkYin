@@ -11,7 +11,8 @@
     "sync": "tsx scripts/sync-all.ts",
     "sync:wikidata": "tsx scripts/sync/wikidata.ts",
     "sync:met": "tsx scripts/sync/met.ts",
-    "sync:commons": "tsx scripts/sync/commons.ts"
+    "sync:commons": "tsx scripts/sync/commons.ts",
+    "sync:museums": "tsx scripts/sync/museums.ts"
   },
   "dependencies": {
     "lucide-react": "^0.400.0",
