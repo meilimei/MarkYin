@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --color-gold: #c47f25;
+  --color-ink: #282521;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--color-ink);
+}
+
+.font-display {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero gradient overlay */
+.hero-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.06);
+}
+
+/* Text gradient */
+.text-gradient {
+  background: linear-gradient(135deg, #c47f25, #d4983e, #a6631b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Artifact card image zoom */
+.img-zoom {
+  transition: transform 0.5s ease;
+}
+.img-zoom:hover {
+  transform: scale(1.05);
+}
+
+/* Ad container styling */
+.ad-container {
+  min-height: 90px;
+  background: #f8f6f2;
+  border: 1px dashed #d0cdc4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9a937e;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Dynasty tag colors */
+.dynasty-tag {
+  background: linear-gradient(135deg, #fdf8f0, #faebd7);
+  border: 1px solid #f5d5ae;
+}
