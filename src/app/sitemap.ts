@@ -65,6 +65,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
     },
     {
+      url: absoluteUrl("/empresses-in-the-palace-real-museum-guide"),
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
+    {
       url: absoluteUrl("/dynasties"),
       lastModified: now,
       changeFrequency: "monthly",

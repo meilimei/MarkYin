@@ -8,6 +8,7 @@ import {
   Gamepad2,
   Mountain,
   Flower2,
+  Crown,
 } from "lucide-react";
 import { artifacts } from "@/data/artifacts";
 import { museums } from "@/data/museums";
@@ -241,10 +242,10 @@ export default function HomePage() {
               All inspirations <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <Link
               href="/genshin-liyue-real-museum-guide"
-              className="group relative block rounded-2xl overflow-hidden bg-gradient-to-br from-primary-900 via-ink-900 to-imperial-950 text-white p-7 hover:shadow-xl transition-shadow"
+              className="group relative block rounded-2xl overflow-hidden bg-gradient-to-br from-primary-900 via-ink-900 to-imperial-950 text-white p-6 hover:shadow-xl transition-shadow"
             >
               <div
                 className="absolute inset-0 opacity-15 mix-blend-overlay"
@@ -259,15 +260,15 @@ export default function HomePage() {
               <div className="relative">
                 <div className="inline-flex items-center gap-2 text-primary-200 mb-3 text-xs font-semibold uppercase tracking-widest">
                   <Mountain className="h-4 w-4" />
-                  Genshin Impact · Liyue
+                  Genshin · Liyue
                 </div>
-                <h4 className="font-display text-xl md:text-2xl font-bold leading-tight mb-3">
-                  Every Liyue Visual, Mapped to a Real Museum Object
+                <h4 className="font-display text-lg md:text-xl font-bold leading-tight mb-3">
+                  Every Liyue Visual, Mapped to a Real Museum
                 </h4>
                 <p className="text-sm text-ink-300 leading-relaxed mb-4">
-                  Karst peaks, porcelain teacups, the Adepti, the
-                  cauldrons — the Tang &amp; Song objects that taught
-                  miHoYo the visual language.
+                  Karst peaks, porcelain teacups, the Adepti — the Tang
+                  &amp; Song objects that taught miHoYo the visual
+                  language.
                 </p>
                 <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary-200 group-hover:gap-2 transition-all">
                   Read the guide <ArrowRight className="h-4 w-4" />
@@ -277,7 +278,7 @@ export default function HomePage() {
 
             <Link
               href="/ne-zha-2-real-museum-guide"
-              className="group relative block rounded-2xl overflow-hidden bg-gradient-to-br from-imperial-950 via-ink-900 to-primary-900 text-white p-7 hover:shadow-xl transition-shadow"
+              className="group relative block rounded-2xl overflow-hidden bg-gradient-to-br from-imperial-950 via-ink-900 to-primary-900 text-white p-6 hover:shadow-xl transition-shadow"
             >
               <div
                 className="absolute inset-0 opacity-15 mix-blend-overlay"
@@ -292,15 +293,48 @@ export default function HomePage() {
               <div className="relative">
                 <div className="inline-flex items-center gap-2 text-primary-200 mb-3 text-xs font-semibold uppercase tracking-widest">
                   <Flower2 className="h-4 w-4" />
-                  Ne Zha 2 · 哪吒之魔童闹海
+                  Ne Zha 2 · 哪吒
                 </div>
-                <h4 className="font-display text-xl md:text-2xl font-bold leading-tight mb-3">
-                  Every Symbol in Ne Zha 2, Mapped to a Real Museum
+                <h4 className="font-display text-lg md:text-xl font-bold leading-tight mb-3">
+                  Every Symbol in Ne Zha 2, Mapped
                 </h4>
                 <p className="text-sm text-ink-300 leading-relaxed mb-4">
                   Lotus rebirth, the Four Dragon Kings, the Sky-Ribbon —
-                  the Tang Buddhas, Ming dragon dishes, and Sanxingdui
-                  bronzes behind 2025&apos;s biggest animated film.
+                  the real artifacts behind 2025&apos;s biggest animated
+                  film.
+                </p>
+                <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary-200 group-hover:gap-2 transition-all">
+                  Read the guide <ArrowRight className="h-4 w-4" />
+                </span>
+              </div>
+            </Link>
+
+            <Link
+              href="/empresses-in-the-palace-real-museum-guide"
+              className="group relative block rounded-2xl overflow-hidden bg-gradient-to-br from-ink-900 via-primary-900 to-imperial-950 text-white p-6 hover:shadow-xl transition-shadow"
+            >
+              <div
+                className="absolute inset-0 opacity-15 mix-blend-overlay"
+                style={{
+                  backgroundImage:
+                    "url('/images/abroad/qing-zhanyinbao-portrait.jpg')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+                aria-hidden
+              />
+              <div className="relative">
+                <div className="inline-flex items-center gap-2 text-primary-200 mb-3 text-xs font-semibold uppercase tracking-widest">
+                  <Crown className="h-4 w-4" />
+                  C-drama · 甄嬛传
+                </div>
+                <h4 className="font-display text-lg md:text-xl font-bold leading-tight mb-3">
+                  Every Visual in Empresses in the Palace
+                </h4>
+                <p className="text-sm text-ink-300 leading-relaxed mb-4">
+                  Dragon robes, jade hairpins, cobalt tea cups — every
+                  recurring object in 2011&apos;s Qing palace
+                  mega-drama, traced back to a real museum piece.
                 </p>
                 <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary-200 group-hover:gap-2 transition-all">
                   Read the guide <ArrowRight className="h-4 w-4" />

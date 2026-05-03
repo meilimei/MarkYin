@@ -533,6 +533,19 @@ export default function NeZha2RealMuseumGuidePage() {
               </Link>
             </li>
             <li>
+              <strong className="text-ink-900">
+                Empresses in the Palace (甄嬛传), mapped.
+              </strong>{" "}
+              The dragon robes, jade hairpins, and cobalt tea service
+              behind the most-watched Qing palace drama.{" "}
+              <Link
+                href="/empresses-in-the-palace-real-museum-guide"
+                className="text-primary-600 hover:text-primary-700 underline font-semibold"
+              >
+                Read it →
+              </Link>
+            </li>
+            <li>
               <strong className="text-ink-900">Inspirations index.</strong>{" "}
               The full pop-culture cross-reference — every game, film, and
               C-drama mapped against real artifacts.{" "}

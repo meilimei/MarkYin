@@ -531,15 +531,22 @@ export default function BlackMythRealMuseumGuidePage() {
               className="text-primary-600 hover:text-primary-700 underline font-semibold"
             >
               Every Liyue Visual in Genshin Impact
-            </Link>{" "}
-            and{" "}
+            </Link>
+            ,{" "}
             <Link
               href="/ne-zha-2-real-museum-guide"
               className="text-primary-600 hover:text-primary-700 underline font-semibold"
             >
               Every Symbol in Ne Zha 2 (哪吒之魔童闹海)
             </Link>
-            , both mapped to real museum objects.
+            , and{" "}
+            <Link
+              href="/empresses-in-the-palace-real-museum-guide"
+              className="text-primary-600 hover:text-primary-700 underline font-semibold"
+            >
+              Every Visual in Empresses in the Palace (甄嬛传)
+            </Link>
+            , all mapped to real museum objects.
           </p>
           <p className="text-ink-700 leading-relaxed mt-4">
             For the full inventory of Chinese masterpieces in Western
