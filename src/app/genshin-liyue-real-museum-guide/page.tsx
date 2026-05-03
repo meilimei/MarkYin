@@ -510,6 +510,21 @@ export default function GenshinLiyueRealMuseumGuidePage() {
             </li>
             <li>
               <strong className="text-ink-900">
+                Ne Zha 2 (哪吒之魔童闹海), decoded.
+              </strong>{" "}
+              Lotus rebirth, the Four Dragon Kings, the Sky-Ribbon —
+              every symbol in 2025&apos;s biggest animated film mapped
+              onto real Tang Buddhas, Ming dragon dishes, and Sanxingdui
+              bronzes.{" "}
+              <Link
+                href="/ne-zha-2-real-museum-guide"
+                className="text-primary-600 hover:text-primary-700 underline font-semibold"
+              >
+                Read it →
+              </Link>
+            </li>
+            <li>
+              <strong className="text-ink-900">
                 Inspirations index.
               </strong>{" "}
               The full pop-culture cross-reference: every game, film, and

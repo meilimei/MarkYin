@@ -59,6 +59,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
     },
     {
+      url: absoluteUrl("/ne-zha-2-real-museum-guide"),
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
+    {
       url: absoluteUrl("/dynasties"),
       lastModified: now,
       changeFrequency: "monthly",

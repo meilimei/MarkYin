@@ -6,6 +6,8 @@ import {
   Sparkles,
   Layers,
   Gamepad2,
+  Mountain,
+  Flower2,
 } from "lucide-react";
 import { artifacts } from "@/data/artifacts";
 import { museums } from "@/data/museums";
@@ -213,6 +215,97 @@ export default function HomePage() {
             >
               Read the field guide
               <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Companion field guides — two more pop-culture-to-museum guides
+          that share the same format as Black Myth, surfaced right after
+          the flagship spotlight. */}
+      <section className="bg-ink-50 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
+            <div>
+              <p className="text-xs uppercase tracking-widest text-primary-600 font-semibold mb-2">
+                More field guides
+              </p>
+              <h3 className="font-display text-2xl md:text-3xl font-bold text-ink-900 leading-tight">
+                Same format. Different fandom.
+              </h3>
+            </div>
+            <Link
+              href="/inspirations"
+              className="hidden sm:inline-flex items-center gap-1 text-sm font-medium text-primary-600 hover:text-primary-700"
+            >
+              All inspirations <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <Link
+              href="/genshin-liyue-real-museum-guide"
+              className="group relative block rounded-2xl overflow-hidden bg-gradient-to-br from-primary-900 via-ink-900 to-imperial-950 text-white p-7 hover:shadow-xl transition-shadow"
+            >
+              <div
+                className="absolute inset-0 opacity-15 mix-blend-overlay"
+                style={{
+                  backgroundImage:
+                    "url('/images/abroad/cma-cloudy-mountains.jpg')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+                aria-hidden
+              />
+              <div className="relative">
+                <div className="inline-flex items-center gap-2 text-primary-200 mb-3 text-xs font-semibold uppercase tracking-widest">
+                  <Mountain className="h-4 w-4" />
+                  Genshin Impact · Liyue
+                </div>
+                <h4 className="font-display text-xl md:text-2xl font-bold leading-tight mb-3">
+                  Every Liyue Visual, Mapped to a Real Museum Object
+                </h4>
+                <p className="text-sm text-ink-300 leading-relaxed mb-4">
+                  Karst peaks, porcelain teacups, the Adepti, the
+                  cauldrons — the Tang &amp; Song objects that taught
+                  miHoYo the visual language.
+                </p>
+                <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary-200 group-hover:gap-2 transition-all">
+                  Read the guide <ArrowRight className="h-4 w-4" />
+                </span>
+              </div>
+            </Link>
+
+            <Link
+              href="/ne-zha-2-real-museum-guide"
+              className="group relative block rounded-2xl overflow-hidden bg-gradient-to-br from-imperial-950 via-ink-900 to-primary-900 text-white p-7 hover:shadow-xl transition-shadow"
+            >
+              <div
+                className="absolute inset-0 opacity-15 mix-blend-overlay"
+                style={{
+                  backgroundImage:
+                    "url('/images/abroad/ming-wanli-dragon-phoenix-dish.jpg')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+                aria-hidden
+              />
+              <div className="relative">
+                <div className="inline-flex items-center gap-2 text-primary-200 mb-3 text-xs font-semibold uppercase tracking-widest">
+                  <Flower2 className="h-4 w-4" />
+                  Ne Zha 2 · 哪吒之魔童闹海
+                </div>
+                <h4 className="font-display text-xl md:text-2xl font-bold leading-tight mb-3">
+                  Every Symbol in Ne Zha 2, Mapped to a Real Museum
+                </h4>
+                <p className="text-sm text-ink-300 leading-relaxed mb-4">
+                  Lotus rebirth, the Four Dragon Kings, the Sky-Ribbon —
+                  the Tang Buddhas, Ming dragon dishes, and Sanxingdui
+                  bronzes behind 2025&apos;s biggest animated film.
+                </p>
+                <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary-200 group-hover:gap-2 transition-all">
+                  Read the guide <ArrowRight className="h-4 w-4" />
+                </span>
+              </div>
             </Link>
           </div>
         </div>

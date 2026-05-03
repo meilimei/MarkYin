@@ -24,8 +24,30 @@ export const metadata: Metadata = {
 export default function TopicsPage() {
   const [featured, ...rest] = topics;
 
+  const itemListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "China Heritage — Themes",
+    description:
+      "Curated cross-museum themes that connect Chinese artifacts across dynasties, materials, and regions.",
+    itemListOrder: "https://schema.org/ItemListOrderAscending",
+    numberOfItems: topics.length,
+    itemListElement: topics.map((t, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: absoluteUrl(`/topics/${t.slug}`),
+      name: t.title,
+      description: t.summary,
+      image: t.heroImage,
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+      />
       <section className="bg-gradient-to-b from-ink-50 to-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">

@@ -36,6 +36,10 @@ export async function generateMetadata({
   const art = getAbroadArtifactBySlug(params.slug);
   if (!art) return { title: "Not found" };
   const title = `${art.title} — ${art.sourceMuseum.shortName}`;
+  const ogImageUrl = absoluteUrl(art.image);
+  // Pinterest Rich Pins read Open Graph article tags. By exposing
+  // `section`, `tags`, and `authors` we give every Pin auto-filled
+  // context (museum name, period, theme) before users save it.
   return {
     title,
     description: art.summary,
@@ -47,13 +51,33 @@ export async function generateMetadata({
       description: art.summary,
       url: absoluteUrl(`/treasures-abroad/${art.slug}`),
       type: "article",
-      images: [{ url: art.image, alt: art.title }],
+      siteName: "China Heritage",
+      locale: "en_US",
+      authors: [art.sourceMuseum.name],
+      section: art.classification,
+      tags: art.tags,
+      images: [
+        {
+          url: ogImageUrl,
+          alt: art.title,
+          width: 1200,
+          height: 1200,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description: art.summary,
-      images: [art.image],
+      images: [ogImageUrl],
+    },
+    other: {
+      // Pinterest still honours these legacy hints on some Pin templates.
+      "pinterest:description": art.summary,
+      "pinterest:media": ogImageUrl,
+      // Surface curator-style breadcrumbs in social cards.
+      "article:section": art.classification,
+      "article:tag": art.tags.join(", "),
     },
   };
 }

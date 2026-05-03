@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ConsentBanner from "@/components/ConsentBanner";
+import Analytics from "@/components/Analytics";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 
 const ADSENSE_PUB_ID = process.env.NEXT_PUBLIC_ADSENSE_PUB_ID; // e.g. "ca-pub-1234567890123456"
@@ -82,6 +83,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <ConsentBanner />
+        <Analytics />
         {ADSENSE_PUB_ID ? (
           <Script
             id="adsense-init"

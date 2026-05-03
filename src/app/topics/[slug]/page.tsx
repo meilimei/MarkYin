@@ -4,11 +4,13 @@ import { notFound } from "next/navigation";
 import {
   ArrowLeft,
   ExternalLink,
+  HelpCircle,
   Layers,
   MapPin,
   Sparkles,
 } from "lucide-react";
-import { topics, getTopicBySlug } from "@/data/topics";
+import { topics, getTopicBySlug, type Topic } from "@/data/topics";
+import type { Artifact } from "@/data/artifacts";
 import {
   getArtifactsForTopic,
   getWorksForTopic,
@@ -18,6 +20,70 @@ import ArtifactCard from "@/components/ArtifactCard";
 import WorkCard from "@/components/WorkCard";
 import AdBanner from "@/components/AdBanner";
 import { absoluteUrl, SITE_NAME } from "@/lib/site";
+
+interface Faq {
+  q: string;
+  a: string;
+}
+
+function buildFaqs(
+  topic: Topic,
+  artifacts: Artifact[],
+  museumNames: string[],
+): Faq[] {
+  const museumPhrase =
+    museumNames.length === 0
+      ? "multiple Chinese institutions"
+      : museumNames.length === 1
+        ? museumNames[0]
+        : museumNames.length === 2
+          ? `${museumNames[0]} and ${museumNames[1]}`
+          : `${museumNames.slice(0, -1).join(", ")}, and ${museumNames[museumNames.length - 1]}`;
+
+  const headlineArtifact = artifacts[0]?.name ?? "the featured artifacts";
+
+  const faqs: Faq[] = [
+    {
+      q: `What is the "${topic.title}" theme about?`,
+      a: topic.summary,
+    },
+    {
+      q: `Which artifacts are part of "${topic.title}"?`,
+      a:
+        artifacts.length === 0
+          ? `We are still gathering objects for this theme.`
+          : `This theme groups ${artifacts.length} artifact${artifacts.length === 1 ? "" : "s"}, including ${artifacts
+              .slice(0, 4)
+              .map((a) => a.name)
+              .join(", ")}${artifacts.length > 4 ? `, and ${artifacts.length - 4} more` : ""}. Each entry on this page links to the artifact's full record with provenance, dating, and museum source.`,
+    },
+    {
+      q: `Where can I see the artifacts in this theme in person?`,
+      a:
+        museumNames.length === 0
+          ? `Most of the objects are held in major Chinese national or provincial museums; check each artifact page for the current location and gallery number.`
+          : `The pieces in this theme are currently held by ${museumPhrase}. Some institutions rotate their displays, so we recommend checking the museum's website before visiting.`,
+    },
+    {
+      q: `Is this theme based on academic sources?`,
+      a:
+        topic.sources && topic.sources.length > 0
+          ? `Yes — every claim links to a primary or scholarly source, including ${topic.sources
+              .slice(0, 3)
+              .map((s) => s.label)
+              .join(", ")}. The full list of references is shown in the sidebar of this page.`
+          : `Yes — we cross-reference each artifact against the issuing museum's official catalogue and at least one peer-reviewed or encyclopaedic secondary source. References appear on the individual artifact pages.`,
+    },
+    {
+      q: `Why is "${headlineArtifact}" considered iconic for this theme?`,
+      a:
+        artifacts[0]?.description?.slice(0, 280) ||
+        `${headlineArtifact} embodies the theme's core ideas in a single object — its form, materials, and historical context together explain why scholars treat it as a touchstone for understanding the broader story.`,
+    },
+  ];
+
+  return faqs;
+}
 
 interface PageProps {
   params: { slug: string };
@@ -76,6 +142,18 @@ export default function TopicDetailPage({ params }: PageProps) {
     publisher: { "@type": "Organization", name: SITE_NAME },
   };
 
+  const faqs = buildFaqs(topic, artifacts, museums);
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
   const artifactsByMuseum = artifacts.reduce<Record<string, typeof artifacts>>(
     (acc, a) => {
       if (!acc[a.museumName]) acc[a.museumName] = [];
@@ -90,6 +168,10 @@ export default function TopicDetailPage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
       {/* Breadcrumb */}
@@ -239,6 +321,36 @@ export default function TopicDetailPage({ params }: PageProps) {
                 </div>
               </section>
             )}
+
+            <section className="mb-10">
+              <h2 className="font-display text-2xl font-bold text-ink-900 mb-6 flex items-center gap-2">
+                <HelpCircle className="h-6 w-6 text-primary-500" />
+                Frequently Asked
+              </h2>
+              <div className="space-y-3">
+                {faqs.map((faq, i) => (
+                  <details
+                    key={i}
+                    className="group bg-white border border-ink-100 rounded-xl overflow-hidden transition-shadow hover:shadow-sm open:shadow-sm"
+                  >
+                    <summary className="cursor-pointer list-none px-5 py-4 flex items-start justify-between gap-3">
+                      <span className="font-display text-base font-semibold text-ink-900 leading-snug">
+                        {faq.q}
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        className="mt-1 text-ink-400 group-open:rotate-45 transition-transform text-xl leading-none"
+                      >
+                        +
+                      </span>
+                    </summary>
+                    <p className="px-5 pb-5 text-sm text-ink-600 leading-relaxed">
+                      {faq.a}
+                    </p>
+                  </details>
+                ))}
+              </div>
+            </section>
           </div>
 
           {/* Sidebar */}
