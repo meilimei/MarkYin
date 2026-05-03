@@ -1,0 +1,29 @@
+{
+  "slug": "terracotta-warriors",
+  "wikidataId": "Q47672",
+  "labels": {
+    "en": "Terracotta Army",
+    "zh": "秦始皇兵马俑",
+    "ja": "兵馬俑",
+    "ko": "병마용",
+    "fr": "Armée de terre cuite",
+    "es": "Guerreros de Terracota"
+  },
+  "descriptions": {
+    "en": "collection of ancient Chinese military statues",
+    "zh": "秦始皇陵卫戍性质的墓葬雕塑群",
+    "ja": "古代中国の副葬品",
+    "fr": "collection de statues funéraires de soldats et chevaux représentant les troupes de Qin Shi Huang, 1er empereur de Chine",
+    "es": "Colección Imperial de estatuas de guerreros chinos"
+  },
+  "claims": {
+    "collection": null,
+    "inventoryNumber": null,
+    "metObjectId": null,
+    "smithsonianObjectId": null,
+    "coordinateLocation": null,
+    "material": null,
+    "heritageStatus": null
+  },
+  "syncedAt": "2026-05-03T09:40:47.624Z"
+}

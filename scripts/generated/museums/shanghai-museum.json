@@ -1,0 +1,31 @@
+{
+  "slug": "shanghai-museum",
+  "wikidataId": "Q1051293",
+  "labels": {
+    "en": "Shanghai Museum",
+    "zh": "上海博物馆",
+    "ja": "上海博物館",
+    "ko": "상하이 박물관",
+    "fr": "musée de Shanghai",
+    "es": "Museo de Shanghái"
+  },
+  "descriptions": {
+    "en": "museum in the Huangpu District of Shanghai, China",
+    "zh": "中国上海市黄浦区博物馆",
+    "ja": "上海市黄浦区に位置する博物館で中国三大博物館の一つ（中華人民共和国）",
+    "es": "museo en Huangpu ( China)"
+  },
+  "claims": {
+    "country": "Q148",
+    "coordinateLocation": null,
+    "officialWebsite": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index"
+  },
+  "image": {
+    "filename": "The shanghai museum.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/The_shanghai_museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:The_shanghai_museum.jpg",
+    "author": "Pyzhou",
+    "license": "GFDL"
+  },
+  "syncedAt": "2026-05-03T10:06:38.463Z"
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "gold-mask-sanxingdui",
+  "wikidataId": "Q11178546",
+  "labels": {
+    "en": "Sanxingdui gold mask",
+    "zh": "黄金面罩"
+  },
+  "descriptions": {
+    "zh": "三星堆遗址出土文物"
+  },
+  "claims": {
+    "collection": null,
+    "inventoryNumber": null,
+    "metObjectId": null,
+    "smithsonianObjectId": null,
+    "coordinateLocation": null,
+    "material": "Q897",
+    "heritageStatus": null
+  },
+  "syncedAt": "2026-05-03T09:40:33.831Z"
+}

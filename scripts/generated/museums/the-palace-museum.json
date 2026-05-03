@@ -1,0 +1,31 @@
+{
+  "slug": "the-palace-museum",
+  "wikidataId": "Q2047427",
+  "labels": {
+    "en": "The Palace Museum",
+    "zh": "故宫博物院",
+    "ja": "故宮博物院",
+    "ko": "고궁박물원",
+    "fr": "musée du Palais",
+    "es": "Palace Museum"
+  },
+  "descriptions": {
+    "en": "museum in the Forbidden City, Beijing, China",
+    "zh": "中國北京故宮的博物館",
+    "fr": "musée situé dans la Cité interdite, à Pékin",
+    "es": "museo en la ciudad prohibida, Beijung"
+  },
+  "claims": {
+    "country": "Q148",
+    "coordinateLocation": null,
+    "officialWebsite": "http://www.dpm.org.cn/"
+  },
+  "image": {
+    "filename": "Forbidden City Beijing Shenwumen Gate.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Forbidden_City_Beijing_Shenwumen_Gate.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Forbidden_City_Beijing_Shenwumen_Gate.JPG",
+    "author": "user:kallgan",
+    "license": "CC BY-SA 3.0"
+  },
+  "syncedAt": "2026-05-03T10:06:28.851Z"
+}

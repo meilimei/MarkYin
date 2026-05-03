@@ -1,0 +1,23 @@
+{
+  "slug": "blue-white-porcelain-plum-vase",
+  "wikidataId": "Q3854013",
+  "labels": {
+    "en": "Meiping",
+    "zh": "梅瓶",
+    "ja": "梅瓶",
+    "fr": "Meiping"
+  },
+  "descriptions": {
+    "en": "type of vase in Chinese ceramics"
+  },
+  "claims": {
+    "collection": null,
+    "inventoryNumber": null,
+    "metObjectId": null,
+    "smithsonianObjectId": null,
+    "coordinateLocation": null,
+    "material": null,
+    "heritageStatus": null
+  },
+  "syncedAt": "2026-05-03T09:40:49.047Z"
+}

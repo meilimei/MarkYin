@@ -1,0 +1,24 @@
+{
+  "slug": "simuwu-ding",
+  "wikidataId": "Q10917916",
+  "labels": {
+    "en": "Houmuwu ding",
+    "zh": "后母戊鼎",
+    "ja": "司母戊大方鼎",
+    "es": "Houmuwu ding"
+  },
+  "descriptions": {
+    "en": "ancient Chinese sacrificial vessel",
+    "zh": "出土于河南安陽的商代青銅器"
+  },
+  "claims": {
+    "collection": "Q1074318",
+    "inventoryNumber": null,
+    "metObjectId": null,
+    "smithsonianObjectId": null,
+    "coordinateLocation": null,
+    "material": "Q34095",
+    "heritageStatus": "Q11155976"
+  },
+  "syncedAt": "2026-05-03T09:40:36.656Z"
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "da-ke-ding",
+  "wikidataId": "Q10933601",
+  "labels": {
+    "en": "Da Ke ding",
+    "zh": "大克鼎"
+  },
+  "descriptions": {
+    "en": "ancient Chinese bronze circular ring"
+  },
+  "claims": {
+    "collection": "Q1051293",
+    "inventoryNumber": null,
+    "metObjectId": null,
+    "smithsonianObjectId": null,
+    "coordinateLocation": null,
+    "material": "Q34095",
+    "heritageStatus": "Q11155976"
+  },
+  "syncedAt": "2026-05-03T09:40:45.628Z"
+}

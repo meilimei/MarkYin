@@ -1,0 +1,31 @@
+{
+  "slug": "shaanxi-history-museum",
+  "wikidataId": "Q1151210",
+  "labels": {
+    "en": "Shaanxi History Museum",
+    "zh": "陕西历史博物馆",
+    "ja": "陝西省歴史博物館",
+    "ko": "산시 역사박물관",
+    "fr": "musée de l'histoire du Shaanxi",
+    "es": "Museo de Historia de Shaanxi"
+  },
+  "descriptions": {
+    "en": "museum",
+    "zh": "位于陕西省西安市的一座博物馆",
+    "ja": "西安の博物館",
+    "es": "museo chino"
+  },
+  "claims": {
+    "country": "Q148",
+    "coordinateLocation": null,
+    "officialWebsite": "https://www.sxhm.com/"
+  },
+  "image": {
+    "filename": "陕西历史博物馆.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/%E9%99%95%E8%A5%BF%E5%8E%86%E5%8F%B2%E5%8D%9A%E7%89%A9%E9%A6%86.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:%E9%99%95%E8%A5%BF%E5%8E%86%E5%8F%B2%E5%8D%9A%E7%89%A9%E9%A6%86.jpg",
+    "author": "Liuxingy",
+    "license": "CC BY-SA 4.0"
+  },
+  "syncedAt": "2026-05-03T10:06:36.334Z"
+}

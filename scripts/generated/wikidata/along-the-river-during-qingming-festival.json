@@ -1,0 +1,28 @@
+{
+  "slug": "along-the-river-during-qingming-festival",
+  "wikidataId": "Q714802",
+  "labels": {
+    "en": "Along the River During the Qingming Festival",
+    "zh": "清明上河圖",
+    "ja": "清明上河図",
+    "ko": "청명상하도",
+    "fr": "La Fête de Qingming au bord de la rivière",
+    "es": "El festival Qingming junto al río"
+  },
+  "descriptions": {
+    "en": "painting attributed to Zhang Zeduan",
+    "zh": "北宋畫家張擇端所作的畫",
+    "ko": "북송의 장택단이 카이펑의 청명절 풍경을 그린 그림",
+    "fr": "rouleau attribué à Zhang Zeduan, et représentant la fête de Qingming"
+  },
+  "claims": {
+    "collection": "Q2047427",
+    "inventoryNumber": "新00087177",
+    "metObjectId": null,
+    "smithsonianObjectId": null,
+    "coordinateLocation": null,
+    "material": "Q37681",
+    "heritageStatus": "Q11155976"
+  },
+  "syncedAt": "2026-05-03T09:40:29.895Z"
+}

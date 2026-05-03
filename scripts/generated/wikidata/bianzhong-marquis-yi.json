@@ -1,0 +1,27 @@
+{
+  "slug": "bianzhong-marquis-yi",
+  "wikidataId": "Q4902549",
+  "labels": {
+    "en": "Bianzhong of Marquis Yi of Zeng",
+    "zh": "曾侯乙编钟",
+    "ja": "曾侯乙編鐘",
+    "fr": "Le Bianzhong de Suizhou du marquis Yi de Zeng",
+    "es": "Bianzhong del marqués de Yi de zeng"
+  },
+  "descriptions": {
+    "en": "ancient Chinese musical instrument made of bells",
+    "zh": "首批国家级重点禁止出境展览文物",
+    "fr": "élément du patrimoine documentaire du Registre International de la Mémoire du Monde, ajouté en 2025",
+    "es": "patrimonio documental inscrito en el Registro Internacional de la Memoria del Mundo, añadido en 2025"
+  },
+  "claims": {
+    "collection": "Q4391403",
+    "inventoryNumber": null,
+    "metObjectId": null,
+    "smithsonianObjectId": null,
+    "coordinateLocation": null,
+    "material": null,
+    "heritageStatus": "Q11155976"
+  },
+  "syncedAt": "2026-05-03T09:40:40.139Z"
+}

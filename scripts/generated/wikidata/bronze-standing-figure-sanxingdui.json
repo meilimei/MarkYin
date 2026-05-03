@@ -1,0 +1,21 @@
+{
+  "slug": "bronze-standing-figure-sanxingdui",
+  "wikidataId": "Q10565984",
+  "labels": {
+    "en": "Sanxingdui bronze standing figure",
+    "zh": "青铜立人像"
+  },
+  "descriptions": {
+    "zh": "三星堆遺址出土文物"
+  },
+  "claims": {
+    "collection": "Q7420771",
+    "inventoryNumber": null,
+    "metObjectId": null,
+    "smithsonianObjectId": null,
+    "coordinateLocation": null,
+    "material": "Q34095",
+    "heritageStatus": null
+  },
+  "syncedAt": "2026-05-03T09:40:31.855Z"
+}

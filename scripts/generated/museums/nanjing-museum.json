@@ -1,0 +1,30 @@
+{
+  "slug": "nanjing-museum",
+  "wikidataId": "Q1815891",
+  "labels": {
+    "en": "Nanjing Museum",
+    "zh": "南京博物院",
+    "ja": "南京博物院",
+    "ko": "난징박물원",
+    "fr": "musée de Nankin",
+    "es": "Museo de Nankín"
+  },
+  "descriptions": {
+    "en": "history museum, art museum in Nanjing, China",
+    "zh": "位于中华人民共和国南京市的历史艺术博物馆",
+    "fr": "musée national situé à Nankin (Nanjing), en République populaire de Chine"
+  },
+  "claims": {
+    "country": "Q148",
+    "coordinateLocation": null,
+    "officialWebsite": "http://www.njmuseum.com/"
+  },
+  "image": {
+    "filename": "Nanjing Museum1.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Nanjing_Museum1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Nanjing_Museum1.jpg",
+    "author": "Tevatron",
+    "license": "CC BY-SA 3.0"
+  },
+  "syncedAt": "2026-05-03T10:06:44.447Z"
+}

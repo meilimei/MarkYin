@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X, Landmark, Globe } from "lucide-react";
+import SearchBox from "@/components/SearchBox";
 
 const navigation = [
   { name: "Inspirations", href: "/inspirations" },
@@ -50,8 +51,11 @@ export default function Header() {
             ))}
           </div>
 
-          {/* Language Selector & Mobile Toggle */}
+          {/* Search + Language Selector + Mobile Toggle */}
           <div className="flex items-center gap-3">
+            <div className="hidden md:block">
+              <SearchBox />
+            </div>
             <div className="relative">
               <button
                 onClick={() => setLangMenuOpen(!langMenuOpen)}
@@ -91,6 +95,9 @@ export default function Header() {
         {/* Mobile Nav */}
         {mobileMenuOpen && (
           <div className="md:hidden pb-4 border-t border-ink-100 mt-2 pt-4">
+            <div className="mb-3">
+              <SearchBox />
+            </div>
             {navigation.map((item) => (
               <Link
                 key={item.name}

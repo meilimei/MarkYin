@@ -1,0 +1,24 @@
+{
+  "slug": "sanxingdui-museum",
+  "wikidataId": "Q7420771",
+  "labels": {
+    "en": "Sanxingdui Museum",
+    "zh": "三星堆博物館"
+  },
+  "descriptions": {
+    "en": "public heritage museum in Guanghan, Sichuan, China"
+  },
+  "claims": {
+    "country": "Q148",
+    "coordinateLocation": null,
+    "officialWebsite": "http://www.sxd.cn/page/default.asp"
+  },
+  "image": {
+    "filename": "SanXingDui Museum.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/SanXingDui_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:SanXingDui_Museum.jpg",
+    "author": "Jason Zou",
+    "license": "Public domain"
+  },
+  "syncedAt": "2026-05-03T10:06:31.503Z"
+}

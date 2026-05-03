@@ -1,0 +1,32 @@
+{
+  "slug": "yuan-blue-and-white-bottle",
+  "metObjectId": "49216",
+  "title": "Bottle with Peony Scroll",
+  "objectName": "Bottle",
+  "artistDisplayName": "",
+  "objectDate": "mid-14th century",
+  "period": "Yuan dynasty (1271–1368)",
+  "dynasty": "",
+  "reign": "",
+  "culture": "China",
+  "medium": "Porcelain painted with cobalt blue under a transparent glaze (Jingdezhen ware)",
+  "dimensions": "H. 17 1/2 in. (44.5 cm)",
+  "creditLine": "Rogers Fund, 1926",
+  "accessionNumber": "26.271.1a, b",
+  "accessionYear": "1926",
+  "department": "Asian Art",
+  "classification": "Ceramics",
+  "objectURL": "https://www.metmuseum.org/art/collection/search/49216",
+  "image": {
+    "primary": "https://images.metmuseum.org/CRDImages/as/original/DP274702.jpg",
+    "small": "https://images.metmuseum.org/CRDImages/as/web-large/DP274702.jpg",
+    "additional": [
+      "https://images.metmuseum.org/CRDImages/as/original/DP274691.jpg",
+      "https://images.metmuseum.org/CRDImages/as/original/DP274703.jpg",
+      "https://images.metmuseum.org/CRDImages/as/original/DP274704.jpg"
+    ],
+    "isPublicDomain": true,
+    "license": "CC0"
+  },
+  "syncedAt": "2026-05-03T10:36:10.373Z"
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "jade-burial-suit",
+  "wikidataId": "Q2568517",
+  "labels": {
+    "en": "Jade burial suit",
+    "zh": "玉衣",
+    "fr": "Costume funéraire de jade",
+    "es": "Traje funerario de jade"
+  },
+  "descriptions": {
+    "en": "ceremonial suit made of pieces of jade"
+  },
+  "claims": {
+    "collection": null,
+    "inventoryNumber": null,
+    "metObjectId": null,
+    "smithsonianObjectId": null,
+    "coordinateLocation": null,
+    "material": "Q175089",
+    "heritageStatus": null
+  },
+  "syncedAt": "2026-05-03T09:40:38.010Z"
+}

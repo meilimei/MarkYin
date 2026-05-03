@@ -1,0 +1,26 @@
+{
+  "slug": "sword-of-goujian",
+  "wikidataId": "Q836117",
+  "labels": {
+    "en": "Sword of Goujian",
+    "zh": "越王勾践剑",
+    "ja": "越王勾践剣",
+    "ko": "월왕구천검",
+    "fr": "Épée de Goujian",
+    "es": "Espada de Goujian"
+  },
+  "descriptions": {
+    "en": "ancient Chinese sword",
+    "zh": "中国湖北省博物馆镇馆之宝之一"
+  },
+  "claims": {
+    "collection": "Q4391403",
+    "inventoryNumber": null,
+    "metObjectId": null,
+    "smithsonianObjectId": null,
+    "coordinateLocation": null,
+    "material": "Q34095",
+    "heritageStatus": null
+  },
+  "syncedAt": "2026-05-03T09:40:42.240Z"
+}

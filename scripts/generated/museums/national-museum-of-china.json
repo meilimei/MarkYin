@@ -1,0 +1,31 @@
+{
+  "slug": "national-museum-of-china",
+  "wikidataId": "Q1074318",
+  "labels": {
+    "en": "National Museum of China",
+    "zh": "中国国家博物馆",
+    "ja": "中国国家博物館",
+    "ko": "중국국가박물관",
+    "fr": "musée national de Chine",
+    "es": "Museo nacional de China"
+  },
+  "descriptions": {
+    "en": "museum in Beijing, China",
+    "zh": "北京市东城区的博物馆",
+    "ko": "중화인민공화국 베이징시의 국립박물관",
+    "fr": "musée situé à Pékin, Chine"
+  },
+  "claims": {
+    "country": "Q148",
+    "coordinateLocation": null,
+    "officialWebsite": "http://www.chnmuseum.cn"
+  },
+  "image": {
+    "filename": "Front of National Museum of China.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Front_of_National_Museum_of_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Front_of_National_Museum_of_China.jpg",
+    "author": "Shujianyang",
+    "license": "CC0"
+  },
+  "syncedAt": "2026-05-03T10:06:33.658Z"
+}

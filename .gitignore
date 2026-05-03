@@ -32,8 +32,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# sync script output (regenerable; commit hand-edited overrides instead)
-/scripts/generated/
+# sync script output — committed so weekly CI can surface upstream drift
+# as reviewable PRs. Hand-edited overrides live in src/data.
+# /scripts/generated/
+
 /.cache/
 
 met-candidates.txt
