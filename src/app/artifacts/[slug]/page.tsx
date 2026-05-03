@@ -180,7 +180,8 @@ export default function ArtifactDetailPage({ params }: PageProps) {
             {/* Artifact Image */}
             <figure className="mb-10">
               <div className="aspect-[16/10] bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl overflow-hidden relative">
-                {artifact.image.startsWith("http") ? (
+                {artifact.image ? (
+                  // eslint-disable-next-line @next/next/no-img-element
                   <img
                     src={artifact.image}
                     alt={artifact.name}

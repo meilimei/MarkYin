@@ -32,6 +32,7 @@ export default function Footer() {
                 { name: "Themes", href: "/topics" },
                 { name: "All Artifacts", href: "/artifacts" },
                 { name: "Museums", href: "/museums" },
+                { name: "Treasures Abroad", href: "/treasures-abroad" },
                 { name: "Dynasties", href: "/dynasties" },
               ].map((link) => (
                 <li key={link.name}>

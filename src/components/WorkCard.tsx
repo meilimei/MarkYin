@@ -18,7 +18,7 @@ interface WorkCardProps {
 
 export default function WorkCard({ work, featured = false }: WorkCardProps) {
   const Icon = mediumIcons[work.medium];
-  const isExternal = work.heroImage.startsWith("http");
+  const hasImage = Boolean(work.heroImage);
 
   if (featured) {
     return (
@@ -28,7 +28,8 @@ export default function WorkCard({ work, featured = false }: WorkCardProps) {
       >
         <div className="grid md:grid-cols-2 gap-0">
           <div className="aspect-[4/3] md:aspect-auto bg-gradient-to-br from-ink-900 to-primary-900 relative overflow-hidden min-h-[280px]">
-            {isExternal && (
+            {hasImage && (
+              // eslint-disable-next-line @next/next/no-img-element
               <img
                 src={work.heroImage}
                 alt={work.title}
@@ -74,7 +75,8 @@ export default function WorkCard({ work, featured = false }: WorkCardProps) {
       className="group block card-hover rounded-xl overflow-hidden bg-white border border-ink-100 shadow-sm"
     >
       <div className="aspect-[4/3] bg-gradient-to-br from-ink-900 to-primary-900 relative overflow-hidden">
-        {isExternal && (
+        {hasImage && (
+          // eslint-disable-next-line @next/next/no-img-element
           <img
             src={work.heroImage}
             alt={work.title}

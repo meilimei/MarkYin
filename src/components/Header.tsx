@@ -5,11 +5,11 @@ import { useState } from "react";
 import { Menu, X, Landmark, Globe } from "lucide-react";
 
 const navigation = [
-  { name: "Home", href: "/" },
   { name: "Inspirations", href: "/inspirations" },
   { name: "Themes", href: "/topics" },
   { name: "Artifacts", href: "/artifacts" },
   { name: "Museums", href: "/museums" },
+  { name: "Abroad", href: "/treasures-abroad" },
   { name: "Dynasties", href: "/dynasties" },
 ];
 

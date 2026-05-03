@@ -3,6 +3,7 @@ import { artifacts } from "@/data/artifacts";
 import { museums } from "@/data/museums";
 import { popCultureWorks } from "@/data/popCultureWorks";
 import { topics } from "@/data/topics";
+import { abroadArtifacts } from "@/data/abroadArtifacts";
 import { absoluteUrl } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -35,6 +36,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: absoluteUrl("/museums"),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: absoluteUrl("/treasures-abroad"),
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.9,
@@ -89,11 +96,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const abroadRoutes: MetadataRoute.Sitemap = abroadArtifacts.map((art) => ({
+    url: absoluteUrl(`/treasures-abroad/${art.slug}`),
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.85,
+  }));
+
   return [
     ...staticRoutes,
     ...inspirationRoutes,
     ...topicRoutes,
     ...artifactRoutes,
     ...museumRoutes,
+    ...abroadRoutes,
   ];
 }

@@ -1,19 +1,19 @@
 /**
- * Met Museum sync — fetches CC0 image and metadata for artifacts that have
- * a Met objectID (from Wikidata P3634, written by sync:wikidata).
+ * Met Museum sync — two modes:
  *
- * For each artifact with a metObjectId:
- *   - GET https://collectionapi.metmuseum.org/public/collection/v1/objects/{id}
- *   - Save: title, dynasty, medium, primaryImage URL, isPublicDomain, objectURL
- *   - Output to scripts/generated/met/<slug>.json
+ *   1. Primary (seed-driven): read `scripts/seeds/met.json` of the form
+ *      [{ slug, metObjectId }, ...] and fetch each. Intended for curating a
+ *      "Chinese treasures abroad" collection.
+ *
+ *   2. Fallback (wikidata-derived): read generated/wikidata/*.json and pick up
+ *      any artifact that carried a P3634 (Met objectID) claim. Kept for
+ *      future expansion when Wikidata links a Chinese-museum item to a Met
+ *      equivalent.
+ *
+ * Writes scripts/generated/met/<slug>.json with rich metadata so downstream
+ * pages can render without re-hitting the Met API.
  *
  * Run: npm run sync:met
- *
- * NOTE: Many seeded Chinese artifacts WILL NOT have a Met record (they're in
- * Chinese museums). The script logs misses and continues. To get usable Met
- * coverage, the seeds need to include Met-collection items (e.g., Tang horses,
- * blue-and-white wares held by The Met). This script is the foundation; seed
- * expansion is a separate workstream.
  */
 
 import fs from "node:fs/promises";
@@ -26,6 +26,7 @@ dns.setDefaultResultOrder("ipv4first");
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const SEEDS_PATH = path.resolve(__dirname, "../seeds/met.json");
 const WIKIDATA_DIR = path.resolve(__dirname, "../generated/wikidata");
 const OUT_DIR = path.resolve(__dirname, "../generated/met");
 const MET_API = "https://collectionapi.metmuseum.org/public/collection/v1";
@@ -39,12 +40,21 @@ interface MetObject {
   isPublicDomain: boolean;
   title: string;
   artistDisplayName: string;
+  objectName: string;
   objectDate: string;
+  period: string;
+  dynasty: string;
+  reign: string;
+  dimensions: string;
+  creditLine: string;
+  accessionNumber: string;
+  accessionYear: string;
   medium: string;
   culture: string;
   objectURL: string;
   department: string;
   classification: string;
+  additionalImages?: string[];
 }
 
 async function fetchMet(objectId: string): Promise<MetObject | null> {
@@ -62,6 +72,12 @@ async function fetchMet(objectId: string): Promise<MetObject | null> {
   }
 }
 
+interface SeedEntry {
+  slug: string;
+  metObjectId: string;
+  notes?: string;
+}
+
 interface WikidataResult {
   slug: string;
   wikidataId: string;
@@ -70,80 +86,114 @@ interface WikidataResult {
   };
 }
 
-async function main(): Promise<void> {
-  console.log("[sync:met] Reading wikidata results...");
+async function readSeedEntries(): Promise<SeedEntry[]> {
+  try {
+    const raw = await fs.readFile(SEEDS_PATH, "utf-8");
+    return JSON.parse(raw) as SeedEntry[];
+  } catch {
+    return [];
+  }
+}
+
+async function readWikidataEntries(): Promise<SeedEntry[]> {
   let files: string[];
   try {
     files = await fs.readdir(WIKIDATA_DIR);
   } catch {
-    console.error(
-      `[sync:met] No wikidata output found at ${WIKIDATA_DIR}. Run 'npm run sync:wikidata' first.`,
-    );
-    process.exit(1);
+    return [];
   }
-
-  const candidates: WikidataResult[] = [];
+  const out: SeedEntry[] = [];
   for (const file of files) {
     if (!file.endsWith(".json")) continue;
     const data = JSON.parse(
       await fs.readFile(path.join(WIKIDATA_DIR, file), "utf-8"),
     ) as WikidataResult;
-    if (data.claims?.metObjectId) candidates.push(data);
+    if (data.claims?.metObjectId) {
+      out.push({ slug: data.slug, metObjectId: data.claims.metObjectId });
+    }
   }
+  return out;
+}
 
-  console.log(`[sync:met] ${candidates.length} candidates with Met objectID`);
+async function syncOne(entry: SeedEntry): Promise<boolean> {
+  console.log(`  > ${entry.slug} -> Met #${entry.metObjectId}`);
+  const met = await fetchMet(entry.metObjectId);
+  if (!met) return false;
 
-  if (candidates.length === 0) {
+  const result = {
+    slug: entry.slug,
+    metObjectId: entry.metObjectId,
+    title: met.title,
+    objectName: met.objectName,
+    artistDisplayName: met.artistDisplayName,
+    objectDate: met.objectDate,
+    period: met.period,
+    dynasty: met.dynasty,
+    reign: met.reign,
+    culture: met.culture,
+    medium: met.medium,
+    dimensions: met.dimensions,
+    creditLine: met.creditLine,
+    accessionNumber: met.accessionNumber,
+    accessionYear: met.accessionYear,
+    department: met.department,
+    classification: met.classification,
+    objectURL: met.objectURL,
+    image: {
+      primary: met.primaryImage,
+      small: met.primaryImageSmall,
+      additional: met.additionalImages ?? [],
+      isPublicDomain: met.isPublicDomain,
+      license: met.isPublicDomain ? "CC0" : "All Rights Reserved",
+    },
+    syncedAt: new Date().toISOString(),
+  };
+
+  await fs.mkdir(OUT_DIR, { recursive: true });
+  await fs.writeFile(
+    path.join(OUT_DIR, `${entry.slug}.json`),
+    JSON.stringify(result, null, 2),
+    "utf-8",
+  );
+  console.log(
+    `    OK -> ${entry.slug}.json (${
+      met.isPublicDomain ? "CC0" : "RIGHTS"
+    })`,
+  );
+  return true;
+}
+
+async function main(): Promise<void> {
+  const seedEntries = await readSeedEntries();
+  const wikidataEntries = await readWikidataEntries();
+
+  // Merge, seed wins on slug collisions
+  const bySlug = new Map<string, SeedEntry>();
+  for (const e of wikidataEntries) bySlug.set(e.slug, e);
+  for (const e of seedEntries) bySlug.set(e.slug, e);
+  const all = Array.from(bySlug.values());
+
+  console.log(
+    `[sync:met] ${seedEntries.length} seed + ${wikidataEntries.length} wikidata = ${all.length} unique`,
+  );
+
+  if (all.length === 0) {
     console.log(
-      "[sync:met] No matches. (Most Chinese museum holdings are not in Met.)",
-    );
-    console.log(
-      "[sync:met] To enable: add seeds that have known Met objectIDs.",
+      "[sync:met] Nothing to sync. Add items to scripts/seeds/met.json",
     );
     return;
   }
 
-  await fs.mkdir(OUT_DIR, { recursive: true });
-
-  for (const cand of candidates) {
-    const objectId = cand.claims.metObjectId!;
-    console.log(`  > ${cand.slug} -> Met #${objectId}`);
-    const met = await fetchMet(objectId);
-    if (!met) continue;
-
-    const result = {
-      slug: cand.slug,
-      metObjectId: objectId,
-      title: met.title,
-      objectDate: met.objectDate,
-      culture: met.culture,
-      medium: met.medium,
-      department: met.department,
-      classification: met.classification,
-      objectURL: met.objectURL,
-      image: {
-        primary: met.primaryImage,
-        small: met.primaryImageSmall,
-        isPublicDomain: met.isPublicDomain,
-        license: met.isPublicDomain ? "CC0" : "All Rights Reserved",
-      },
-      syncedAt: new Date().toISOString(),
-    };
-
-    await fs.writeFile(
-      path.join(OUT_DIR, `${cand.slug}.json`),
-      JSON.stringify(result, null, 2),
-      "utf-8",
-    );
-    console.log(
-      `    OK -> ${cand.slug}.json (${met.isPublicDomain ? "CC0" : "RIGHTS"})`,
-    );
-
-    // Be polite
+  let okCount = 0;
+  for (const entry of all) {
+    const ok = await syncOne(entry);
+    if (ok) okCount++;
     await new Promise((r) => setTimeout(r, 500));
   }
 
-  console.log(`[sync:met] Done. Output: ${OUT_DIR}`);
+  console.log(
+    `[sync:met] Done. ${okCount}/${all.length} synced. Output: ${OUT_DIR}`,
+  );
 }
 
 main().catch((err) => {

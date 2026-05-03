@@ -122,7 +122,8 @@ export default function InspirationDetailPage({ params }: PageProps) {
       {/* Hero */}
       <section className="bg-gradient-to-b from-ink-950 via-ink-900 to-primary-950 text-white py-16 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          {work.heroImage.startsWith("http") && (
+          {work.heroImage && (
+            // eslint-disable-next-line @next/next/no-img-element
             <img
               src={work.heroImage}
               alt={work.title}

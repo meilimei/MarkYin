@@ -145,7 +145,8 @@ export default function TopicDetailPage({ params }: PageProps) {
               </div>
             </div>
             <div className="md:col-span-2 aspect-[4/3] bg-gradient-to-br from-primary-100 to-primary-200 rounded-2xl overflow-hidden">
-              {topic.heroImage.startsWith("http") && (
+              {topic.heroImage && (
+                // eslint-disable-next-line @next/next/no-img-element
                 <img
                   src={topic.heroImage}
                   alt={topic.title}

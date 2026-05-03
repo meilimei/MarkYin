@@ -13,7 +13,8 @@ export default function MuseumCard({ museum }: MuseumCardProps) {
       className="group block card-hover rounded-xl overflow-hidden bg-white border border-ink-100 shadow-sm"
     >
       <div className="aspect-[16/9] bg-gradient-to-br from-ink-50 to-ink-100 relative overflow-hidden">
-        {museum.image.startsWith("http") ? (
+        {museum.image ? (
+          // eslint-disable-next-line @next/next/no-img-element
           <img src={museum.image} alt={museum.name} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         ) : (
           <div className="absolute inset-0 flex items-center justify-center">

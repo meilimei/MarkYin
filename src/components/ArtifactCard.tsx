@@ -8,10 +8,11 @@ interface ArtifactCardProps {
 }
 
 function ArtifactImage({ src, alt, className = "" }: { src: string; alt: string; className?: string }) {
-  const isExternal = src.startsWith("http");
-  return isExternal ? (
-    <img src={src} alt={alt} className={`object-cover w-full h-full ${className}`} loading="lazy" />
-  ) : (
+  if (src) {
+    // eslint-disable-next-line @next/next/no-img-element
+    return <img src={src} alt={alt} className={`object-cover w-full h-full ${className}`} loading="lazy" />;
+  }
+  return (
     <div className="absolute inset-0 flex items-center justify-center">
       <Sparkles className="h-10 w-10 text-primary-200" />
     </div>

@@ -160,5 +160,77 @@
     "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Forbidden_City_Beijing_Shenwumen_Gate.JPG",
     "author": "user:kallgan",
     "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "ming-wanli-dragon-phoenix-dish",
+    "kind": "abroad",
+    "localPath": "/images/abroad/ming-wanli-dragon-phoenix-dish.jpg",
+    "remoteUrl": "https://images.metmuseum.org/CRDImages/as/web-large/DP-14609-080.jpg",
+    "descriptionUrl": "https://www.metmuseum.org/art/collection/search/42543",
+    "author": "The Metropolitan Museum of Art",
+    "license": "CC0"
+  },
+  {
+    "slug": "night-shining-white",
+    "kind": "abroad",
+    "localPath": "/images/abroad/night-shining-white.jpg",
+    "remoteUrl": "https://images.metmuseum.org/CRDImages/as/web-large/DP153705.jpg",
+    "descriptionUrl": "https://www.metmuseum.org/art/collection/search/39901",
+    "author": "Han Gan",
+    "license": "CC0"
+  },
+  {
+    "slug": "northern-wei-buddha-maitreya",
+    "kind": "abroad",
+    "localPath": "/images/abroad/northern-wei-buddha-maitreya.jpg",
+    "remoteUrl": "https://images.metmuseum.org/CRDImages/as/web-large/DP170102.jpg",
+    "descriptionUrl": "https://www.metmuseum.org/art/collection/search/42733",
+    "author": "The Metropolitan Museum of Art",
+    "license": "CC0"
+  },
+  {
+    "slug": "shang-zhou-ritual-altar-set",
+    "kind": "abroad",
+    "localPath": "/images/abroad/shang-zhou-ritual-altar-set.jpg",
+    "remoteUrl": "https://images.metmuseum.org/CRDImages/as/web-large/DP219959.jpg",
+    "descriptionUrl": "https://www.metmuseum.org/art/collection/search/76974",
+    "author": "The Metropolitan Museum of Art",
+    "license": "CC0"
+  },
+  {
+    "slug": "tang-head-of-bodhisattva",
+    "kind": "abroad",
+    "localPath": "/images/abroad/tang-head-of-bodhisattva.jpg",
+    "remoteUrl": "https://images.metmuseum.org/CRDImages/as/web-large/DP170147.jpg",
+    "descriptionUrl": "https://www.metmuseum.org/art/collection/search/39640",
+    "author": "The Metropolitan Museum of Art",
+    "license": "CC0"
+  },
+  {
+    "slug": "tang-sancai-horse",
+    "kind": "abroad",
+    "localPath": "/images/abroad/tang-sancai-horse.jpg",
+    "remoteUrl": "https://images.metmuseum.org/CRDImages/as/web-large/1991_253_12.jpg",
+    "descriptionUrl": "https://www.metmuseum.org/art/collection/search/42189",
+    "author": "The Metropolitan Museum of Art",
+    "license": "CC0"
+  },
+  {
+    "slug": "tang-twelve-zodiac-set",
+    "kind": "abroad",
+    "localPath": "/images/abroad/tang-twelve-zodiac-set.jpg",
+    "remoteUrl": "https://images.metmuseum.org/CRDImages/as/web-large/LC-2000_662_7al_027-1.jpg",
+    "descriptionUrl": "https://www.metmuseum.org/art/collection/search/49381",
+    "author": "The Metropolitan Museum of Art",
+    "license": "CC0"
+  },
+  {
+    "slug": "yuan-blue-and-white-bottle",
+    "kind": "abroad",
+    "localPath": "/images/abroad/yuan-blue-and-white-bottle.jpg",
+    "remoteUrl": "https://images.metmuseum.org/CRDImages/as/web-large/DP274702.jpg",
+    "descriptionUrl": "https://www.metmuseum.org/art/collection/search/49216",
+    "author": "The Metropolitan Museum of Art",
+    "license": "CC0"
   }
 ]

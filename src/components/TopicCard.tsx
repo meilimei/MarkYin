@@ -8,7 +8,7 @@ interface TopicCardProps {
 }
 
 export default function TopicCard({ topic, featured = false }: TopicCardProps) {
-  const isExternal = topic.heroImage.startsWith("http");
+  const hasImage = Boolean(topic.heroImage);
 
   if (featured) {
     return (
@@ -18,7 +18,8 @@ export default function TopicCard({ topic, featured = false }: TopicCardProps) {
       >
         <div className="grid md:grid-cols-5 gap-0">
           <div className="md:col-span-2 aspect-[4/3] md:aspect-auto bg-gradient-to-br from-primary-100 to-primary-200 relative overflow-hidden min-h-[280px]">
-            {isExternal && (
+            {hasImage && (
+              // eslint-disable-next-line @next/next/no-img-element
               <img
                 src={topic.heroImage}
                 alt={topic.title}
@@ -61,7 +62,8 @@ export default function TopicCard({ topic, featured = false }: TopicCardProps) {
       className="group block card-hover rounded-xl overflow-hidden bg-white border border-ink-100 shadow-sm"
     >
       <div className="aspect-[16/9] bg-gradient-to-br from-primary-100 to-primary-200 relative overflow-hidden">
-        {isExternal && (
+        {hasImage && (
+          // eslint-disable-next-line @next/next/no-img-element
           <img
             src={topic.heroImage}
             alt={topic.title}

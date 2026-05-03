@@ -28,9 +28,11 @@ const __dirname = path.dirname(__filename);
 
 const COMMONS_DIR = path.resolve(__dirname, "../generated/commons");
 const MUSEUMS_DIR = path.resolve(__dirname, "../generated/museums");
+const MET_DIR = path.resolve(__dirname, "../generated/met");
 const PUBLIC_IMG_DIR = path.resolve(__dirname, "../../public/images");
 const ARTIFACT_OUT = path.join(PUBLIC_IMG_DIR, "artifacts");
 const MUSEUM_OUT = path.join(PUBLIC_IMG_DIR, "museums");
+const ABROAD_OUT = path.join(PUBLIC_IMG_DIR, "abroad");
 const MANIFEST_PATH = path.join(PUBLIC_IMG_DIR, "manifest.json");
 const USER_AGENT =
   "AncientEchoes/1.0 (https://chinaheritageguide.com; sync-bot)";
@@ -53,9 +55,22 @@ interface MuseumJson {
   } | null;
 }
 
+interface MetJson {
+  slug: string;
+  title?: string;
+  objectURL?: string;
+  artistDisplayName?: string;
+  image?: {
+    primary: string;
+    small: string;
+    isPublicDomain: boolean;
+    license: string;
+  };
+}
+
 interface ManifestEntry {
   slug: string;
-  kind: "artifact" | "museum";
+  kind: "artifact" | "museum" | "abroad";
   localPath: string;
   remoteUrl: string;
   descriptionUrl?: string;
@@ -168,6 +183,49 @@ async function processCommonsArtifacts(): Promise<ManifestEntry[]> {
   return entries;
 }
 
+async function processMet(): Promise<ManifestEntry[]> {
+  const entries: ManifestEntry[] = [];
+  let files: string[];
+  try {
+    files = await fs.readdir(MET_DIR);
+  } catch {
+    console.warn(
+      `[download-images] No met output dir; run 'npm run sync:met' first.`,
+    );
+    return entries;
+  }
+
+  for (const file of files) {
+    if (!file.endsWith(".json")) continue;
+    const data = JSON.parse(
+      await fs.readFile(path.join(MET_DIR, file), "utf-8"),
+    ) as MetJson;
+    // Use the "small" (web-large, ~1500px) variant — already right-sized
+    const imgUrl = data.image?.small || data.image?.primary;
+    if (!imgUrl) {
+      console.log(`  - met: ${data.slug} (no image, skip)`);
+      continue;
+    }
+    console.log(`  > abroad: ${data.slug}`);
+    const ext = pickExtension(imgUrl);
+    const fileName = `${data.slug}${ext}`;
+    const destPath = path.join(ABROAD_OUT, fileName);
+    const ok = await downloadOne(imgUrl, destPath);
+    if (!ok) continue;
+    entries.push({
+      slug: data.slug,
+      kind: "abroad",
+      localPath: `/images/abroad/${fileName}`,
+      remoteUrl: imgUrl,
+      descriptionUrl: data.objectURL,
+      author: data.artistDisplayName || "The Metropolitan Museum of Art",
+      license: data.image?.license ?? "CC0",
+    });
+    await new Promise((r) => setTimeout(r, 200));
+  }
+  return entries;
+}
+
 async function processMuseums(): Promise<ManifestEntry[]> {
   const entries: ManifestEntry[] = [];
   let files: string[];
@@ -213,13 +271,14 @@ async function main() {
   console.log("[download-images] Starting...");
   const artifacts = await processCommonsArtifacts();
   const museums = await processMuseums();
-  const manifest = [...artifacts, ...museums];
+  const abroad = await processMet();
+  const manifest = [...artifacts, ...museums, ...abroad];
 
   await fs.mkdir(PUBLIC_IMG_DIR, { recursive: true });
   await fs.writeFile(MANIFEST_PATH, JSON.stringify(manifest, null, 2), "utf-8");
 
   console.log(
-    `[download-images] Done. ${artifacts.length} artifacts + ${museums.length} museums. Manifest: ${MANIFEST_PATH}`,
+    `[download-images] Done. ${artifacts.length} artifacts + ${museums.length} museums + ${abroad.length} abroad. Manifest: ${MANIFEST_PATH}`,
   );
 }
 
