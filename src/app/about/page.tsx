@@ -1,10 +1,21 @@
 import { Metadata } from "next";
 import { Landmark, Globe, BookOpen, Heart } from "lucide-react";
+import { absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About AncientEchoes",
   description:
     "AncientEchoes is dedicated to making China's extraordinary cultural heritage accessible to the world through engaging storytelling and modern technology.",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "About AncientEchoes",
+    description:
+      "AncientEchoes is dedicated to making China's extraordinary cultural heritage accessible to the world through engaging storytelling and modern technology.",
+    url: absoluteUrl("/about"),
+    type: "website",
+  },
 };
 
 export default function AboutPage() {

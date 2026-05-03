@@ -2,11 +2,22 @@ import { Metadata } from "next";
 import { artifacts, categories, dynasties } from "@/data/artifacts";
 import ArtifactCard from "@/components/ArtifactCard";
 import AdBanner from "@/components/AdBanner";
+import { absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Artifacts — Explore China's Cultural Treasures",
   description:
     "Browse a curated collection of China's most extraordinary cultural artifacts, from Sanxingdui bronze masks to Song Dynasty masterpiece paintings.",
+  alternates: {
+    canonical: "/artifacts",
+  },
+  openGraph: {
+    title: "Artifacts — Explore China's Cultural Treasures",
+    description:
+      "Browse a curated collection of China's most extraordinary cultural artifacts, from Sanxingdui bronze masks to Song Dynasty masterpiece paintings.",
+    url: absoluteUrl("/artifacts"),
+    type: "website",
+  },
 };
 
 export default function ArtifactsPage() {

@@ -2,11 +2,22 @@ import { Metadata } from "next";
 import { museums } from "@/data/museums";
 import MuseumCard from "@/components/MuseumCard";
 import AdBanner from "@/components/AdBanner";
+import { absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Museums — China's Greatest Cultural Institutions",
   description:
     "Explore China's most prestigious museums, from the Forbidden City to Sanxingdui. Plan your visit and discover their most important collections.",
+  alternates: {
+    canonical: "/museums",
+  },
+  openGraph: {
+    title: "Museums — China's Greatest Cultural Institutions",
+    description:
+      "Explore China's most prestigious museums, from the Forbidden City to Sanxingdui. Plan your visit and discover their most important collections.",
+    url: absoluteUrl("/museums"),
+    type: "website",
+  },
 };
 
 export default function MuseumsPage() {

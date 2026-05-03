@@ -18,6 +18,7 @@ import {
 } from "@/data/artifacts";
 import ArtifactCard from "@/components/ArtifactCard";
 import AdBanner from "@/components/AdBanner";
+import { absoluteUrl } from "@/lib/site";
 
 interface PageProps {
   params: { slug: string };
@@ -36,10 +37,26 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${artifact.name} — ${artifact.dynasty}`,
     description: artifact.description,
+    alternates: {
+      canonical: `/artifacts/${artifact.slug}`,
+    },
     openGraph: {
       title: `${artifact.name} — ${artifact.dynasty} | AncientEchoes`,
       description: artifact.description,
+      url: absoluteUrl(`/artifacts/${artifact.slug}`),
       type: "article",
+      images: [
+        {
+          url: artifact.image,
+          alt: artifact.name,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${artifact.name} — ${artifact.dynasty}`,
+      description: artifact.description,
+      images: [artifact.image],
     },
   };
 }
@@ -49,9 +66,43 @@ export default function ArtifactDetailPage({ params }: PageProps) {
   if (!artifact) notFound();
 
   const relatedArtifacts = getRelatedArtifacts(artifact.relatedSlugs);
+  const artifactJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: `${artifact.name} — ${artifact.dynasty}`,
+    description: artifact.description,
+    image: artifact.image,
+    mainEntityOfPage: absoluteUrl(`/artifacts/${artifact.slug}`),
+    author: {
+      "@type": "Organization",
+      name: "AncientEchoes",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "AncientEchoes",
+    },
+    about: {
+      "@type": "Thing",
+      name: artifact.name,
+      description: artifact.significance,
+    },
+    keywords: [
+      artifact.name,
+      artifact.dynasty,
+      artifact.category,
+      artifact.material,
+      artifact.museumName,
+      "Chinese artifact",
+      "Chinese cultural heritage",
+    ],
+  };
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(artifactJsonLd) }}
+      />
       {/* Breadcrumb */}
       <div className="bg-ink-50 border-b border-ink-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">

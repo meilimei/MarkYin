@@ -2,11 +2,22 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { artifacts } from "@/data/artifacts";
 import { Clock, ArrowRight } from "lucide-react";
+import { absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Chinese Dynasties — A Timeline of Civilization",
   description:
     "Explore the major dynasties of Chinese history through their most significant cultural artifacts. From the Shang Dynasty to the Qing.",
+  alternates: {
+    canonical: "/dynasties",
+  },
+  openGraph: {
+    title: "Chinese Dynasties — A Timeline of Civilization",
+    description:
+      "Explore the major dynasties of Chinese history through their most significant cultural artifacts. From the Shang Dynasty to the Qing.",
+    url: absoluteUrl("/dynasties"),
+    type: "website",
+  },
 };
 
 const dynastyInfo = [

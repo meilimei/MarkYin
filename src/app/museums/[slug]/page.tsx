@@ -14,6 +14,7 @@ import { museums, getMuseumBySlug } from "@/data/museums";
 import { getArtifactsByMuseum } from "@/data/artifacts";
 import ArtifactCard from "@/components/ArtifactCard";
 import AdBanner from "@/components/AdBanner";
+import { absoluteUrl } from "@/lib/site";
 
 interface PageProps {
   params: { slug: string };
@@ -32,10 +33,26 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${museum.name} — Visitor Guide & Collections`,
     description: museum.description,
+    alternates: {
+      canonical: `/museums/${museum.slug}`,
+    },
     openGraph: {
       title: `${museum.name} | AncientEchoes`,
       description: museum.description,
+      url: absoluteUrl(`/museums/${museum.slug}`),
       type: "article",
+      images: [
+        {
+          url: museum.image,
+          alt: museum.name,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${museum.name} — Visitor Guide & Collections`,
+      description: museum.description,
+      images: [museum.image],
     },
   };
 }
@@ -45,9 +62,33 @@ export default function MuseumDetailPage({ params }: PageProps) {
   if (!museum) notFound();
 
   const museumArtifacts = getArtifactsByMuseum(museum.slug);
+  const museumJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Museum",
+    name: museum.name,
+    description: museum.description,
+    image: museum.image,
+    url: absoluteUrl(`/museums/${museum.slug}`),
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: museum.city,
+      addressRegion: museum.province,
+      addressCountry: "CN",
+    },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      description: museum.visitInfo.hours,
+    },
+    isAccessibleForFree: museum.visitInfo.admission.toLowerCase().includes("free"),
+    sameAs: museum.visitInfo.website,
+  };
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(museumJsonLd) }}
+      />
       {/* Breadcrumb */}
       <div className="bg-ink-50 border-b border-ink-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">

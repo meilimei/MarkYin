@@ -5,14 +5,44 @@ import { museums } from "@/data/museums";
 import ArtifactCard from "@/components/ArtifactCard";
 import MuseumCard from "@/components/MuseumCard";
 import AdBanner from "@/components/AdBanner";
+import { SITE_NAME, SITE_URL, absoluteUrl } from "@/lib/site";
 
 export default function HomePage() {
   const featuredArtifact = artifacts[0];
   const popularArtifacts = artifacts.slice(1, 5);
   const featuredMuseums = museums.slice(0, 4);
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE_NAME,
+    url: SITE_URL,
+    description:
+      "A multilingual guide to China's cultural artifacts, museums, dynasties, and heritage stories.",
+    inLanguage: "en",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: `${SITE_URL}/artifacts?search={search_term_string}`,
+      "query-input": "required name=search_term_string",
+    },
+  };
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: SITE_NAME,
+    url: SITE_URL,
+    sameAs: [absoluteUrl("/")],
+  };
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
       {/* Hero Section */}
       <section className="relative bg-ink-950 text-white overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-ink-950 via-ink-900 to-primary-950 opacity-90" />

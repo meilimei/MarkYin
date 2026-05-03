@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  alternates: {
+    canonical: "/",
+  },
   title: {
     default: "AncientEchoes — Discover China's Greatest Cultural Treasures",
     template: "%s | AncientEchoes",
@@ -28,7 +33,8 @@ export const metadata: Metadata = {
       "Explore the stories behind China's most extraordinary artifacts and museums.",
     type: "website",
     locale: "en_US",
-    siteName: "AncientEchoes",
+    siteName: SITE_NAME,
+    url: SITE_URL,
   },
   twitter: {
     card: "summary_large_image",
