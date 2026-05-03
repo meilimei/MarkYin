@@ -162,6 +162,24 @@
     "license": "CC BY-SA 3.0"
   },
   {
+    "slug": "han-jade-gold-comb",
+    "kind": "abroad",
+    "localPath": "/images/abroad/han-jade-gold-comb.jpg",
+    "remoteUrl": "https://images.metmuseum.org/CRDImages/as/web-large/DP116267.jpg",
+    "descriptionUrl": "https://www.metmuseum.org/art/collection/search/72544",
+    "author": "The Metropolitan Museum of Art",
+    "license": "CC0"
+  },
+  {
+    "slug": "ming-jiajing-carp-jar",
+    "kind": "abroad",
+    "localPath": "/images/abroad/ming-jiajing-carp-jar.jpg",
+    "remoteUrl": "https://images.metmuseum.org/CRDImages/as/web-large/DP342697.jpg",
+    "descriptionUrl": "https://www.metmuseum.org/art/collection/search/42549",
+    "author": "The Metropolitan Museum of Art",
+    "license": "CC0"
+  },
+  {
     "slug": "ming-wanli-dragon-phoenix-dish",
     "kind": "abroad",
     "localPath": "/images/abroad/ming-wanli-dragon-phoenix-dish.jpg",
@@ -186,6 +204,33 @@
     "remoteUrl": "https://images.metmuseum.org/CRDImages/as/web-large/DP170102.jpg",
     "descriptionUrl": "https://www.metmuseum.org/art/collection/search/42733",
     "author": "The Metropolitan Museum of Art",
+    "license": "CC0"
+  },
+  {
+    "slug": "qing-jade-boy-buffalo",
+    "kind": "abroad",
+    "localPath": "/images/abroad/qing-jade-boy-buffalo.jpg",
+    "remoteUrl": "https://images.metmuseum.org/CRDImages/as/web-large/DT257389.jpg",
+    "descriptionUrl": "https://www.metmuseum.org/art/collection/search/41918",
+    "author": "The Metropolitan Museum of Art",
+    "license": "CC0"
+  },
+  {
+    "slug": "qing-qianlong-jade-basin",
+    "kind": "abroad",
+    "localPath": "/images/abroad/qing-qianlong-jade-basin.jpg",
+    "remoteUrl": "https://images.metmuseum.org/CRDImages/as/web-large/DP-14153-068.jpg",
+    "descriptionUrl": "https://www.metmuseum.org/art/collection/search/42060",
+    "author": "The Metropolitan Museum of Art",
+    "license": "CC0"
+  },
+  {
+    "slug": "qing-zhanyinbao-portrait",
+    "kind": "abroad",
+    "localPath": "/images/abroad/qing-zhanyinbao-portrait.jpg",
+    "remoteUrl": "https://images.metmuseum.org/CRDImages/as/web-large/DT8324.jpg",
+    "descriptionUrl": "https://www.metmuseum.org/art/collection/search/49249",
+    "author": "Unidentified artist",
     "license": "CC0"
   },
   {
@@ -225,6 +270,15 @@
     "license": "CC0"
   },
   {
+    "slug": "western-zhou-he-vessel",
+    "kind": "abroad",
+    "localPath": "/images/abroad/western-zhou-he-vessel.jpg",
+    "remoteUrl": "https://images.metmuseum.org/CRDImages/as/web-large/DP219726.jpg",
+    "descriptionUrl": "https://www.metmuseum.org/art/collection/search/42168",
+    "author": "The Metropolitan Museum of Art",
+    "license": "CC0"
+  },
+  {
     "slug": "yuan-blue-and-white-bottle",
     "kind": "abroad",
     "localPath": "/images/abroad/yuan-blue-and-white-bottle.jpg",
@@ -232,5 +286,131 @@
     "descriptionUrl": "https://www.metmuseum.org/art/collection/search/49216",
     "author": "The Metropolitan Museum of Art",
     "license": "CC0"
+  },
+  {
+    "slug": "cma-buddhist-retreat-stream-mountains",
+    "kind": "abroad",
+    "localPath": "/images/abroad/cma-buddhist-retreat-stream-mountains.jpg",
+    "remoteUrl": "https://openaccess-cdn.clevelandart.org/1959.348/1959.348_web.jpg",
+    "descriptionUrl": "https://clevelandart.org/art/1959.348",
+    "author": "Juran (Chinese, active 960–985)",
+    "license": "CC0"
+  },
+  {
+    "slug": "cma-chenghua-children-cup",
+    "kind": "abroad",
+    "localPath": "/images/abroad/cma-chenghua-children-cup.jpg",
+    "remoteUrl": "https://openaccess-cdn.clevelandart.org/1957.61/1957.61_web.jpg",
+    "descriptionUrl": "https://clevelandart.org/art/1957.61",
+    "author": "The Cleveland Museum of Art",
+    "license": "CC0"
+  },
+  {
+    "slug": "cma-cloudy-mountains",
+    "kind": "abroad",
+    "localPath": "/images/abroad/cma-cloudy-mountains.jpg",
+    "remoteUrl": "https://openaccess-cdn.clevelandart.org/1933.220/1933.220_web.jpg",
+    "descriptionUrl": "https://clevelandart.org/art/1933.220",
+    "author": "Mi Youren (Chinese, 1072–1151)",
+    "license": "CC0"
+  },
+  {
+    "slug": "cma-five-hundred-arhats",
+    "kind": "abroad",
+    "localPath": "/images/abroad/cma-five-hundred-arhats.jpg",
+    "remoteUrl": "https://openaccess-cdn.clevelandart.org/1971.16/1971.16_web.jpg",
+    "descriptionUrl": "https://clevelandart.org/art/1971.16",
+    "author": "Wu Bin (Chinese, active c. 1591–1626)",
+    "license": "CC0"
+  },
+  {
+    "slug": "cma-knickknack-peddler",
+    "kind": "abroad",
+    "localPath": "/images/abroad/cma-knickknack-peddler.jpg",
+    "remoteUrl": "https://openaccess-cdn.clevelandart.org/1963.582/1963.582_web.jpg",
+    "descriptionUrl": "https://clevelandart.org/art/1963.582",
+    "author": "Li Song (Chinese, active c. 1190-c. 1230)",
+    "license": "CC0"
+  },
+  {
+    "slug": "cma-quails-sparrows-autumn",
+    "kind": "abroad",
+    "localPath": "/images/abroad/cma-quails-sparrows-autumn.jpg",
+    "remoteUrl": "https://openaccess-cdn.clevelandart.org/1997.91/1997.91_web.jpg",
+    "descriptionUrl": "https://clevelandart.org/art/1997.91",
+    "author": "Wang Yuan (Chinese, c. 1299-after 1366)",
+    "license": "CC0"
+  },
+  {
+    "slug": "cma-shang-fangyou",
+    "kind": "abroad",
+    "localPath": "/images/abroad/cma-shang-fangyou.jpg",
+    "remoteUrl": "https://openaccess-cdn.clevelandart.org/1963.103/1963.103_web.jpg",
+    "descriptionUrl": "https://clevelandart.org/art/1963.103",
+    "author": "The Cleveland Museum of Art",
+    "license": "CC0"
+  },
+  {
+    "slug": "cma-yongle-meiping",
+    "kind": "abroad",
+    "localPath": "/images/abroad/cma-yongle-meiping.jpg",
+    "remoteUrl": "https://openaccess-cdn.clevelandart.org/1964.167/1964.167_web.jpg",
+    "descriptionUrl": "https://clevelandart.org/art/1964.167",
+    "author": "The Cleveland Museum of Art",
+    "license": "CC0"
+  },
+  {
+    "slug": "bm-admonitions-scroll",
+    "kind": "abroad",
+    "localPath": "/images/abroad/bm-admonitions-scroll.jpg",
+    "remoteUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Gu_Kaizhi_001.jpg",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Gu_Kaizhi_001.jpg",
+    "author": "Gu Kaizhi",
+    "license": "Public domain"
+  },
+  {
+    "slug": "bm-david-vases",
+    "kind": "abroad",
+    "localPath": "/images/abroad/bm-david-vases.jpg",
+    "remoteUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/The_David_Vases.jpg",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:The_David_Vases.jpg",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain"
+  },
+  {
+    "slug": "bm-diamond-sutra",
+    "kind": "abroad",
+    "localPath": "/images/abroad/bm-diamond-sutra.jpg",
+    "remoteUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Jingangjing.jpg",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Jingangjing.jpg",
+    "author": "The colophon, at the inner end, reads: Reverently [caused to be] made for universal free distribution by Wang Jie on behalf of his two parents on the 13th of the 4th moon of the 9th year of Xiantong [i.e. 11th May, CE 868 ].",
+    "license": "Public domain"
+  },
+  {
+    "slug": "bm-liu-tingxun-tomb-figures",
+    "kind": "abroad",
+    "localPath": "/images/abroad/bm-liu-tingxun-tomb-figures.jpg",
+    "remoteUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Tomb_figures_of_Liu_Tingxun-British_Museum.jpg",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Tomb_figures_of_Liu_Tingxun-British_Museum.jpg",
+    "author": "Yair Haklai",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "bm-sui-amitabha-buddha",
+    "kind": "abroad",
+    "localPath": "/images/abroad/bm-sui-amitabha-buddha.jpg",
+    "remoteUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Amitabha_BM_OA_1938.7-15.1.jpg",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Amitabha_BM_OA_1938.7-15.1.jpg",
+    "author": "Marie-Lan Nguyen",
+    "license": "Public domain"
+  },
+  {
+    "slug": "bm-yixian-luohan",
+    "kind": "abroad",
+    "localPath": "/images/abroad/bm-yixian-luohan.jpg",
+    "remoteUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Stoneware_figure_of_a_luohan%2C_from_Yixian%2C_China%2C_Liao_Dynasty%2C_907-1125_CE._British_Museum.jpg",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Stoneware_figure_of_a_luohan,_from_Yixian,_China,_Liao_Dynasty,_907-1125_CE._British_Museum.jpg",
+    "author": "Osama Shukir Muhammed Amin FRCP(Glasg)",
+    "license": "CC BY-SA 4.0"
   }
 ]

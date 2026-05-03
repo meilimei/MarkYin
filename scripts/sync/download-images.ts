@@ -29,13 +29,15 @@ const __dirname = path.dirname(__filename);
 const COMMONS_DIR = path.resolve(__dirname, "../generated/commons");
 const MUSEUMS_DIR = path.resolve(__dirname, "../generated/museums");
 const MET_DIR = path.resolve(__dirname, "../generated/met");
+const CLEVELAND_DIR = path.resolve(__dirname, "../generated/cleveland");
+const BM_DIR = path.resolve(__dirname, "../generated/british-museum");
 const PUBLIC_IMG_DIR = path.resolve(__dirname, "../../public/images");
 const ARTIFACT_OUT = path.join(PUBLIC_IMG_DIR, "artifacts");
 const MUSEUM_OUT = path.join(PUBLIC_IMG_DIR, "museums");
 const ABROAD_OUT = path.join(PUBLIC_IMG_DIR, "abroad");
 const MANIFEST_PATH = path.join(PUBLIC_IMG_DIR, "manifest.json");
 const USER_AGENT =
-  "AncientEchoes/1.0 (https://chinaheritageguide.com; sync-bot)";
+  "ChinaHeritage/1.0 (https://chinaheritageguide.com; sync-bot)";
 
 interface CommonsArtifactJson {
   slug: string;
@@ -226,6 +228,107 @@ async function processMet(): Promise<ManifestEntry[]> {
   return entries;
 }
 
+interface ClevelandJson {
+  slug: string;
+  url?: string;
+  creators?: Array<{ description?: string }>;
+  image?: {
+    web?: string;
+    print?: string;
+    full?: string;
+    license?: string;
+  };
+}
+
+async function processCleveland(): Promise<ManifestEntry[]> {
+  const entries: ManifestEntry[] = [];
+  let files: string[];
+  try {
+    files = await fs.readdir(CLEVELAND_DIR);
+  } catch {
+    return entries;
+  }
+  for (const file of files) {
+    if (!file.endsWith(".json")) continue;
+    const data = JSON.parse(
+      await fs.readFile(path.join(CLEVELAND_DIR, file), "utf-8"),
+    ) as ClevelandJson;
+    const imgUrl = data.image?.web ?? data.image?.print;
+    if (!imgUrl) {
+      console.log(`  - cleveland: ${data.slug} (no image, skip)`);
+      continue;
+    }
+    console.log(`  > abroad(cma): ${data.slug}`);
+    const ext = pickExtension(imgUrl);
+    const fileName = `${data.slug}${ext}`;
+    const destPath = path.join(ABROAD_OUT, fileName);
+    const ok = await downloadOne(imgUrl, destPath);
+    if (!ok) continue;
+    entries.push({
+      slug: data.slug,
+      kind: "abroad",
+      localPath: `/images/abroad/${fileName}`,
+      remoteUrl: imgUrl,
+      descriptionUrl: data.url,
+      author:
+        data.creators?.[0]?.description || "The Cleveland Museum of Art",
+      license: data.image?.license ?? "CC0",
+    });
+    await new Promise((r) => setTimeout(r, 200));
+  }
+  return entries;
+}
+
+interface BritishMuseumJson {
+  slug: string;
+  bmUrl?: string;
+  image?: {
+    url?: string;
+    descriptionUrl?: string;
+    author?: string;
+    credit?: string;
+    license?: string;
+  };
+}
+
+async function processBritishMuseum(): Promise<ManifestEntry[]> {
+  const entries: ManifestEntry[] = [];
+  let files: string[];
+  try {
+    files = await fs.readdir(BM_DIR);
+  } catch {
+    return entries;
+  }
+  for (const file of files) {
+    if (!file.endsWith(".json")) continue;
+    const data = JSON.parse(
+      await fs.readFile(path.join(BM_DIR, file), "utf-8"),
+    ) as BritishMuseumJson;
+    const imgUrl = data.image?.url;
+    if (!imgUrl) {
+      console.log(`  - bm: ${data.slug} (no image, skip)`);
+      continue;
+    }
+    console.log(`  > abroad(bm): ${data.slug}`);
+    const ext = pickExtension(imgUrl);
+    const fileName = `${data.slug}${ext}`;
+    const destPath = path.join(ABROAD_OUT, fileName);
+    const ok = await downloadOne(imgUrl, destPath);
+    if (!ok) continue;
+    entries.push({
+      slug: data.slug,
+      kind: "abroad",
+      localPath: `/images/abroad/${fileName}`,
+      remoteUrl: imgUrl.split("?")[0],
+      descriptionUrl: data.image?.descriptionUrl ?? data.bmUrl,
+      author: data.image?.author || "The British Museum",
+      license: data.image?.license ?? "Unknown",
+    });
+    await new Promise((r) => setTimeout(r, 200));
+  }
+  return entries;
+}
+
 async function processMuseums(): Promise<ManifestEntry[]> {
   const entries: ManifestEntry[] = [];
   let files: string[];
@@ -271,14 +374,17 @@ async function main() {
   console.log("[download-images] Starting...");
   const artifacts = await processCommonsArtifacts();
   const museums = await processMuseums();
-  const abroad = await processMet();
+  const met = await processMet();
+  const cleveland = await processCleveland();
+  const bm = await processBritishMuseum();
+  const abroad = [...met, ...cleveland, ...bm];
   const manifest = [...artifacts, ...museums, ...abroad];
 
   await fs.mkdir(PUBLIC_IMG_DIR, { recursive: true });
   await fs.writeFile(MANIFEST_PATH, JSON.stringify(manifest, null, 2), "utf-8");
 
   console.log(
-    `[download-images] Done. ${artifacts.length} artifacts + ${museums.length} museums + ${abroad.length} abroad. Manifest: ${MANIFEST_PATH}`,
+    `[download-images] Done. ${artifacts.length} artifacts + ${museums.length} museums + ${abroad.length} abroad (Met ${met.length} / CMA ${cleveland.length} / BM ${bm.length}). Manifest: ${MANIFEST_PATH}`,
   );
 }
 

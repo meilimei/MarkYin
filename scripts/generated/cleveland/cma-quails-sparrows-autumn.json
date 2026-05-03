@@ -1,0 +1,39 @@
+{
+  "slug": "cma-quails-sparrows-autumn",
+  "accessionNumber": "1997.91",
+  "title": "Quails and Sparrows in an Autumn Scene",
+  "type": "Painting",
+  "technique": "hanging scroll, ink on paper",
+  "culture": [
+    "China, Yuan dynasty (1271-1368)"
+  ],
+  "creationDate": "1347",
+  "creators": [
+    {
+      "id": 11246,
+      "description": "Wang Yuan (Chinese, c. 1299-after 1366)",
+      "extent": null,
+      "qualifier": null,
+      "role": "artist",
+      "biography": null,
+      "name_in_original_language": "王淵",
+      "death_year": "1371",
+      "use_in_caption": true,
+      "include_extent": false,
+      "weight": 1
+    }
+  ],
+  "url": "https://clevelandart.org/art/1997.91",
+  "measurements": "Painting: 114.3 x 56 cm (45 x 22 1/16 in.); Overall with knobs: 267.5 x 85 cm (105 5/16 x 33 7/16 in.)",
+  "description": "The flower-and-bird subjects here are depicted in a meticulous manner, echoing the academic tradition but translating the customarily colored images to plain monochrome. Fine ink lines combined with carefully graded washes define the contours and give subtle modeling to the natural forms. <br><br>Wang Yuan excelled in flower-and-bird subjects as well as landscape and figure paintings. A child prodigy, he was instructed by the great Yuan master Zhao Mengfu at an early age.",
+  "didYouKnow": "Wang Yuan was from Qiantang, today’s Hangzhou in eastern China.",
+  "department": "Chinese Art",
+  "collection": "ASIAN - Hanging scroll",
+  "image": {
+    "web": "https://openaccess-cdn.clevelandart.org/1997.91/1997.91_web.jpg",
+    "print": "https://openaccess-cdn.clevelandart.org/1997.91/1997.91_print.jpg",
+    "full": "https://openaccess-cdn.clevelandart.org/1997.91/1997.91_full.tif",
+    "license": "CC0"
+  },
+  "syncedAt": "2026-05-03T11:21:51.121Z"
+}

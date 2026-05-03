@@ -1,0 +1,38 @@
+{
+  "slug": "cma-five-hundred-arhats",
+  "accessionNumber": "1971.16",
+  "title": "The Five Hundred Arhats",
+  "type": "Painting",
+  "technique": "Handscroll; ink and color on paper",
+  "culture": [
+    "China, Ming dynasty (1368–1644)"
+  ],
+  "creationDate": "1591–1626",
+  "creators": [
+    {
+      "id": 6266,
+      "description": "Wu Bin (Chinese, active c. 1591–1626)",
+      "extent": null,
+      "qualifier": null,
+      "role": "artist",
+      "biography": "Originally from Fujian province, the artist Wu Bin moved to Nanjing by 1600 where he was affiliated as a Buddhist layman with the Qixia temple. He specialized in landscapes and Buddhist subjects.",
+      "name_in_original_language": "吳彬",
+      "use_in_caption": true,
+      "include_extent": false,
+      "weight": 1
+    }
+  ],
+  "url": "https://clevelandart.org/art/1971.16",
+  "measurements": "Overall: 39.5 x 2646.5 cm (15 9/16 x 1041 15/16 in.); Painting only: 37.7 x 2347 cm (14 13/16 x 924 in.)",
+  "description": "More than 66 feet long, this handscroll depicts 447 <em>luohans</em>, 72 attendants, and the bodhisattva of compassion at its very end. Luohans (arhats in Sanskrit), disciples of the Buddha and protectors of the Buddha’s law, possess supernatural powers and take on myriad external appearances. The amusing assortment of characters are engaged in an array of religious, secular, and miraculous activities. The painter used stylistic features borrowed from earlier artists, carefully controlled lines, and refined coloring.<br>Wu Bin was a lay Buddhist and depicting this sort of image was part of a religious practice seeking understanding of the Buddha’s teaching.",
+  "didYouKnow": "Far advanced on the path to enlightenment, arhats have the capacity to tame tigers, free dragons, and to float on water or in the air.",
+  "department": "Chinese Art",
+  "collection": "ASIAN - Handscroll",
+  "image": {
+    "web": "https://openaccess-cdn.clevelandart.org/1971.16/1971.16_web.jpg",
+    "print": "https://openaccess-cdn.clevelandart.org/1971.16/1971.16_print.jpg",
+    "full": "https://openaccess-cdn.clevelandart.org/1971.16/1971.16_full.tif",
+    "license": "CC0"
+  },
+  "syncedAt": "2026-05-03T11:21:52.056Z"
+}

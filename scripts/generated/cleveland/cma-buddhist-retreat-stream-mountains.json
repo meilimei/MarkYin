@@ -1,0 +1,38 @@
+{
+  "slug": "cma-buddhist-retreat-stream-mountains",
+  "accessionNumber": "1959.348",
+  "title": "Buddhist Retreat by Stream and Mountains",
+  "type": "Painting",
+  "technique": "Hanging scroll; ink on silk",
+  "culture": [
+    "China, Northern Song dynasty (960-1127)"
+  ],
+  "creationDate": "960–85",
+  "creators": [
+    {
+      "id": 22770,
+      "description": "Juran (Chinese, active 960–985)",
+      "extent": null,
+      "qualifier": null,
+      "role": "artist",
+      "biography": null,
+      "name_in_original_language": "巨然",
+      "use_in_caption": true,
+      "include_extent": false,
+      "weight": 1
+    }
+  ],
+  "url": "https://clevelandart.org/art/1959.348",
+  "measurements": "Painting only: 184.5 x 56.1 cm (72 5/8 x 22 1/16 in.); Overall with knobs: 260.5 x 77.4 cm (102 9/16 x 30 1/2 in.)",
+  "description": "Monk Juran served the Southern Tang (937–75) imperial house in Nanjing, where he studied with Dong Yuan (active 930s–60s). Both founded the southern landscape tradition, or Jiangnan school, known for gentle misty riverscapes in wet ink.<br> <br>Juran moved north to Kaifeng when the Southern Tang surrendered to the Northern Song, the impact of which may be seen in this painting, presumably painted after 976. A towering mountain dominates the composition, typically representing the style of the Northern Song academy; while the use of long hemp fiber strokes to texture the mountains, wet dots, and round boulders on mountain tops are elements of the southern landscape tradition.",
+  "didYouKnow": "This hanging scroll with the towering mountain is a prime example of the monumental landscape style of Northern Song.",
+  "department": "Chinese Art",
+  "collection": "ASIAN - Hanging scroll",
+  "image": {
+    "web": "https://openaccess-cdn.clevelandart.org/1959.348/1959.348_web.jpg",
+    "print": "https://openaccess-cdn.clevelandart.org/1959.348/1959.348_print.jpg",
+    "full": "https://openaccess-cdn.clevelandart.org/1959.348/1959.348_full.tif",
+    "license": "CC0"
+  },
+  "syncedAt": "2026-05-03T11:21:45.833Z"
+}

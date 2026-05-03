@@ -1,0 +1,38 @@
+{
+  "slug": "cma-knickknack-peddler",
+  "accessionNumber": "1963.582",
+  "title": "The Knickknack Peddler",
+  "type": "Painting",
+  "technique": "Album leaf; ink and color on silk",
+  "culture": [
+    "China, Southern Song dynasty (1127-1279)"
+  ],
+  "creationDate": "1212",
+  "creators": [
+    {
+      "id": 6236,
+      "description": "Li Song (Chinese, active c. 1190-c. 1230)",
+      "extent": null,
+      "qualifier": null,
+      "role": "artist",
+      "biography": null,
+      "name_in_original_language": "李嵩",
+      "use_in_caption": true,
+      "include_extent": false,
+      "weight": 1
+    }
+  ],
+  "url": "https://clevelandart.org/art/1963.582",
+  "measurements": "Image: 24.1 x 26 cm (9 1/2 x 10 1/4 in.); with mat: 33.3 x 40.5 cm (13 1/8 x 15 15/16 in.)",
+  "description": "The court artist Li Song from Hangzhou excelled in meticulous depictions of children, peddlers, and their various goods. Here, he captures a dramatic scene of children attacking a snake with a stick and stone. The peddler rushes toward the children, leaving his merchandise unattended. Painted during the reign of emperor Ningzong, the drama unfolding around vulnerable children may allude to Ningzong’s nine sons who died young, leaving him without a direct male descendant.",
+  "didYouKnow": "There is a skull, upside down, near the top of the left basket.",
+  "department": "Chinese Art",
+  "collection": "ASIAN - Album leaf",
+  "image": {
+    "web": "https://openaccess-cdn.clevelandart.org/1963.582/1963.582_web.jpg",
+    "print": "https://openaccess-cdn.clevelandart.org/1963.582/1963.582_print.jpg",
+    "full": "https://openaccess-cdn.clevelandart.org/1963.582/1963.582_full.tif",
+    "license": "CC0"
+  },
+  "syncedAt": "2026-05-03T11:21:46.710Z"
+}

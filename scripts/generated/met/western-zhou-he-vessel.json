@@ -1,0 +1,37 @@
+{
+  "slug": "western-zhou-he-vessel",
+  "metObjectId": "42168",
+  "title": "Spouted Ritual Water Vessel (He)",
+  "objectName": "Water vessel",
+  "artistDisplayName": "",
+  "objectDate": "late 11th century BCE",
+  "period": "Western Zhou dynasty (1046–771 BCE)",
+  "dynasty": "",
+  "reign": "",
+  "culture": "China",
+  "medium": "Bronze",
+  "dimensions": "H. 11 1/4 in. (28.6 cm); W. (at handle and spout) 9 1/4 in. (23.5 cm)",
+  "creditLine": "Munsey Fund, 1931",
+  "accessionNumber": "24.72.5a, b",
+  "accessionYear": "1924",
+  "department": "Asian Art",
+  "classification": "Metalwork",
+  "objectURL": "https://www.metmuseum.org/art/collection/search/42168",
+  "image": {
+    "primary": "https://images.metmuseum.org/CRDImages/as/original/DP219726.jpg",
+    "small": "https://images.metmuseum.org/CRDImages/as/web-large/DP219726.jpg",
+    "additional": [
+      "https://images.metmuseum.org/CRDImages/as/original/DP219733.jpg",
+      "https://images.metmuseum.org/CRDImages/as/original/DP219734.jpg",
+      "https://images.metmuseum.org/CRDImages/as/original/DP219735.jpg",
+      "https://images.metmuseum.org/CRDImages/as/original/DP219736.jpg",
+      "https://images.metmuseum.org/CRDImages/as/original/DP219737.jpg",
+      "https://images.metmuseum.org/CRDImages/as/original/DP219738.jpg",
+      "https://images.metmuseum.org/CRDImages/as/original/DP219959.jpg",
+      "https://images.metmuseum.org/CRDImages/as/original/DP147532.jpg"
+    ],
+    "isPublicDomain": true,
+    "license": "CC0"
+  },
+  "syncedAt": "2026-05-03T11:21:36.707Z"
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "qing-qianlong-jade-basin",
+  "metObjectId": "42060",
+  "title": "Basin",
+  "objectName": "Basin",
+  "artistDisplayName": "",
+  "objectDate": "dated 1774",
+  "period": "Qing dynasty (1644–1911), Qianlong period (1736–95)",
+  "dynasty": "",
+  "reign": "",
+  "culture": "China",
+  "medium": "Jade (nephrite)",
+  "dimensions": "H. 7 5/8 in. (19.3 cm); W. 29 15/16 in. (76. 1 cm); D. 16 15/16 in. (43 cm)",
+  "creditLine": "Gift of Heber R. Bishop, 1902",
+  "accessionNumber": "02.18.689",
+  "accessionYear": "1902",
+  "department": "Asian Art",
+  "classification": "Jade",
+  "objectURL": "https://www.metmuseum.org/art/collection/search/42060",
+  "image": {
+    "primary": "https://images.metmuseum.org/CRDImages/as/original/DP-14153-068.jpg",
+    "small": "https://images.metmuseum.org/CRDImages/as/web-large/DP-14153-068.jpg",
+    "additional": [
+      "https://images.metmuseum.org/CRDImages/as/original/DP-14153-069.jpg",
+      "https://images.metmuseum.org/CRDImages/as/original/DP-14153-070.jpg",
+      "https://images.metmuseum.org/CRDImages/as/original/DP-14153-071.jpg",
+      "https://images.metmuseum.org/CRDImages/as/original/DP-14153-072.jpg",
+      "https://images.metmuseum.org/CRDImages/as/original/DP-14153-073.jpg"
+    ],
+    "isPublicDomain": true,
+    "license": "CC0"
+  },
+  "syncedAt": "2026-05-03T11:21:33.957Z"
+}
