@@ -57,3 +57,19 @@ export function getMuseumsForTopic(topic: Topic): string[] {
   }
   return Array.from(museumNames);
 }
+
+const IMAGE_SOURCE_LABELS: Record<string, string> = {
+  commons: "Wikimedia Commons",
+  met: "The Met",
+  smithsonian: "Smithsonian",
+  "british-museum": "British Museum",
+  cleveland: "Cleveland Museum of Art",
+  harvard: "Harvard Art Museums",
+  "mfa-boston": "MFA Boston",
+  unsplash: "Unsplash",
+  other: "Source",
+};
+
+export function getImageSourceLabel(source: string): string {
+  return IMAGE_SOURCE_LABELS[source] ?? source;
+}

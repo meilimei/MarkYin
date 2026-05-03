@@ -22,6 +22,7 @@ import {
 import {
   getWorksForArtifactSlug,
   getTopicsForArtifactSlug,
+  getImageSourceLabel,
 } from "@/lib/content";
 import { getArtifactConnectionFromWork } from "@/data/popCultureWorks";
 import ArtifactCard from "@/components/ArtifactCard";
@@ -211,10 +212,10 @@ export default function ArtifactDetailPage({ params }: PageProps) {
                       rel="noopener noreferrer"
                       className="hover:text-primary-600"
                     >
-                      {artifact.imageCredit.source}
+                      {getImageSourceLabel(artifact.imageCredit.source)}
                     </a>
                   ) : (
-                    artifact.imageCredit.source
+                    getImageSourceLabel(artifact.imageCredit.source)
                   )}
                 </figcaption>
               )}

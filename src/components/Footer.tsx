@@ -15,22 +15,24 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm text-ink-400 leading-relaxed">
-              Discover the stories behind China&apos;s greatest cultural
-              treasures. From Bronze Age mysteries to imperial masterpieces.
+              The real Chinese artifacts behind the games, films, and stories
+              you love — traced back to the museums where you can see them
+              today.
             </p>
           </div>
 
-          {/* Explore */}
+          {/* Discover */}
           <div>
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
-              Explore
+              Discover
             </h3>
             <ul className="space-y-2.5">
               {[
+                { name: "Inspirations", href: "/inspirations" },
+                { name: "Themes", href: "/topics" },
                 { name: "All Artifacts", href: "/artifacts" },
                 { name: "Museums", href: "/museums" },
                 { name: "Dynasties", href: "/dynasties" },
-                { name: "Categories", href: "/artifacts" },
               ].map((link) => (
                 <li key={link.name}>
                   <Link
@@ -52,15 +54,21 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {[
                 {
+                  name: "Black Myth: Wukong",
+                  href: "/inspirations/black-myth-wukong",
+                },
+                {
+                  name: "Genshin Impact: Liyue",
+                  href: "/inspirations/genshin-impact-liyue",
+                },
+                {
+                  name: "Sanxingdui Mysteries",
+                  href: "/topics/sanxingdui-mysteries",
+                },
+                {
                   name: "Terracotta Warriors",
                   href: "/artifacts/terracotta-warriors",
                 },
-                {
-                  name: "Sanxingdui Bronze Mask",
-                  href: "/artifacts/gold-mask-sanxingdui",
-                },
-                { name: "Sword of Goujian", href: "/artifacts/sword-of-goujian" },
-                { name: "Forbidden City", href: "/museums/the-palace-museum" },
               ].map((link) => (
                 <li key={link.name}>
                   <Link
@@ -81,8 +89,8 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2.5">
               {[
-                { name: "About Us", href: "/about" },
-                { name: "Contact", href: "/about" },
+                { name: "Our Approach", href: "/about" },
+                { name: "Methodology", href: "/methodology" },
                 { name: "Privacy Policy", href: "/privacy" },
                 { name: "Terms of Use", href: "/terms" },
               ].map((link) => (
@@ -101,11 +109,11 @@ export default function Footer() {
 
         <div className="border-t border-ink-800 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-ink-500">
-            &copy; {new Date().getFullYear()} AncientEchoes. All rights
-            reserved. Content for educational purposes.
+            &copy; {new Date().getFullYear()} AncientEchoes. Educational
+            content. All third-party trademarks belong to their owners.
           </p>
           <p className="text-xs text-ink-500">
-            Exploring 5,000 years of Chinese heritage
+            Where modern myths meet ancient stones
           </p>
         </div>
       </div>

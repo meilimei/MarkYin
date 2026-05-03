@@ -13,7 +13,12 @@
 
 import fs from "node:fs/promises";
 import path from "node:path";
+import dns from "node:dns";
 import { fileURLToPath } from "node:url";
+
+// Force IPv4 first — many networks (esp. China) have flaky IPv6 routing to
+// wikidata.org and Node's default dual-stack lookup hangs on AAAA records.
+dns.setDefaultResultOrder("ipv4first");
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

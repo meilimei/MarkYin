@@ -91,7 +91,14 @@ export const artifacts: Artifact[] = [
     significance:
       "Considered the Chinese equivalent of the Mona Lisa in cultural importance, it provides the most detailed visual record of everyday life, commerce, and architecture in Song Dynasty China.",
     dimensions: "24.8 cm × 528.7 cm",
-    image: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/86/Alongtheriver_QingMing.jpg",
+    imageCredit: {
+      source: "commons",
+      author: "Zhang Zeduan",
+      license: "Public domain",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Alongtheriver_QingMing.jpg",
+    },
     funFacts: [
       "Contains over 800 individually painted human figures",
       "The painting has been copied, forged, and reimagined more than any other Chinese artwork",
@@ -100,7 +107,7 @@ export const artifacts: Artifact[] = [
     ],
     relatedSlugs: ["da-ke-ding", "jade-burial-suit"],
     nameZh: "清明上河图",
-    wikidataId: "Q1018865",
+    wikidataId: "Q714802",
     wikipediaUrl: "https://en.wikipedia.org/wiki/Along_the_River_During_the_Qingming_Festival",
     topicSlugs: [],
     externalCollections: [
@@ -149,7 +156,14 @@ export const artifacts: Artifact[] = [
     significance:
       "This artifact fundamentally changed our understanding of ancient Chinese civilization, proving that sophisticated bronze cultures existed far beyond the Yellow River heartland.",
     dimensions: "Height: 262 cm (including 80 cm base)",
-    image: "https://images.unsplash.com/photo-1590736969955-71cc94901144?w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/24/%E4%B8%89%E6%98%9F%E5%A0%86%E5%87%BA%E5%9C%9F%E9%9D%92%E9%93%9C%E5%A4%A7%E7%AB%8B%E4%BA%BA%E5%83%8F%2C_2017-09-17.jpg",
+    imageCredit: {
+      source: "commons",
+      author: "Siyuwj",
+      license: "CC BY-SA 4.0",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:%E4%B8%89%E6%98%9F%E5%A0%86%E5%87%BA%E5%9C%9F%E9%9D%92%E9%93%9C%E5%A4%A7%E7%AB%8B%E4%BA%BA%E5%83%8F,_2017-09-17.jpg",
+    },
     funFacts: [
       "It is the tallest bronze figure ever discovered from the ancient world",
       "The statue was found in two pieces in separate sacrificial pits",
@@ -158,7 +172,7 @@ export const artifacts: Artifact[] = [
     ],
     relatedSlugs: ["gold-mask-sanxingdui", "sacred-bronze-tree"],
     nameZh: "青铜大立人像",
-    wikidataId: "Q10898847",
+    wikidataId: "Q10565984",
     wikipediaUrl: "https://en.wikipedia.org/wiki/Sanxingdui",
     topicSlugs: ["sanxingdui-mysteries"],
     externalCollections: [
@@ -199,7 +213,14 @@ export const artifacts: Artifact[] = [
     significance:
       "The mask became a symbol of China's archaeological renaissance and one of the most shared cultural artifacts on global social media in 2021.",
     dimensions: "28 cm × 23 cm, weight ~280g",
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/24/Sanxingdui_Oct_2007_585.jpg",
+    imageCredit: {
+      source: "commons",
+      author: "G41rn8",
+      license: "CC BY-SA 4.0",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Sanxingdui_Oct_2007_585.jpg",
+    },
     funFacts: [
       "It went viral worldwide when discovered in 2021, becoming a meme and cultural icon",
       "The gold is approximately 84% pure — remarkably high for 3,000-year-old metalwork",
@@ -208,6 +229,7 @@ export const artifacts: Artifact[] = [
     ],
     relatedSlugs: ["bronze-standing-figure-sanxingdui", "sacred-bronze-tree"],
     nameZh: "三星堆金面具",
+    wikidataId: "Q11178546",
     wikipediaUrl: "https://en.wikipedia.org/wiki/Sanxingdui",
     topicSlugs: ["sanxingdui-mysteries"],
     externalCollections: [
@@ -243,7 +265,14 @@ export const artifacts: Artifact[] = [
     significance:
       "The tree connects Sanxingdui's unknown civilization to pan-Asian mythology of the World Tree, suggesting cultural exchanges across vast distances in the Bronze Age.",
     dimensions: "Height: 396 cm",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/d3/%E2%85%A0%E5%8F%B7%E5%A4%A7%E5%9E%8B%E9%9D%92%E9%93%9C%E7%A5%9E%E6%A0%91.jpg",
+    imageCredit: {
+      source: "commons",
+      author: "Tyg728",
+      license: "CC BY-SA 4.0",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:%E2%85%A0%E5%8F%B7%E5%A4%A7%E5%9E%8B%E9%9D%92%E9%93%9C%E7%A5%9E%E6%A0%91.jpg",
+    },
     funFacts: [
       "It was reconstructed from over 200 broken fragments",
       "One branch is still missing — the complete tree may have been taller",
@@ -255,7 +284,7 @@ export const artifacts: Artifact[] = [
       "gold-mask-sanxingdui",
     ],
     nameZh: "青铜神树",
-    wikidataId: "Q10898847",
+    wikidataId: "Q17029249",
     wikipediaUrl: "https://en.wikipedia.org/wiki/Sanxingdui",
     topicSlugs: ["sanxingdui-mysteries"],
     externalCollections: [
@@ -291,7 +320,14 @@ export const artifacts: Artifact[] = [
     significance:
       "Represents the absolute pinnacle of Bronze Age metallurgy and demonstrates the extraordinary organizational capability of the Shang state.",
     dimensions: "133 cm tall, 110 cm long, 79 cm wide",
-    image: "https://images.unsplash.com/photo-1569587112025-0d460e81a126?w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/c2/HouMuWuDingFullView.jpg",
+    imageCredit: {
+      source: "commons",
+      author: "Mlogic",
+      license: "CC BY-SA 3.0",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:HouMuWuDingFullView.jpg",
+    },
     funFacts: [
       "It weighs 832.84 kg — heavier than a grand piano",
       "Villagers hid it underground to prevent Japanese looting during WWII",
@@ -300,7 +336,7 @@ export const artifacts: Artifact[] = [
     ],
     relatedSlugs: ["da-ke-ding", "bianzhong-marquis-yi"],
     nameZh: "司母戊鼎（后母戊鼎）",
-    wikidataId: "Q875825",
+    wikidataId: "Q10917916",
     wikipediaUrl: "https://en.wikipedia.org/wiki/Houmuwu_ding",
     topicSlugs: ["bronze-dings-through-the-ages"],
     externalCollections: [
@@ -341,7 +377,14 @@ export const artifacts: Artifact[] = [
     significance:
       "One of the finest examples of Han Dynasty funerary art, revealing the ancient Chinese aristocracy's obsession with immortality and the extraordinary lengths they pursued it.",
     dimensions: "Full body length: approximately 188 cm",
-    image: "https://images.unsplash.com/photo-1563302111-eab4b145e6c9?w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/27/Xihan_Tomb_1_Jade_Burial_Suit.JPG",
+    imageCredit: {
+      source: "commons",
+      author: "Zcm11",
+      license: "CC BY-SA 3.0",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Xihan_Tomb_1_Jade_Burial_Suit.JPG",
+    },
     funFacts: [
       "It took an estimated 10+ years for skilled artisans to make",
       "Only royals and the highest nobles were permitted gold-wire jade suits",
@@ -350,7 +393,7 @@ export const artifacts: Artifact[] = [
     ],
     relatedSlugs: ["simuwu-ding", "along-the-river-during-qingming-festival"],
     nameZh: "金缕玉衣",
-    wikidataId: "Q1245062",
+    wikidataId: "Q2568517",
     wikipediaUrl: "https://en.wikipedia.org/wiki/Jade_burial_suit",
     topicSlugs: ["jade-and-immortality"],
     externalCollections: [
@@ -393,7 +436,14 @@ export const artifacts: Artifact[] = [
     significance:
       "Revolutionized our understanding of ancient Chinese music, metallurgy, and acoustic science, proving the existence of a 12-tone musical system 2,000 years before Europe.",
     dimensions: "Frame: 748 cm long, 265 cm high; Total weight: 4,421 kg",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7f/20230208_Chime_bells_of_Marquis_Yi_of_Zeng.jpg",
+    imageCredit: {
+      source: "commons",
+      author: "Windmemories",
+      license: "CC BY-SA 4.0",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:20230208_Chime_bells_of_Marquis_Yi_of_Zeng.jpg",
+    },
     funFacts: [
       "Each bell produces TWO different notes depending on where you strike it",
       "The complete set weighs over 4.4 tons",
@@ -402,7 +452,7 @@ export const artifacts: Artifact[] = [
     ],
     relatedSlugs: ["sword-of-goujian", "simuwu-ding"],
     nameZh: "曾侯乙编钟",
-    wikidataId: "Q1124836",
+    wikidataId: "Q4902549",
     wikipediaUrl: "https://en.wikipedia.org/wiki/Bianzhong_of_Marquis_Yi_of_Zeng",
     topicSlugs: [],
     externalCollections: [
@@ -438,7 +488,14 @@ export const artifacts: Artifact[] = [
     significance:
       "Demonstrates that ancient Chinese metallurgists had mastered chromium-based anti-corrosion technology 2,000+ years before modern science.",
     dimensions: "55.7 cm long, 4.6 cm wide",
-    image: "https://images.unsplash.com/photo-1582142839970-2b9e04b60f65?w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/25/20230208_Bronze_sword_used_by_King_Goujian_of_Yue_01.jpg",
+    imageCredit: {
+      source: "commons",
+      author: "Windmemories",
+      license: "CC BY-SA 4.0",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:20230208_Bronze_sword_used_by_King_Goujian_of_Yue_01.jpg",
+    },
     funFacts: [
       "Still sharp enough to cut paper after 2,500 years",
       "Contains a chromium oxide anti-corrosion layer — technology 're-discovered' in the 1900s",
@@ -447,7 +504,7 @@ export const artifacts: Artifact[] = [
     ],
     relatedSlugs: ["bianzhong-marquis-yi", "simuwu-ding"],
     nameZh: "越王勾践剑",
-    wikidataId: "Q707267",
+    wikidataId: "Q836117",
     wikipediaUrl: "https://en.wikipedia.org/wiki/Sword_of_Goujian",
     topicSlugs: [],
     externalCollections: [
@@ -483,7 +540,14 @@ export const artifacts: Artifact[] = [
     significance:
       "A tangible symbol of Silk Road cultural exchange, and one of only a handful of Chinese artifacts permanently banned from overseas exhibition due to its irreplaceable value.",
     dimensions: "15.6 cm long, 6.8 cm tall",
-    image: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/ee/%E5%94%90-%E7%8E%9B%E7%91%99%E5%85%BD%E9%A6%96%E6%9D%AF.jpg",
+    imageCredit: {
+      source: "commons",
+      author: "Kougo",
+      license: "CC BY-SA 4.0",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:%E5%94%90-%E7%8E%9B%E7%91%99%E5%85%BD%E9%A6%96%E6%9D%AF.jpg",
+    },
     funFacts: [
       "It is one of China's national treasures permanently banned from leaving the country",
       "Carved from a single piece of natural banded agate",
@@ -495,6 +559,7 @@ export const artifacts: Artifact[] = [
       "along-the-river-during-qingming-festival",
     ],
     nameZh: "镶金兽首玛瑙杯",
+    wikidataId: "Q10894661",
     wikipediaUrl: "https://en.wikipedia.org/wiki/Shaanxi_History_Museum",
     topicSlugs: ["tang-silk-road-treasures"],
     externalCollections: [
@@ -536,7 +601,12 @@ export const artifacts: Artifact[] = [
     significance:
       "Its inscription is a primary historical source for understanding Western Zhou political structure, and the vessel's survival story embodies Chinese dedication to cultural preservation.",
     dimensions: "93.1 cm tall, weight 201.5 kg",
-    image: "https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/70/Da_Ke_ding.jpg",
+    imageCredit: {
+      source: "commons",
+      license: "CC BY-SA 3.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Da_Ke_ding.jpg",
+    },
     funFacts: [
       "The Pan family protected it for over 80 years through war, rebellion, and occupation",
       "Its 290-character inscription is one of the longest ever found on a bronze vessel",
@@ -548,6 +618,7 @@ export const artifacts: Artifact[] = [
       "along-the-river-during-qingming-festival",
     ],
     nameZh: "大克鼎",
+    wikidataId: "Q10933601",
     wikipediaUrl: "https://en.wikipedia.org/wiki/Da_Ke_ding",
     topicSlugs: ["bronze-dings-through-the-ages"],
     externalCollections: [
@@ -583,7 +654,14 @@ export const artifacts: Artifact[] = [
     significance:
       "The greatest archaeological discovery of the 20th century, revealing the military organization, artistry, and imperial ambition of China's first unified dynasty.",
     dimensions: "Average soldier height: 180-197 cm",
-    image: "https://images.unsplash.com/photo-1591122947157-26bad3a117d2?w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/49/Terracotta_Army%2C_View_of_Pit_1.jpg",
+    imageCredit: {
+      source: "commons",
+      author: "Jmhullot",
+      license: "CC BY 3.0",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Terracotta_Army%2C_View_of_Pit_1.jpg",
+    },
     funFacts: [
       "No two warriors have the same face — over 8,000 unique portraits",
       "They were originally painted in vivid colors that faded upon exposure to air",
@@ -592,7 +670,7 @@ export const artifacts: Artifact[] = [
     ],
     relatedSlugs: ["simuwu-ding", "sword-of-goujian"],
     nameZh: "秦始皇陵兵马俑",
-    wikidataId: "Q133132",
+    wikidataId: "Q47672",
     wikipediaUrl: "https://en.wikipedia.org/wiki/Terracotta_Army",
     topicSlugs: [],
     externalCollections: [
@@ -656,6 +734,7 @@ export const artifacts: Artifact[] = [
     ],
     relatedSlugs: ["beast-head-agate-cup", "da-ke-ding"],
     nameZh: "青花萧何月下追韩信梅瓶",
+    wikidataId: "Q3854013",
     wikipediaUrl: "https://en.wikipedia.org/wiki/Blue_and_white_pottery",
     topicSlugs: ["blue-and-white-porcelain"],
     externalCollections: [

@@ -18,7 +18,10 @@
 
 import fs from "node:fs/promises";
 import path from "node:path";
+import dns from "node:dns";
 import { fileURLToPath } from "node:url";
+
+dns.setDefaultResultOrder("ipv4first");
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
