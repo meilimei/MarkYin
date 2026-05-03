@@ -1,8 +1,21 @@
 import type { Metadata } from "next";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -10,11 +23,11 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   title: {
-    default: "AncientEchoes — Discover China's Greatest Cultural Treasures",
-    template: "%s | AncientEchoes",
+    default: `${SITE_NAME} — Discover China's Cultural Treasures`,
+    template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Explore the stories behind China's most extraordinary artifacts and museums. From Bronze Age mysteries to imperial masterpieces — 5,000 years of heritage, one click away.",
+    "Explore the magnificent artifacts, museums, and historical periods that shaped Chinese civilization.",
   keywords: [
     "Chinese artifacts",
     "Chinese museums",
@@ -38,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AncientEchoes — Discover China's Greatest Cultural Treasures",
+    title: "China Heritage — Discover China's Greatest Cultural Treasures",
     description:
       "Explore the stories behind China's most extraordinary artifacts and museums.",
   },
@@ -54,14 +67,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
         {/* Google AdSense - Replace with your actual publisher ID */}
         {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossOrigin="anonymous" /> */}
       </head>
-      <body className="bg-white text-ink-900 antialiased">
+      <body className="bg-paper text-ink-900 font-sans min-h-screen flex flex-col antialiased selection:bg-imperial-500 selection:text-white">
         <Header />
-        <main className="min-h-screen">{children}</main>
+        <main className="flex-1">{children}</main>
         <Footer />
       </body>
     </html>

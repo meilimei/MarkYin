@@ -1,19 +1,26 @@
 import Link from "next/link";
-import { Landmark } from "lucide-react";
+import { Github, Twitter, Mail } from "lucide-react";
+import { SITE_NAME } from "@/lib/site";
+
+const SealLogo = ({ className = "" }: { className?: string }) => (
+  <svg viewBox="0 0 40 40" className={className} xmlns="http://www.w3.org/2000/svg">
+    <rect width="40" height="40" rx="6" fill="#b03241" />
+    <text x="50%" y="53%" fill="white" fontSize="24" fontFamily="serif" textAnchor="middle" dominantBaseline="middle" fontWeight="bold">華</text>
+  </svg>
+);
 
 export default function Footer() {
   return (
-    <footer className="bg-ink-950 text-ink-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
-          {/* Brand */}
-          <div className="md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <Landmark className="h-6 w-6 text-primary-400" />
-              <span className="font-display text-lg font-bold text-white">
-                Ancient<span className="text-primary-400">Echoes</span>
+    <footer className="bg-ink-950 text-white mt-auto border-t border-ink-900">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
+          <div className="lg:col-span-2">
+            <Link href="/" className="inline-flex items-center gap-3 mb-6 group">
+              <SealLogo className="h-8 w-8 transform group-hover:scale-105 transition-transform duration-300" />
+              <span className="font-display text-2xl font-bold tracking-tight text-white">
+                China Heritage
               </span>
-            </div>
+            </Link>
             <p className="text-sm text-ink-400 leading-relaxed">
               The real Chinese artifacts behind the games, films, and stories
               you love — traced back to the museums where you can see them
