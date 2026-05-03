@@ -1,0 +1,23 @@
+=={{int:filedesc}}==
+{{Artwork
+ |artist             = Unknown / unattributed
+ |title              = {{en|Spouted Ritual Water Vessel (He)}}
+ |description        = {{en|Spouted Ritual Water Vessel (He). late 11th century BCE. China. Bronze. H. 11 1/4 in. (28.6 cm); W. (at handle and spout) 9 1/4 in. (23.5 cm)}}
+ |date               = late 11th century BCE
+ |medium             = {{en|Bronze}}
+ |dimensions         = H. 11 1/4 in. (28.6 cm); W. (at handle and spout) 9 1/4 in. (23.5 cm)
+ |institution        = {{Institution:Metropolitan Museum of Art}}
+ |department         = Asian Art
+ |accession number   = 24.72.5a, b
+ |credit line        = {{en|Munsey Fund, 1931}}
+ |source             = https://www.metmuseum.org/art/collection/search/42168
+ |permission         =
+ |other_versions     =
+}}
+
+=={{int:license-header}}==
+{{cc-zero}}
+{{Metropolitan Museum of Art Open Access}}
+
+[[Category:Metalwork]]
+[[Category:Chinese art in the Metropolitan Museum of Art]]

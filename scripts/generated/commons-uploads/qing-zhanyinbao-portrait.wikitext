@@ -1,0 +1,27 @@
+=={{int:filedesc}}==
+{{Artwork
+ |artist             = Unidentified artist
+ |title              = {{en|Portrait of the imperial guard Zhanyinbao}}
+ |description        = {{en|Portrait of the imperial guard Zhanyinbao. by Unidentified artist. dated 1760. China. Hanging scroll; ink and color on silk. Painting and inscription: 74 1/4 x 37 7/16 in. (188.6 x 95.1 cm)
+Overall with mounting: 130 1/2 x 46 3/8 in. (331.5 x 117.8 cm)
+Overall with knobs: 130 1/2 x 50 1/4 in. (331.5 x 127.6 cm)}}
+ |date               = dated 1760
+ |medium             = {{en|Hanging scroll; ink and color on silk}}
+ |dimensions         = Painting and inscription: 74 1/4 x 37 7/16 in. (188.6 x 95.1 cm)
+Overall with mounting: 130 1/2 x 46 3/8 in. (331.5 x 117.8 cm)
+Overall with knobs: 130 1/2 x 50 1/4 in. (331.5 x 127.6 cm)
+ |institution        = {{Institution:Metropolitan Museum of Art}}
+ |department         = Asian Art
+ |accession number   = 1986.206
+ |credit line        = {{en|Purchase, The Dillon Fund Gift, 1986}}
+ |source             = https://www.metmuseum.org/art/collection/search/49249
+ |permission         =
+ |other_versions     =
+}}
+
+=={{int:license-header}}==
+{{cc-zero}}
+{{Metropolitan Museum of Art Open Access}}
+
+[[Category:Paintings]]
+[[Category:Chinese art in the Metropolitan Museum of Art]]

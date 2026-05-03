@@ -1,0 +1,21 @@
+=={{int:filedesc}}==
+{{Artwork
+ |artist             = Juran (Chinese, active 960–985)
+ |title              = {{en|Buddhist Retreat by Stream and Mountains}}
+ |description        = {{en|Buddhist Retreat by Stream and Mountains. by Juran (Chinese, active 960–985). 960–85. China, Northern Song dynasty (960-1127). Hanging scroll; ink on silk. Painting only: 184.5 x 56.1 cm (72 5/8 x 22 1/16 in.); Overall with knobs: 260.5 x 77.4 cm (102 9/16 x 30 1/2 in.)<br/>Monk Juran served the Southern Tang (937–75) imperial house in Nanjing, where he studied with Dong Yuan (active 930s–60s). Both founded the southern landscape tradition, or Jiangnan school, known for gentle misty riverscapes in wet ink. Juran moved north to Kaifeng when the Southern Tang surrendered to the Northern Song, the impact of which may be seen in this painting, presumably painted after 976. A towering mountain dominates the composition, typically representing the style of the Northern Song academy; while the use of long hemp fiber strokes to texture the mountains, wet dots, and round boulders on mountain tops are elements of the southern landscape tradition.}}
+ |date               = 960–85
+ |medium             = {{en|Hanging scroll; ink on silk}}
+ |dimensions         = Painting only: 184.5 x 56.1 cm (72 5/8 x 22 1/16 in.); Overall with knobs: 260.5 x 77.4 cm (102 9/16 x 30 1/2 in.)
+ |institution        = {{Institution:Cleveland Museum of Art}}
+ |department         = Chinese Art
+ |accession number   = 1959.348
+ |source             = https://clevelandart.org/art/1959.348
+ |permission         =
+ |other_versions     =
+}}
+
+=={{int:license-header}}==
+{{cc-zero}}
+{{Cleveland Museum of Art Open Access}}
+
+[[Category:Chinese art in the Cleveland Museum of Art]]

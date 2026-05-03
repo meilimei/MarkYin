@@ -1,0 +1,23 @@
+=={{int:filedesc}}==
+{{Artwork
+ |artist             = Unknown / unattributed
+ |title              = {{en|Dish with Dragon and Phoenix}}
+ |description        = {{en|Dish with Dragon and Phoenix. late 16th–early 17th century. China. Porcelain painted with cobalt blue under and colored enamels over transparent glaze (Jingdezhen ware). H. 2 3/4 in. (7 cm); Diam. 14 3/4 in. (37.5 cm); Diam. of rim 14 7/8 in. (37.8 cm); Diam. of foot 9 5/8 in. (24.4 cm)}}
+ |date               = late 16th–early 17th century
+ |medium             = {{en|Porcelain painted with cobalt blue under and colored enamels over transparent glaze (Jingdezhen ware)}}
+ |dimensions         = H. 2 3/4 in. (7 cm); Diam. 14 3/4 in. (37.5 cm); Diam. of rim 14 7/8 in. (37.8 cm); Diam. of foot 9 5/8 in. (24.4 cm)
+ |institution        = {{Institution:Metropolitan Museum of Art}}
+ |department         = Asian Art
+ |accession number   = 17.118.17
+ |credit line        = {{en|Rogers Fund, 1917}}
+ |source             = https://www.metmuseum.org/art/collection/search/42543
+ |permission         =
+ |other_versions     =
+}}
+
+=={{int:license-header}}==
+{{cc-zero}}
+{{Metropolitan Museum of Art Open Access}}
+
+[[Category:Ceramics]]
+[[Category:Chinese art in the Metropolitan Museum of Art]]

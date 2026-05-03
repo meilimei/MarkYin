@@ -15,7 +15,8 @@
     "sync:british-museum": "tsx scripts/sync/british-museum.ts",
     "sync:commons": "tsx scripts/sync/commons.ts",
     "sync:museums": "tsx scripts/sync/museums.ts",
-    "sync:download-images": "tsx scripts/sync/download-images.ts"
+    "sync:download-images": "tsx scripts/sync/download-images.ts",
+    "prepare:commons-uploads": "tsx scripts/sync/prepare-commons-uploads.ts"
   },
   "dependencies": {
     "lucide-react": "^0.400.0",

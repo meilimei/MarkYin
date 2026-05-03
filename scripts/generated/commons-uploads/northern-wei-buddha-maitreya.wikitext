@@ -1,0 +1,23 @@
+=={{int:filedesc}}==
+{{Artwork
+ |artist             = Unknown / unattributed
+ |title              = {{en|Buddha Maitreya (Mile)}}
+ |description        = {{en|Buddha Maitreya (Mile). dated 486 (10th year of Taihe reign). China. Gilt bronze with traces of pigment; piece-mold cast. H. 55 1/4 in. (140.3 cm); W. 24 1/2 in. (62.2 cm); D. 19 1/4 in. (48.9 cm)}}
+ |date               = dated 486 (10th year of Taihe reign)
+ |medium             = {{en|Gilt bronze with traces of pigment; piece-mold cast}}
+ |dimensions         = H. 55 1/4 in. (140.3 cm); W. 24 1/2 in. (62.2 cm); D. 19 1/4 in. (48.9 cm)
+ |institution        = {{Institution:Metropolitan Museum of Art}}
+ |department         = Asian Art
+ |accession number   = 26.123
+ |credit line        = {{en|John Stewart Kennedy Fund, 1926}}
+ |source             = https://www.metmuseum.org/art/collection/search/42733
+ |permission         =
+ |other_versions     =
+}}
+
+=={{int:license-header}}==
+{{cc-zero}}
+{{Metropolitan Museum of Art Open Access}}
+
+[[Category:Sculpture]]
+[[Category:Chinese art in the Metropolitan Museum of Art]]

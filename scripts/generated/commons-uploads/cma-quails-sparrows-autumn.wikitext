@@ -1,0 +1,21 @@
+=={{int:filedesc}}==
+{{Artwork
+ |artist             = Wang Yuan (Chinese, c. 1299-after 1366)
+ |title              = {{en|Quails and Sparrows in an Autumn Scene}}
+ |description        = {{en|Quails and Sparrows in an Autumn Scene. by Wang Yuan (Chinese, c. 1299-after 1366). 1347. China, Yuan dynasty (1271-1368). hanging scroll, ink on paper. Painting: 114.3 x 56 cm (45 x 22 1/16 in.); Overall with knobs: 267.5 x 85 cm (105 5/16 x 33 7/16 in.)<br/>The flower-and-bird subjects here are depicted in a meticulous manner, echoing the academic tradition but translating the customarily colored images to plain monochrome. Fine ink lines combined with carefully graded washes define the contours and give subtle modeling to the natural forms. Wang Yuan excelled in flower-and-bird subjects as well as landscape and figure paintings. A child prodigy, he was instructed by the great Yuan master Zhao Mengfu at an early age.}}
+ |date               = 1347
+ |medium             = {{en|hanging scroll, ink on paper}}
+ |dimensions         = Painting: 114.3 x 56 cm (45 x 22 1/16 in.); Overall with knobs: 267.5 x 85 cm (105 5/16 x 33 7/16 in.)
+ |institution        = {{Institution:Cleveland Museum of Art}}
+ |department         = Chinese Art
+ |accession number   = 1997.91
+ |source             = https://clevelandart.org/art/1997.91
+ |permission         =
+ |other_versions     =
+}}
+
+=={{int:license-header}}==
+{{cc-zero}}
+{{Cleveland Museum of Art Open Access}}
+
+[[Category:Chinese art in the Cleveland Museum of Art]]

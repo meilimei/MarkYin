@@ -1,0 +1,23 @@
+=={{int:filedesc}}==
+{{Artwork
+ |artist             = Unknown / unattributed
+ |title              = {{en|Basin}}
+ |description        = {{en|Basin. dated 1774. China. Jade (nephrite). H. 7 5/8 in. (19.3 cm); W. 29 15/16 in. (76. 1 cm); D. 16 15/16 in. (43 cm)}}
+ |date               = dated 1774
+ |medium             = {{en|Jade (nephrite)}}
+ |dimensions         = H. 7 5/8 in. (19.3 cm); W. 29 15/16 in. (76. 1 cm); D. 16 15/16 in. (43 cm)
+ |institution        = {{Institution:Metropolitan Museum of Art}}
+ |department         = Asian Art
+ |accession number   = 02.18.689
+ |credit line        = {{en|Gift of Heber R. Bishop, 1902}}
+ |source             = https://www.metmuseum.org/art/collection/search/42060
+ |permission         =
+ |other_versions     =
+}}
+
+=={{int:license-header}}==
+{{cc-zero}}
+{{Metropolitan Museum of Art Open Access}}
+
+[[Category:Jade]]
+[[Category:Chinese art in the Metropolitan Museum of Art]]

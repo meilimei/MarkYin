@@ -24,8 +24,27 @@ export const metadata: Metadata = {
 export default function InspirationsPage() {
   const [featured, ...rest] = popCultureWorks;
 
+  const itemListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Inspirations — Real Artifacts Behind the Games and Films You Love",
+    description:
+      "Curated index of modern Chinese pop culture works mapped to the real artifacts and museum collections that inspired them.",
+    numberOfItems: popCultureWorks.length,
+    itemListElement: popCultureWorks.map((work, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: absoluteUrl(`/inspirations/${work.slug}`),
+      name: work.title,
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+      />
       <section className="bg-gradient-to-b from-ink-950 via-ink-900 to-primary-950 text-white py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div

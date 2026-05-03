@@ -12,13 +12,16 @@ import {
   BookOpen,
   Sparkles,
   Layers,
+  HelpCircle,
 } from "lucide-react";
+import type { PopCultureWork } from "@/data/popCultureWorks";
 import {
   popCultureWorks,
   getWorkBySlug,
   mediumLabels,
 } from "@/data/popCultureWorks";
 import { getArtifactsForWork, getTopicsForWork } from "@/lib/content";
+import type { Artifact } from "@/data/artifacts";
 import ArtifactCard from "@/components/ArtifactCard";
 import TopicCard from "@/components/TopicCard";
 import AdBanner from "@/components/AdBanner";
@@ -95,11 +98,30 @@ export default function InspirationDetailPage({ params }: PageProps) {
     publisher: { "@type": "Organization", name: SITE_NAME },
   };
 
+  const faqs = buildFaqs(
+    work,
+    artifactRefs.map((r) => r.artifact),
+  );
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
       {/* Breadcrumb */}
@@ -232,6 +254,84 @@ export default function InspirationDetailPage({ params }: PageProps) {
                 </div>
               </section>
             )}
+
+            {/* Long-form bait spotlight (Black Myth / Liyue only) */}
+            {work.slug === "black-myth-wukong" && (
+              <section className="mb-10">
+                <Link
+                  href="/black-myth-real-museum-guide"
+                  className="block bg-gradient-to-br from-imperial-950 via-ink-900 to-primary-900 text-white rounded-2xl p-7 md:p-9 hover:shadow-xl transition-shadow"
+                >
+                  <p className="text-xs uppercase tracking-widest text-primary-300 font-semibold mb-3">
+                    Field guide · 12 min read
+                  </p>
+                  <h3 className="font-display text-2xl md:text-3xl font-bold mb-3 leading-tight">
+                    Want every Black Myth visual mapped, boss by boss?
+                  </h3>
+                  <p className="text-ink-300 leading-relaxed mb-4">
+                    7 visual lineages, 23 specific objects, 5 museums on 3
+                    continents — the full field guide to Black Myth&apos;s
+                    real-world references.
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary-300">
+                    Read the field guide →
+                  </span>
+                </Link>
+              </section>
+            )}
+            {work.slug === "genshin-impact-liyue" && (
+              <section className="mb-10">
+                <Link
+                  href="/genshin-liyue-real-museum-guide"
+                  className="block bg-gradient-to-br from-imperial-950 via-ink-900 to-primary-900 text-white rounded-2xl p-7 md:p-9 hover:shadow-xl transition-shadow"
+                >
+                  <p className="text-xs uppercase tracking-widest text-primary-300 font-semibold mb-3">
+                    Field guide · 14 min read
+                  </p>
+                  <h3 className="font-display text-2xl md:text-3xl font-bold mb-3 leading-tight">
+                    Want every Liyue visual decoded, harbor to karst?
+                  </h3>
+                  <p className="text-ink-300 leading-relaxed mb-4">
+                    7 visual lineages — the karst peaks, the Song-dynasty
+                    harbour, the bronze cauldron of Rex Lapis, the Adepti,
+                    the Ming porcelain — mapped to specific museum objects.
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary-300">
+                    Read the field guide →
+                  </span>
+                </Link>
+              </section>
+            )}
+
+            {/* FAQ — visible HTML matched 1:1 with FAQPage JSON-LD */}
+            {faqs.length > 0 && (
+              <section className="mb-10">
+                <h2 className="font-display text-2xl font-bold text-ink-900 mb-5 flex items-center gap-2">
+                  <HelpCircle className="h-6 w-6 text-primary-500" />
+                  Frequently asked questions
+                </h2>
+                <div className="space-y-3">
+                  {faqs.map((f) => (
+                    <details
+                      key={f.q}
+                      className="group bg-white border border-ink-100 rounded-xl px-5 py-4 open:shadow-sm transition-shadow"
+                    >
+                      <summary className="cursor-pointer list-none flex items-start justify-between gap-3">
+                        <span className="font-display text-base font-semibold text-ink-900">
+                          {f.q}
+                        </span>
+                        <span className="text-ink-400 group-open:rotate-45 transition-transform select-none text-xl leading-none mt-0.5">
+                          +
+                        </span>
+                      </summary>
+                      <p className="text-ink-600 leading-relaxed text-sm mt-3 whitespace-pre-line">
+                        {f.a}
+                      </p>
+                    </details>
+                  ))}
+                </div>
+              </section>
+            )}
           </div>
 
           {/* Sidebar */}
@@ -295,4 +395,72 @@ export default function InspirationDetailPage({ params }: PageProps) {
       </article>
     </>
   );
+}
+
+/**
+ * Build 4–5 frequently-asked questions per inspiration page from the work's
+ * structured data + the artifacts it references. The strings are emitted both
+ * as visible HTML (for users) and as FAQPage JSON-LD (for Google rich
+ * results) — Google requires the two to match.
+ */
+function buildFaqs(
+  work: PopCultureWork,
+  artifacts: Artifact[],
+): { q: string; a: string }[] {
+  const faqs: { q: string; a: string }[] = [];
+  const mediumWord = mediumLabels[work.medium].toLowerCase();
+
+  // What artifacts inspired the work
+  if (artifacts.length > 0) {
+    const list = artifacts.map((a) => a.name).join(", ");
+    faqs.push({
+      q: `What real Chinese artifacts inspired ${work.title}?`,
+      a: `${work.title} draws on multiple real Chinese artifacts and traditions, most notably: ${list}. Each is documented in a Chinese museum and many are visible to the public today. See the connections section above for specific scene-by-scene references.`,
+    });
+  }
+
+  // Where to see them
+  const museums = Array.from(
+    new Set(artifacts.map((a) => a.museumName).filter(Boolean)),
+  );
+  if (museums.length > 0) {
+    faqs.push({
+      q: `Where can I see the artifacts that inspired ${work.title}?`,
+      a: `The artifacts referenced by ${work.title} are held by: ${museums.join(", ")}. Most have public galleries with regular visitor hours; a few have travelled to international exhibitions.`,
+    });
+  }
+
+  // Year + studio context
+  if (work.studio) {
+    faqs.push({
+      q: `Who created ${work.title}?`,
+      a: `${work.title} was developed by ${work.studio} and released in ${work.year}. It is a ${mediumWord} produced in ${work.region}.`,
+    });
+  }
+
+  // Historical accuracy framing
+  faqs.push({
+    q: `Is ${work.title} historically accurate?`,
+    a: `${work.title} is a creative work, not a documentary. It draws inspiration from real Chinese material culture but adapts and dramatises freely. Our role at China Heritage is to identify which historical references the work is drawing on, with citations to museum primary sources, so curious viewers can separate the historical core from the creative invention.`,
+  });
+
+  // What to read next — bait page cross-link if applicable
+  if (work.slug === "black-myth-wukong") {
+    faqs.push({
+      q: `Where can I learn more about Chinese material culture after Black Myth: Wukong?`,
+      a: `Start with our long-form field guide, "Every Visual in Black Myth: Wukong, Mapped to a Real Museum You Can Visit" — it walks the seven major visual lineages in the game (Buddhist sculpture, ritual bronzes, Sanxingdui, Tang sancai, painted scrolls, imperial porcelain, jade) and points at 23 specific objects you can visit in Beijing, Shanghai, New York, Cleveland, and London.`,
+    });
+  } else if (work.slug === "genshin-impact-liyue") {
+    faqs.push({
+      q: `Where can I learn more about Chinese material culture after Liyue?`,
+      a: `Start with our long-form field guide, "Every Liyue Visual in Genshin Impact, Mapped to a Real Museum Object" — it walks the seven major visual lineages of Liyue (karst landscape painting, Song urban culture, the bronze cauldron, the Adepti, costumes, porcelain, jade) and points at 23 specific objects you can visit.`,
+    });
+  } else {
+    faqs.push({
+      q: `Where can I learn more about Chinese material culture beyond ${work.title}?`,
+      a: `Browse our Topics index for cross-museum themes (bronze ritual, jade and immortality, blue-and-white porcelain) and our Treasures Abroad index for the 28 great Chinese masterpieces in Western museum collections. Each theme links back to specific artifacts you can read about in detail.`,
+    });
+  }
+
+  return faqs;
 }

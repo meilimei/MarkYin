@@ -1,0 +1,21 @@
+=={{int:filedesc}}==
+{{Artwork
+ |artist             = Unknown / unattributed
+ |title              = {{en|Meiping  Vase with Cloud Collars and Peony Sprays}}
+ |description        = {{en|Meiping  Vase with Cloud Collars and Peony Sprays. 1403–24. China, Jiangxi province, Jingdezhen kilns, Ming dynasty (1368-1644), Yongle period (1403-1424). porcelain with incised decoration and white glaze. Diameter: 20.3 cm (8 in.); Overall: 32.1 cm (12 5/8 in.)<br/>This beautiful vase, called a meiping, is a testimony to the extremely high standards demanded for imperial white porcelain of the Yongle period. It is exquisitely potted and subtly decorated with "hidden decoration" (anhua) incised into the body. The clear glaze over the white body has a luster and purity; the white color radiates with a soft glow like melting snow, described by the Chinese connoisseurs as tianbai, or "sweetwhite." Tianbai wares were produced for use in imperial offerings and have always been considered a great achievement of the Yongle period.}}
+ |date               = 1403–24
+ |medium             = {{en|porcelain with incised decoration and white glaze}}
+ |dimensions         = Diameter: 20.3 cm (8 in.); Overall: 32.1 cm (12 5/8 in.)
+ |institution        = {{Institution:Cleveland Museum of Art}}
+ |department         = Chinese Art
+ |accession number   = 1964.167
+ |source             = https://clevelandart.org/art/1964.167
+ |permission         =
+ |other_versions     =
+}}
+
+=={{int:license-header}}==
+{{cc-zero}}
+{{Cleveland Museum of Art Open Access}}
+
+[[Category:Chinese art in the Cleveland Museum of Art]]

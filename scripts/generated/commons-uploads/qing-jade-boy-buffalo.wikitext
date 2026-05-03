@@ -1,0 +1,23 @@
+=={{int:filedesc}}==
+{{Artwork
+ |artist             = Unknown / unattributed
+ |title              = {{en|Boy with water buffalo}}
+ |description        = {{en|Boy with water buffalo. 18th century. China. Jade (nephrite). H. 5 3/16 in. (13.2 cm); W. 4 3/16 in. (10.6 cm); L. 7 5/16 in. (18.5 cm)}}
+ |date               = 18th century
+ |medium             = {{en|Jade (nephrite)}}
+ |dimensions         = H. 5 3/16 in. (13.2 cm); W. 4 3/16 in. (10.6 cm); L. 7 5/16 in. (18.5 cm)
+ |institution        = {{Institution:Metropolitan Museum of Art}}
+ |department         = Asian Art
+ |accession number   = 02.18.438
+ |credit line        = {{en|Gift of Heber R. Bishop, 1902}}
+ |source             = https://www.metmuseum.org/art/collection/search/41918
+ |permission         =
+ |other_versions     =
+}}
+
+=={{int:license-header}}==
+{{cc-zero}}
+{{Metropolitan Museum of Art Open Access}}
+
+[[Category:Jade]]
+[[Category:Chinese art in the Metropolitan Museum of Art]]

@@ -1,0 +1,25 @@
+=={{int:filedesc}}==
+{{Artwork
+ |artist             = Han Gan
+ |title              = {{en|Night-Shining White}}
+ |description        = {{en|Night-Shining White. by Han Gan. ca. 750. China. Handscroll; ink on paper. Image: 12 1/8 x 13 3/8 in. (30.8 x 34 cm)
+Overall with mounting: 14 in. x 37 ft. 5 1/8 in. (35.4 cm x 11.4 m)}}
+ |date               = ca. 750
+ |medium             = {{en|Handscroll; ink on paper}}
+ |dimensions         = Image: 12 1/8 x 13 3/8 in. (30.8 x 34 cm)
+Overall with mounting: 14 in. x 37 ft. 5 1/8 in. (35.4 cm x 11.4 m)
+ |institution        = {{Institution:Metropolitan Museum of Art}}
+ |department         = Asian Art
+ |accession number   = 1977.78
+ |credit line        = {{en|Purchase, The Dillon Fund Gift, 1977}}
+ |source             = https://www.metmuseum.org/art/collection/search/39901
+ |permission         =
+ |other_versions     =
+}}
+
+=={{int:license-header}}==
+{{cc-zero}}
+{{Metropolitan Museum of Art Open Access}}
+
+[[Category:Paintings]]
+[[Category:Chinese art in the Metropolitan Museum of Art]]

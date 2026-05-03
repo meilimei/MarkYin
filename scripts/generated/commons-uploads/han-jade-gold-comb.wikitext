@@ -1,0 +1,23 @@
+=={{int:filedesc}}==
+{{Artwork
+ |artist             = Unknown / unattributed
+ |title              = {{en|Comb}}
+ |description        = {{en|Comb. Eastern Han dynasty (25–220). China. Jade (nephrite) and gold. H. 2 in. (5.1 cm); L. 3 in. (7.6 cm)}}
+ |date               = Eastern Han dynasty (25–220)
+ |medium             = {{en|Jade (nephrite) and gold}}
+ |dimensions         = H. 2 in. (5.1 cm); L. 3 in. (7.6 cm)
+ |institution        = {{Institution:Metropolitan Museum of Art}}
+ |department         = Asian Art
+ |accession number   = 2004.322
+ |credit line        = {{en|Purchase, The Rosenkranz Foundation and Shelby White Gifts, 2004}}
+ |source             = https://www.metmuseum.org/art/collection/search/72544
+ |permission         =
+ |other_versions     =
+}}
+
+=={{int:license-header}}==
+{{cc-zero}}
+{{Metropolitan Museum of Art Open Access}}
+
+[[Category:Jade]]
+[[Category:Chinese art in the Metropolitan Museum of Art]]

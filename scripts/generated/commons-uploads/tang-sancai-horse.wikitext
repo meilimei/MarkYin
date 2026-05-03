@@ -1,0 +1,23 @@
+=={{int:filedesc}}==
+{{Artwork
+ |artist             = Unknown / unattributed
+ |title              = {{en|Horse}}
+ |description        = {{en|Horse. late 7th–first half of the 8th century. China. Earthenware with three-color (sancai) glaze and pigment. H. 29 in. (73.7 cm); W. 32 in. (81.3 cm); D. 12 in. (30.5 cm)}}
+ |date               = late 7th–first half of the 8th century
+ |medium             = {{en|Earthenware with three-color (sancai) glaze and pigment}}
+ |dimensions         = H. 29 in. (73.7 cm); W. 32 in. (81.3 cm); D. 12 in. (30.5 cm)
+ |institution        = {{Institution:Metropolitan Museum of Art}}
+ |department         = Asian Art
+ |accession number   = 1991.253.12
+ |credit line        = {{en|Gift of Stanley Herzman, in memory of Adele Herzman, 1991}}
+ |source             = https://www.metmuseum.org/art/collection/search/42189
+ |permission         =
+ |other_versions     =
+}}
+
+=={{int:license-header}}==
+{{cc-zero}}
+{{Metropolitan Museum of Art Open Access}}
+
+[[Category:Tomb Pottery]]
+[[Category:Chinese art in the Metropolitan Museum of Art]]

@@ -1,0 +1,21 @@
+=={{int:filedesc}}==
+{{Artwork
+ |artist             = Mi Youren (Chinese, 1072–1151)
+ |title              = {{en|Cloudy Mountains}}
+ |description        = {{en|Cloudy Mountains. by Mi Youren (Chinese, 1072–1151). 1130. China, Southern Song dynasty (1127-1279). Handscroll; ink and color on silk. Image: 43.7 x 192.6 cm (17 3/16 x 75 13/16 in.); Overall: 45.5 x 646.8 cm (17 15/16 x 254 5/8 in.)<br/>Cloudy Mountains captures the view of a lush and misty riverscape, an impression of Mi Youren’s new environment, painted in a moment of peace. With the fall of the Northern Song dynasty in 1127 upon the Jurchen’s military invasion, Mi Youren fled south across the Yangzi River. In 1130, he had reached Xinchang in Zhejiang province and thanked his host with this painting for having given him shelter. Mi Youren was the oldest son of the art critic Mi Fu (1051– 1107); both developed a distinct style of mountain scenery by accumulating wet ink dots that create a hazy atmosphere.}}
+ |date               = 1130
+ |medium             = {{en|Handscroll; ink and color on silk}}
+ |dimensions         = Image: 43.7 x 192.6 cm (17 3/16 x 75 13/16 in.); Overall: 45.5 x 646.8 cm (17 15/16 x 254 5/8 in.)
+ |institution        = {{Institution:Cleveland Museum of Art}}
+ |department         = Chinese Art
+ |accession number   = 1933.220
+ |source             = https://clevelandart.org/art/1933.220
+ |permission         =
+ |other_versions     =
+}}
+
+=={{int:license-header}}==
+{{cc-zero}}
+{{Cleveland Museum of Art Open Access}}
+
+[[Category:Chinese art in the Cleveland Museum of Art]]

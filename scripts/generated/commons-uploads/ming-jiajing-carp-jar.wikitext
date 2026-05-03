@@ -1,0 +1,23 @@
+=={{int:filedesc}}==
+{{Artwork
+ |artist             = Unknown / unattributed
+ |title              = {{en|Jar with carp in lotus pond}}
+ |description        = {{en|Jar with carp in lotus pond. mid-16th century. China. Porcelain painted in underglaze cobalt blue and overglaze polychrome enamels (Jingdezhen ware). H. 9 1/8 in. (23.2 cm)}}
+ |date               = mid-16th century
+ |medium             = {{en|Porcelain painted in underglaze cobalt blue and overglaze polychrome enamels (Jingdezhen ware)}}
+ |dimensions         = H. 9 1/8 in. (23.2 cm)
+ |institution        = {{Institution:Metropolitan Museum of Art}}
+ |department         = Asian Art
+ |accession number   = 17.127.2
+ |credit line        = {{en|Rogers Fund, 1917}}
+ |source             = https://www.metmuseum.org/art/collection/search/42549
+ |permission         =
+ |other_versions     =
+}}
+
+=={{int:license-header}}==
+{{cc-zero}}
+{{Metropolitan Museum of Art Open Access}}
+
+[[Category:Ceramics]]
+[[Category:Chinese art in the Metropolitan Museum of Art]]

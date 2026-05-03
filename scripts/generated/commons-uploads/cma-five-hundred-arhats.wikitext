@@ -1,0 +1,21 @@
+=={{int:filedesc}}==
+{{Artwork
+ |artist             = Wu Bin (Chinese, active c. 1591–1626)
+ |title              = {{en|The Five Hundred Arhats}}
+ |description        = {{en|The Five Hundred Arhats. by Wu Bin (Chinese, active c. 1591–1626). 1591–1626. China, Ming dynasty (1368–1644). Handscroll; ink and color on paper. Overall: 39.5 x 2646.5 cm (15 9/16 x 1041 15/16 in.); Painting only: 37.7 x 2347 cm (14 13/16 x 924 in.)<br/>More than 66 feet long, this handscroll depicts 447 luohans, 72 attendants, and the bodhisattva of compassion at its very end. Luohans (arhats in Sanskrit), disciples of the Buddha and protectors of the Buddha’s law, possess supernatural powers and take on myriad external appearances. The amusing assortment of characters are engaged in an array of religious, secular, and miraculous activities. The painter used stylistic features borrowed from earlier artists, carefully controlled lines, and refined coloring. Wu Bin was a lay Buddhist and depicting this sort of image was part of a religious practice seeking understanding of the Buddha’s teaching.}}
+ |date               = 1591–1626
+ |medium             = {{en|Handscroll; ink and color on paper}}
+ |dimensions         = Overall: 39.5 x 2646.5 cm (15 9/16 x 1041 15/16 in.); Painting only: 37.7 x 2347 cm (14 13/16 x 924 in.)
+ |institution        = {{Institution:Cleveland Museum of Art}}
+ |department         = Chinese Art
+ |accession number   = 1971.16
+ |source             = https://clevelandart.org/art/1971.16
+ |permission         =
+ |other_versions     =
+}}
+
+=={{int:license-header}}==
+{{cc-zero}}
+{{Cleveland Museum of Art Open Access}}
+
+[[Category:Chinese art in the Cleveland Museum of Art]]

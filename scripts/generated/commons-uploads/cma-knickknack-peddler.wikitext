@@ -1,0 +1,21 @@
+=={{int:filedesc}}==
+{{Artwork
+ |artist             = Li Song (Chinese, active c. 1190-c. 1230)
+ |title              = {{en|The Knickknack Peddler}}
+ |description        = {{en|The Knickknack Peddler. by Li Song (Chinese, active c. 1190-c. 1230). 1212. China, Southern Song dynasty (1127-1279). Album leaf; ink and color on silk. Image: 24.1 x 26 cm (9 1/2 x 10 1/4 in.); with mat: 33.3 x 40.5 cm (13 1/8 x 15 15/16 in.)<br/>The court artist Li Song from Hangzhou excelled in meticulous depictions of children, peddlers, and their various goods. Here, he captures a dramatic scene of children attacking a snake with a stick and stone. The peddler rushes toward the children, leaving his merchandise unattended. Painted during the reign of emperor Ningzong, the drama unfolding around vulnerable children may allude to Ningzong’s nine sons who died young, leaving him without a direct male descendant.}}
+ |date               = 1212
+ |medium             = {{en|Album leaf; ink and color on silk}}
+ |dimensions         = Image: 24.1 x 26 cm (9 1/2 x 10 1/4 in.); with mat: 33.3 x 40.5 cm (13 1/8 x 15 15/16 in.)
+ |institution        = {{Institution:Cleveland Museum of Art}}
+ |department         = Chinese Art
+ |accession number   = 1963.582
+ |source             = https://clevelandart.org/art/1963.582
+ |permission         =
+ |other_versions     =
+}}
+
+=={{int:license-header}}==
+{{cc-zero}}
+{{Cleveland Museum of Art Open Access}}
+
+[[Category:Chinese art in the Cleveland Museum of Art]]

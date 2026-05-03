@@ -1,0 +1,23 @@
+=={{int:filedesc}}==
+{{Artwork
+ |artist             = Unknown / unattributed
+ |title              = {{en|Set of twelve zodiac animals}}
+ |description        = {{en|Set of twelve zodiac animals. 8th century. China. Earthenware with white slip. Each approx. H. 12 in. (30.5 cm); W. 4 in. (10.2 cm)}}
+ |date               = 8th century
+ |medium             = {{en|Earthenware with white slip}}
+ |dimensions         = Each approx. H. 12 in. (30.5 cm); W. 4 in. (10.2 cm)
+ |institution        = {{Institution:Metropolitan Museum of Art}}
+ |department         = Asian Art
+ |accession number   = 2000.662.7a–l
+ |credit line        = {{en|Gift of Charlotte C. Weber, 2000}}
+ |source             = https://www.metmuseum.org/art/collection/search/49381
+ |permission         =
+ |other_versions     =
+}}
+
+=={{int:license-header}}==
+{{cc-zero}}
+{{Metropolitan Museum of Art Open Access}}
+
+[[Category:Ceramics]]
+[[Category:Chinese art in the Metropolitan Museum of Art]]

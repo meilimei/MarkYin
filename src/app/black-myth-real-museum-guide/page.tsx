@@ -525,6 +525,17 @@ export default function BlackMythRealMuseumGuidePage() {
             </li>
           </ul>
           <p className="text-ink-700 leading-relaxed mt-6">
+            Already finished Black Myth? Try the companion field guide:{" "}
+            <Link
+              href="/genshin-liyue-real-museum-guide"
+              className="text-primary-600 hover:text-primary-700 underline font-semibold"
+            >
+              Every Liyue Visual in Genshin Impact, Mapped to a Real Museum
+              Object
+            </Link>
+            .
+          </p>
+          <p className="text-ink-700 leading-relaxed mt-4">
             For the full inventory of Chinese masterpieces in Western
             museums, see our{" "}
             <Link

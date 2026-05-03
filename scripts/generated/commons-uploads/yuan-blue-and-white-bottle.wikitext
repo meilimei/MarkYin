@@ -1,0 +1,23 @@
+=={{int:filedesc}}==
+{{Artwork
+ |artist             = Unknown / unattributed
+ |title              = {{en|Bottle with Peony Scroll}}
+ |description        = {{en|Bottle with Peony Scroll. mid-14th century. China. Porcelain painted with cobalt blue under a transparent glaze (Jingdezhen ware). H. 17 1/2 in. (44.5 cm)}}
+ |date               = mid-14th century
+ |medium             = {{en|Porcelain painted with cobalt blue under a transparent glaze (Jingdezhen ware)}}
+ |dimensions         = H. 17 1/2 in. (44.5 cm)
+ |institution        = {{Institution:Metropolitan Museum of Art}}
+ |department         = Asian Art
+ |accession number   = 26.271.1a, b
+ |credit line        = {{en|Rogers Fund, 1926}}
+ |source             = https://www.metmuseum.org/art/collection/search/49216
+ |permission         =
+ |other_versions     =
+}}
+
+=={{int:license-header}}==
+{{cc-zero}}
+{{Metropolitan Museum of Art Open Access}}
+
+[[Category:Ceramics]]
+[[Category:Chinese art in the Metropolitan Museum of Art]]

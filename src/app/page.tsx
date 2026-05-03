@@ -1,5 +1,12 @@
 import Link from "next/link";
-import { ArrowRight, Landmark, BookOpen, Sparkles, Layers } from "lucide-react";
+import {
+  ArrowRight,
+  Landmark,
+  BookOpen,
+  Sparkles,
+  Layers,
+  Gamepad2,
+} from "lucide-react";
 import { artifacts } from "@/data/artifacts";
 import { museums } from "@/data/museums";
 import { popCultureWorks } from "@/data/popCultureWorks";
@@ -9,6 +16,7 @@ import MuseumCard from "@/components/MuseumCard";
 import WorkCard from "@/components/WorkCard";
 import TopicCard from "@/components/TopicCard";
 import AdBanner from "@/components/AdBanner";
+import Newsletter from "@/components/Newsletter";
 import { SITE_NAME, SITE_URL, absoluteUrl } from "@/lib/site";
 
 export default function HomePage() {
@@ -153,6 +161,63 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Black Myth flagship spotlight — drives traffic to the long-form bait
+          guide that maps every game visual back to a real museum object. */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-imperial-950 via-ink-900 to-primary-950 text-white">
+        <div
+          className="absolute inset-0 opacity-30 mix-blend-overlay"
+          style={{
+            backgroundImage:
+              "url('/images/abroad/bm-yixian-luohan.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+          aria-hidden
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink-950/80 via-ink-900/60 to-primary-950/40" />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 bg-primary-500/15 border border-primary-400/30 px-3 py-1 rounded-full text-xs font-semibold text-primary-200 mb-5 backdrop-blur-sm">
+              <Gamepad2 className="h-3.5 w-3.5" />
+              Field Guide · 12 minute read
+            </div>
+            <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight mb-5">
+              Every Visual in{" "}
+              <span className="text-primary-300">Black Myth: Wukong</span>,
+              Mapped to a Real Museum
+            </h2>
+            <p className="text-base md:text-lg text-ink-200 leading-relaxed mb-7 max-w-2xl">
+              The Buddhist colossi, bronze cauldrons, and painted scrolls in
+              Game Science&apos;s breakout hit are real — and most of them
+              are sitting in museums you can walk into. 7 visual lineages,
+              23 specific objects, 5 museums on 3 continents.
+            </p>
+            <div className="flex flex-wrap items-center gap-3 mb-8 text-xs text-ink-300">
+              <span className="bg-white/5 border border-white/10 rounded-full px-3 py-1">
+                Yungang &amp; Longmen Buddhas
+              </span>
+              <span className="bg-white/5 border border-white/10 rounded-full px-3 py-1">
+                Sanxingdui masks
+              </span>
+              <span className="bg-white/5 border border-white/10 rounded-full px-3 py-1">
+                Tang sancai
+              </span>
+              <span className="bg-white/5 border border-white/10 rounded-full px-3 py-1">
+                Ming porcelain
+              </span>
+            </div>
+            <Link
+              href="/black-myth-real-museum-guide"
+              className="inline-flex items-center gap-2 bg-primary-500 hover:bg-primary-400 text-white px-7 py-3.5 rounded-full font-semibold transition-all hover:scale-105 shadow-lg shadow-primary-900/50"
+            >
+              Read the field guide
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Topic */}
       <section className="bg-ink-50/50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -264,25 +329,34 @@ export default function HomePage() {
       <section className="bg-imperial-950 text-white py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-imperial-950 to-transparent opacity-80" />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-paper to-primary-200">
-            Where Modern Myths Meet Ancient Stones
-          </h2>
-          <p className="text-ink-200 text-lg md:text-xl mb-10 leading-relaxed font-light">
-            Every game, film, and story above is built on real artifacts you can
-            still visit today. Start with the inspirations you know, end with
-            the museums you didn&apos;t.
+          <p className="text-primary-300 font-medium text-xs tracking-[0.2em] uppercase mb-4">
+            Artifact of the Week · Free
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-paper to-primary-200">
+            One Chinese Treasure, Every Sunday
+          </h2>
+          <p className="text-ink-200 text-lg md:text-xl mb-10 leading-relaxed font-light max-w-2xl mx-auto">
+            Short. Visual. Always one real artifact, plus the modern game,
+            film, or drama it shows up in. Unsubscribe anytime — we never
+            sell your email.
+          </p>
+
+          <div className="mb-10">
+            <Newsletter variant="dark" />
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center text-sm">
             <Link
               href="/inspirations"
-              className="inline-flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-500 text-white px-8 py-4 rounded-full font-medium transition-all hover:scale-105 shadow-lg shadow-primary-900/50"
+              className="inline-flex items-center justify-center gap-1 text-ink-300 hover:text-white transition-colors"
             >
-              Start with Inspirations
+              Or start with Inspirations
               <ArrowRight className="h-4 w-4" />
             </Link>
+            <span className="hidden sm:inline text-ink-600">·</span>
             <Link
               href="/topics"
-              className="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/20 text-white px-8 py-4 rounded-full font-medium transition-all hover:scale-105 backdrop-blur-md"
+              className="inline-flex items-center justify-center gap-1 text-ink-300 hover:text-white transition-colors"
             >
               Explore Themes
             </Link>

@@ -1,0 +1,21 @@
+=={{int:filedesc}}==
+{{Artwork
+ |artist             = Unknown / unattributed
+ |title              = {{en|Square Wine Container (Fangyou)}}
+ |description        = {{en|Square Wine Container (Fangyou). c. 1250–1046 BCE. China, Henan province, probably Anyang, Shang dynasty (c. 1600–c. 1046 BCE), Anyang phase (c. 1250–1046 BCE). bronze. Overall: 26.7 x 13.4 cm (10 1/2 x 5 1/4 in.)<br/>From the finely proportioned body to the elaborate decoration cast with great precision, this ritual wine vessel displays the artistic refinement and technical virtuosity that marked the full blossoming of late Shang bronze art. The dramatic contrast of the crested birds (kuifeng) against the dense background of spiral patterns (leiwen) gives the vessel a new force, clarity, and intense vitality. The distinctive square body also places it as a rare and important type among the more usual round or ovoid types.}}
+ |date               = c. 1250–1046 BCE
+ |medium             = {{en|bronze}}
+ |dimensions         = Overall: 26.7 x 13.4 cm (10 1/2 x 5 1/4 in.)
+ |institution        = {{Institution:Cleveland Museum of Art}}
+ |department         = Chinese Art
+ |accession number   = 1963.103
+ |source             = https://clevelandart.org/art/1963.103
+ |permission         =
+ |other_versions     =
+}}
+
+=={{int:license-header}}==
+{{cc-zero}}
+{{Cleveland Museum of Art Open Access}}
+
+[[Category:Chinese art in the Cleveland Museum of Art]]
