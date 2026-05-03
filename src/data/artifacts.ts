@@ -91,7 +91,7 @@ export const artifacts: Artifact[] = [
     significance:
       "Considered the Chinese equivalent of the Mona Lisa in cultural importance, it provides the most detailed visual record of everyday life, commerce, and architecture in Song Dynasty China.",
     dimensions: "24.8 cm × 528.7 cm",
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/86/Alongtheriver_QingMing.jpg",
+    image: "/images/artifacts/along-the-river-during-qingming-festival.jpg",
     imageCredit: {
       source: "commons",
       author: "Zhang Zeduan",
@@ -156,7 +156,7 @@ export const artifacts: Artifact[] = [
     significance:
       "This artifact fundamentally changed our understanding of ancient Chinese civilization, proving that sophisticated bronze cultures existed far beyond the Yellow River heartland.",
     dimensions: "Height: 262 cm (including 80 cm base)",
-    image: "https://upload.wikimedia.org/wikipedia/commons/2/24/%E4%B8%89%E6%98%9F%E5%A0%86%E5%87%BA%E5%9C%9F%E9%9D%92%E9%93%9C%E5%A4%A7%E7%AB%8B%E4%BA%BA%E5%83%8F%2C_2017-09-17.jpg",
+    image: "/images/artifacts/bronze-standing-figure-sanxingdui.jpg",
     imageCredit: {
       source: "commons",
       author: "Siyuwj",
@@ -213,7 +213,7 @@ export const artifacts: Artifact[] = [
     significance:
       "The mask became a symbol of China's archaeological renaissance and one of the most shared cultural artifacts on global social media in 2021.",
     dimensions: "28 cm × 23 cm, weight ~280g",
-    image: "https://upload.wikimedia.org/wikipedia/commons/2/24/Sanxingdui_Oct_2007_585.jpg",
+    image: "/images/artifacts/gold-mask-sanxingdui.jpg",
     imageCredit: {
       source: "commons",
       author: "G41rn8",
@@ -265,7 +265,7 @@ export const artifacts: Artifact[] = [
     significance:
       "The tree connects Sanxingdui's unknown civilization to pan-Asian mythology of the World Tree, suggesting cultural exchanges across vast distances in the Bronze Age.",
     dimensions: "Height: 396 cm",
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/d3/%E2%85%A0%E5%8F%B7%E5%A4%A7%E5%9E%8B%E9%9D%92%E9%93%9C%E7%A5%9E%E6%A0%91.jpg",
+    image: "/images/artifacts/sacred-bronze-tree.jpg",
     imageCredit: {
       source: "commons",
       author: "Tyg728",
@@ -320,7 +320,7 @@ export const artifacts: Artifact[] = [
     significance:
       "Represents the absolute pinnacle of Bronze Age metallurgy and demonstrates the extraordinary organizational capability of the Shang state.",
     dimensions: "133 cm tall, 110 cm long, 79 cm wide",
-    image: "https://upload.wikimedia.org/wikipedia/commons/c/c2/HouMuWuDingFullView.jpg",
+    image: "/images/artifacts/simuwu-ding.jpg",
     imageCredit: {
       source: "commons",
       author: "Mlogic",
@@ -377,7 +377,7 @@ export const artifacts: Artifact[] = [
     significance:
       "One of the finest examples of Han Dynasty funerary art, revealing the ancient Chinese aristocracy's obsession with immortality and the extraordinary lengths they pursued it.",
     dimensions: "Full body length: approximately 188 cm",
-    image: "https://upload.wikimedia.org/wikipedia/commons/2/27/Xihan_Tomb_1_Jade_Burial_Suit.JPG",
+    image: "/images/artifacts/jade-burial-suit.jpg",
     imageCredit: {
       source: "commons",
       author: "Zcm11",
@@ -436,7 +436,7 @@ export const artifacts: Artifact[] = [
     significance:
       "Revolutionized our understanding of ancient Chinese music, metallurgy, and acoustic science, proving the existence of a 12-tone musical system 2,000 years before Europe.",
     dimensions: "Frame: 748 cm long, 265 cm high; Total weight: 4,421 kg",
-    image: "https://upload.wikimedia.org/wikipedia/commons/7/7f/20230208_Chime_bells_of_Marquis_Yi_of_Zeng.jpg",
+    image: "/images/artifacts/bianzhong-marquis-yi.jpg",
     imageCredit: {
       source: "commons",
       author: "Windmemories",
@@ -488,7 +488,7 @@ export const artifacts: Artifact[] = [
     significance:
       "Demonstrates that ancient Chinese metallurgists had mastered chromium-based anti-corrosion technology 2,000+ years before modern science.",
     dimensions: "55.7 cm long, 4.6 cm wide",
-    image: "https://upload.wikimedia.org/wikipedia/commons/2/25/20230208_Bronze_sword_used_by_King_Goujian_of_Yue_01.jpg",
+    image: "/images/artifacts/sword-of-goujian.jpg",
     imageCredit: {
       source: "commons",
       author: "Windmemories",
@@ -540,7 +540,7 @@ export const artifacts: Artifact[] = [
     significance:
       "A tangible symbol of Silk Road cultural exchange, and one of only a handful of Chinese artifacts permanently banned from overseas exhibition due to its irreplaceable value.",
     dimensions: "15.6 cm long, 6.8 cm tall",
-    image: "https://upload.wikimedia.org/wikipedia/commons/e/ee/%E5%94%90-%E7%8E%9B%E7%91%99%E5%85%BD%E9%A6%96%E6%9D%AF.jpg",
+    image: "/images/artifacts/beast-head-agate-cup.jpg",
     imageCredit: {
       source: "commons",
       author: "Kougo",
@@ -601,7 +601,7 @@ export const artifacts: Artifact[] = [
     significance:
       "Its inscription is a primary historical source for understanding Western Zhou political structure, and the vessel's survival story embodies Chinese dedication to cultural preservation.",
     dimensions: "93.1 cm tall, weight 201.5 kg",
-    image: "https://upload.wikimedia.org/wikipedia/commons/7/70/Da_Ke_ding.jpg",
+    image: "/images/artifacts/da-ke-ding.jpg",
     imageCredit: {
       source: "commons",
       license: "CC BY-SA 3.0",
@@ -654,7 +654,7 @@ export const artifacts: Artifact[] = [
     significance:
       "The greatest archaeological discovery of the 20th century, revealing the military organization, artistry, and imperial ambition of China's first unified dynasty.",
     dimensions: "Average soldier height: 180-197 cm",
-    image: "https://upload.wikimedia.org/wikipedia/commons/4/49/Terracotta_Army%2C_View_of_Pit_1.jpg",
+    image: "/images/artifacts/terracotta-warriors.jpg",
     imageCredit: {
       source: "commons",
       author: "Jmhullot",

@@ -12,7 +12,8 @@
     "sync:wikidata": "tsx scripts/sync/wikidata.ts",
     "sync:met": "tsx scripts/sync/met.ts",
     "sync:commons": "tsx scripts/sync/commons.ts",
-    "sync:museums": "tsx scripts/sync/museums.ts"
+    "sync:museums": "tsx scripts/sync/museums.ts",
+    "sync:download-images": "tsx scripts/sync/download-images.ts"
   },
   "dependencies": {
     "lucide-react": "^0.400.0",
