@@ -599,6 +599,82 @@ export const topics: Topic[] = [
       },
     ],
   },
+  {
+    slug: "i-ching-oracle-bones-chinese-divination",
+    title: "I Ching, Oracle Bones & Chinese Divination",
+    subtitle: "From turtle shells to hexagrams: the artifact history behind the Book of Changes",
+    category: "theme",
+    summary:
+      "The modern fascination with the I Ching and Chinese divination has a deep archaeological record: Shang oracle bones, Han silk manuscripts, and later instruments that turned change, time, and direction into readable signs.",
+    longDescription:
+      "Long before online fortune telling, Chinese divination was a state technology, a manuscript tradition, and a way of organizing uncertainty. Shang kings asked questions on turtle shells and ox bones, then read the cracks made by heat. Centuries later, the Zhouyi — later known globally as the I Ching or Book of Changes — arranged change into 64 hexagrams built from yin and yang lines. The Mawangdui silk manuscript of the I Ching shows this classic before later editions became fixed, while the luopan connects trigrams and directional cosmology to lived space.\n\nThis topic treats 'metaphysics' as material culture: bones, silk, diagrams, compasses, and museums. It gives readers searching for I Ching, Zhouyi, oracle bone divination, yin-yang, and Chinese fortune-telling a grounded path into real artifacts rather than modern superstition.",
+    heroImage:
+      "https://images.unsplash.com/photo-1455885666463-9b28f591265b?w=1200&q=80",
+    artifactSlugs: [
+      "oracle-bones-yinxu",
+      "mawangdui-i-ching-silk-manuscript",
+      "mawangdui-silk-manuscripts",
+      "luopan-feng-shui-compass",
+    ],
+    relatedWorkSlugs: ["creation-of-the-gods"],
+    sources: [
+      {
+        label: "Wikipedia — I Ching",
+        url: "https://en.wikipedia.org/wiki/I_Ching",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "Wikipedia — Oracle bone",
+        url: "https://en.wikipedia.org/wiki/Oracle_bone",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "Wikipedia — Mawangdui Silk Texts",
+        url: "https://en.wikipedia.org/wiki/Mawangdui_Silk_Texts",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "feng-shui-compass-and-cosmic-orientation",
+    title: "Feng Shui Compass & Cosmic Orientation",
+    subtitle: "How the luopan turned direction, time, landscape, and the cosmos into one instrument",
+    category: "theme",
+    summary:
+      "The feng shui compass, or luopan, is not just a navigation tool. Its rings encode trigrams, stems, branches, stars, and spatial formulas used to align buildings, graves, and landscapes.",
+    longDescription:
+      "Feng shui is often discussed today as lifestyle advice, but its historical tools were exacting instruments. The luopan combines a magnetic compass with concentric rings of cosmological information: Eight Trigrams from the Changes tradition, Twenty-Four Mountains, Heavenly Stems, Earthly Branches, lunar mansions, and other systems for reading direction and time. It belongs to the same broad intellectual world as Chinese astronomy, city planning, tomb orientation, and ritual geography.\n\nFor global audiences searching for feng shui, bagua, Chinese compass, and luopan, this topic anchors the discussion in museum objects rather than vague mysticism. It also connects to wider Chinese heritage themes: why imperial capitals face south, why tombs were placed in particular landscapes, and how ancient technologies turned the visible world into a map of invisible order.",
+    heroImage:
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&q=80",
+    artifactSlugs: [
+      "luopan-feng-shui-compass",
+      "mawangdui-i-ching-silk-manuscript",
+      "mawangdui-silk-banner",
+      "jinsha-sun-bird-gold-foil",
+    ],
+    relatedWorkSlugs: ["black-myth-wukong", "wuchang-fallen-feathers"],
+    sources: [
+      {
+        label: "Science Museum Group — Chinese Geomancer's Compass",
+        url: "https://collection.sciencemuseumgroup.org.uk/objects/co55384/chinese-geomancers-compass",
+        type: "academic",
+      },
+      {
+        label: "Royal Museums Greenwich — Geomantic Compass",
+        url: "https://www.rmg.co.uk/collections/objects/rmgc-object-42660",
+        type: "academic",
+      },
+      {
+        label: "Wikipedia — Luopan",
+        url: "https://en.wikipedia.org/wiki/Luopan",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
 ];
 
 export const topicCategories: { value: TopicCategory | "all"; label: string }[] = [

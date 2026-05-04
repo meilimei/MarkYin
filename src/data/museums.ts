@@ -492,6 +492,35 @@ export const museums: Museum[] = [
     },
     wikidataId: "Q19786",
   },
+  {
+    slug: "science-museum-london",
+    name: "Science Museum, London",
+    city: "London",
+    province: "England",
+    description:
+      "A major museum of science, technology, medicine, and global instruments, including Chinese geomantic compasses that document the material history of feng shui.",
+    longDescription:
+      "The Science Museum in London preserves one of the world's broadest collections of scientific and technological objects. Its Chinese geomancer's compass demonstrates how the magnetic compass could be used not only for navigation, but also for architecture, landscape orientation, ritual geography, and feng shui. For Chinese heritage interpretation, such overseas collections help connect global searches for feng shui, compass history, and the luopan with real museum objects.",
+    image: "/images/museums/science-museum-london.jpg",
+    imageCredit: {
+      source: "commons",
+      author: "Science Museum, London",
+      license: "CC BY-SA 4.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/Category:Science_Museum,_London",
+    },
+    artifactCount: 300000,
+    highlights: [
+      "Chinese Geomancer's Compass",
+      "History of Scientific Instruments",
+      "Global Technology Collections",
+    ],
+    visitInfo: {
+      hours: "10:00 AM - 6:00 PM",
+      admission: "Free",
+      website: "https://www.sciencemuseum.org.uk",
+    },
+    wikidataId: "Q130893",
+  },
 ];
 
 export function getMuseumBySlug(slug: string): Museum | undefined {

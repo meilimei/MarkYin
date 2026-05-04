@@ -1172,11 +1172,20 @@ export const artifacts: Artifact[] = [
       "The banner's three-realm cosmology matches descriptions in the Chu Ci (Songs of the South)",
       "Over 1,400 objects were found in Lady Dai's tomb including silk manuscripts, lacquerware, and food",
     ],
-    relatedSlugs: ["changxin-palace-lamp", "jade-burial-suit"],
+    relatedSlugs: [
+      "mawangdui-i-ching-silk-manuscript",
+      "mawangdui-silk-manuscripts",
+      "changxin-palace-lamp",
+      "jade-burial-suit",
+    ],
     nameZh: "马王堆一号汉墓T形帛画",
     wikidataId: "Q6003476",
     wikipediaUrl: "https://en.wikipedia.org/wiki/Mawangdui",
-    topicSlugs: ["jade-and-immortality", "imperial-power-and-court-life"],
+    topicSlugs: [
+      "jade-and-immortality",
+      "imperial-power-and-court-life",
+      "feng-shui-compass-and-cosmic-orientation",
+    ],
     externalCollections: [
       {
         museum: "Hunan Provincial Museum",
@@ -1320,11 +1329,18 @@ export const artifacts: Artifact[] = [
       "Medical texts describe acupuncture meridians centuries before the canonical Huangdi Neijing",
       "Often called 'China's Dead Sea Scrolls' for their impact on scholarship",
     ],
-    relatedSlugs: ["mawangdui-silk-banner", "mawangdui-lacquer-coffins"],
+    relatedSlugs: [
+      "mawangdui-i-ching-silk-manuscript",
+      "mawangdui-silk-banner",
+      "mawangdui-lacquer-coffins",
+    ],
     nameZh: "马王堆帛书",
     wikidataId: "Q6003476",
     wikipediaUrl: "https://en.wikipedia.org/wiki/Mawangdui_Silk_Texts",
-    topicSlugs: ["imperial-power-and-court-life"],
+    topicSlugs: [
+      "imperial-power-and-court-life",
+      "i-ching-oracle-bones-chinese-divination",
+    ],
     externalCollections: [
       {
         museum: "Hunan Provincial Museum",
@@ -1339,6 +1355,65 @@ export const artifacts: Artifact[] = [
         url: "https://en.wikipedia.org/wiki/Mawangdui_Silk_Texts",
         type: "wiki",
         license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "mawangdui-i-ching-silk-manuscript",
+    name: "Mawangdui Silk Manuscript of the I Ching",
+    dynasty: "Western Han Dynasty",
+    period: "c. 168 BC",
+    museumSlug: "hunan-provincial-museum",
+    museumName: "Hunan Provincial Museum",
+    category: "Silk / Textile",
+    material: "Ink on silk",
+    description:
+      "One of the earliest surviving manuscript witnesses to the I Ching, copied on silk and buried in the Mawangdui Han tombs before later received editions became canonical.",
+    story:
+      "The Mawangdui silk manuscripts were excavated from Tomb 3 at Mawangdui in Changsha in 1973. Among their philosophical, medical, astronomical, and military texts was a version of the Zhouyi — the core text later known in English as the I Ching or Book of Changes. Unlike a modern printed classic, the Mawangdui text preserves an early manuscript world in which divination, cosmology, politics, and self-cultivation were still being actively organized. Its silk format, character variants, and textual sequence give scholars a rare view of how the Changes circulated in the Western Han, before later commentarial traditions fixed the book's shape for imperial education and global divination culture.",
+    significance:
+      "A museum-grounded entry point into the worldwide fascination with the I Ching, connecting modern searches for Chinese divination with a real Han Dynasty manuscript discovery.",
+    dimensions: "Fragmentary silk manuscript leaves; dimensions vary",
+    image: "https://images.unsplash.com/photo-1580130379624-3a069adbffc5?w=800&q=80",
+    funFacts: [
+      "The manuscript was buried roughly two centuries before the I Ching became one of the Five Classics of imperial learning",
+      "Mawangdui also preserved early Laozi texts, medical manuscripts, maps, and astronomical records",
+      "The I Ching's 64 hexagrams are built from six yin or yang lines",
+      "The Mawangdui discovery is often compared to the Dead Sea Scrolls for Chinese intellectual history",
+    ],
+    relatedSlugs: [
+      "mawangdui-silk-manuscripts",
+      "oracle-bones-yinxu",
+      "mawangdui-silk-banner",
+    ],
+    nameZh: "马王堆帛书《周易》",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Mawangdui_Silk_Texts",
+    topicSlugs: ["i-ching-oracle-bones-chinese-divination"],
+    externalCollections: [
+      {
+        museum: "Hunan Provincial Museum",
+        country: "China",
+        collectionUrl: "https://www.hnmuseum.com",
+        isPrimaryHolder: true,
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Mawangdui Silk Texts",
+        url: "https://en.wikipedia.org/wiki/Mawangdui_Silk_Texts",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "Wikipedia — I Ching",
+        url: "https://en.wikipedia.org/wiki/I_Ching",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "Hunan Museum — Bamboo and Silk Manuscripts of Mawangdui",
+        url: "https://www.hnmuseum.com/en/aboutus/new-book-launch-complete-works-bamboo-and-silk-manuscripts-mawangdui-han-tombs-changsha",
+        type: "official-cn",
       },
     ],
   },
@@ -1655,10 +1730,18 @@ export const artifacts: Artifact[] = [
       "The script is directly ancestral to modern Chinese characters",
       "Oracle bones helped prove that the Shang Dynasty was historical, not legendary",
     ],
-    relatedSlugs: ["simuwu-ding", "fuhao-owl-zun"],
+    relatedSlugs: [
+      "mawangdui-i-ching-silk-manuscript",
+      "simuwu-ding",
+      "fuhao-owl-zun",
+    ],
     nameZh: "殷墟甲骨文",
     wikipediaUrl: "https://en.wikipedia.org/wiki/Oracle_bone",
-    topicSlugs: ["oracle-bones-and-shang-writing", "bronze-dings-through-the-ages"],
+    topicSlugs: [
+      "oracle-bones-and-shang-writing",
+      "i-ching-oracle-bones-chinese-divination",
+      "bronze-dings-through-the-ages",
+    ],
     externalCollections: [
       {
         museum: "Yinxu Museum",
@@ -1738,6 +1821,75 @@ export const artifacts: Artifact[] = [
       },
     ],
   },
+  {
+    slug: "luopan-feng-shui-compass",
+    name: "Luopan Feng Shui Compass",
+    dynasty: "Qing Dynasty",
+    period: "18th–19th century AD",
+    museumSlug: "science-museum-london",
+    museumName: "Science Museum, London",
+    category: "Scientific Instrument",
+    material: "Wood, lacquer, ink, and magnetic needle",
+    description:
+      "A Chinese geomantic compass whose concentric rings encode directions, trigrams, heavenly stems, earthly branches, lunar mansions, and feng shui formulas.",
+    story:
+      "A luopan looks like a compass, but it is also a map of the cosmos. At its center sits the magnetic needle; around it are dense rings of Chinese characters and symbols used by geomancers to align houses, graves, temples, and city spaces with patterns of qi, direction, time, and landscape. Unlike a navigation compass, the luopan is designed for interpretation. Its rings may include the Eight Trigrams, the Twenty-Four Mountains, the Heavenly Stems and Earthly Branches, and stellar divisions. Museum luopan examples from the 18th and 19th centuries show how a scientific invention — the magnetic compass — became a ritual and spatial technology at the heart of feng shui.",
+    significance:
+      "A high-SEO bridge between global interest in feng shui and the material history of Chinese instruments, architecture, orientation, and cosmology.",
+    dimensions: "Varies by example; often palm-sized to tabletop format",
+    image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&q=80",
+    funFacts: [
+      "The Chinese word for compass can be translated as 'south-pointing needle'",
+      "Some luopan have dozens of concentric rings of formulas",
+      "Early Chinese compasses were used for divination and geomancy before maritime navigation",
+      "The Eight Trigrams on a luopan connect feng shui practice to I Ching cosmology",
+    ],
+    relatedSlugs: [
+      "mawangdui-i-ching-silk-manuscript",
+      "mawangdui-silk-banner",
+      "jinsha-sun-bird-gold-foil",
+    ],
+    nameZh: "风水罗盘",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Luopan",
+    topicSlugs: [
+      "feng-shui-compass-and-cosmic-orientation",
+      "i-ching-oracle-bones-chinese-divination",
+      "mythic-animals-and-cosmic-order",
+    ],
+    externalCollections: [
+      {
+        museum: "Science Museum, London",
+        country: "United Kingdom",
+        collectionUrl:
+          "https://collection.sciencemuseumgroup.org.uk/objects/co55384/chinese-geomancers-compass",
+        isPrimaryHolder: true,
+      },
+      {
+        museum: "Royal Museums Greenwich",
+        country: "United Kingdom",
+        collectionUrl: "https://www.rmg.co.uk/collections/objects/rmgc-object-42660",
+        isPrimaryHolder: false,
+      },
+    ],
+    sources: [
+      {
+        label: "Science Museum Group — Chinese Geomancer's Compass",
+        url: "https://collection.sciencemuseumgroup.org.uk/objects/co55384/chinese-geomancers-compass",
+        type: "academic",
+      },
+      {
+        label: "Royal Museums Greenwich — Geomantic Compass",
+        url: "https://www.rmg.co.uk/collections/objects/rmgc-object-42660",
+        type: "academic",
+      },
+      {
+        label: "Wikipedia — Luopan",
+        url: "https://en.wikipedia.org/wiki/Luopan",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
 ];
 
 export const categories = [
@@ -1754,6 +1906,7 @@ export const categories = [
   "Lacquer",
   "Silk / Textile",
   "Bone / Writing",
+  "Scientific Instrument",
 ];
 
 export const dynasties = [
@@ -1770,6 +1923,7 @@ export const dynasties = [
   "Tang Dynasty",
   "Northern Song Dynasty",
   "Yuan Dynasty",
+  "Qing Dynasty",
   "Qing Dynasty (Qianlong era)",
 ];
 

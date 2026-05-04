@@ -256,6 +256,11 @@ export const popCultureWorks: PopCultureWork[] = [
           "The film's oracle-bone imagery and divination scenes draw from the real Yinxu inscriptions that record Shang royal questions about war, harvest, weather, and ancestors.",
       },
       {
+        artifactSlug: "mawangdui-i-ching-silk-manuscript",
+        connection:
+          "Although the film is set in the Shang-Zhou transition, modern viewers often read its world of omens, mandate, and cosmic change through later classics such as the I Ching.",
+      },
+      {
         artifactSlug: "fuhao-owl-zun",
         connection:
           "Lady Fuhao's verified military and ritual status provides a real archaeological counterpart to the film's powerful Shang court figures.",
@@ -266,6 +271,7 @@ export const popCultureWorks: PopCultureWork[] = [
       "imperial-power-and-court-life",
       "warriors-weapons-and-empire",
       "oracle-bones-and-shang-writing",
+      "i-ching-oracle-bones-chinese-divination",
     ],
     sources: [
       {
@@ -679,6 +685,7 @@ export const popCultureWorks: PopCultureWork[] = [
       "ancient-shu-sichuan-heritage",
       "sanxingdui-mysteries",
       "warriors-weapons-and-empire",
+      "feng-shui-compass-and-cosmic-orientation",
     ],
     sources: [
       {
