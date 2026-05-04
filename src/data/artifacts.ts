@@ -768,6 +768,387 @@ export const artifacts: Artifact[] = [
       },
     ],
   },
+  {
+    slug: "hongshan-jade-dragon",
+    name: "Hongshan Culture C-Shaped Jade Dragon",
+    dynasty: "Neolithic (Hongshan Culture)",
+    period: "c. 4700–2900 BC",
+    museumSlug: "national-museum-of-china",
+    museumName: "National Museum of China",
+    category: "Jade",
+    material: "Nephrite jade (dark green)",
+    description:
+      "Often called China's first dragon, this 26-cm C-shaped jade figure is the most iconic artifact of the Hongshan Culture and a symbol of the prehistoric origins of dragon worship.",
+    story:
+      "Discovered in 1971 in Ongniud Banner, Inner Mongolia, this jade carving predates Chinese civilization's written record by millennia. Its elegant C-curve, boar-like snout, flowing mane, and smooth polish demonstrate astonishing Neolithic lapidary skill. The figure's form — coiled, toothless, with an open mouth — became the template for every later Chinese dragon. For decades after discovery it was mistakenly called a 'pig dragon'; only in the 1980s did scholars recognize it as a dragon, pushing the origin of dragon symbolism back over 5,000 years. The Hongshan culture's jade ritual tradition shows that complex beliefs about heaven, authority, and the spirit world existed long before the Bronze Age dynasties.",
+    significance:
+      "Proof that dragon worship — China's central mythological motif — is not a Bronze Age invention but a Neolithic one, with roots older than any written Chinese text.",
+    dimensions: "26 cm height, body diameter approximately 2.3–2.9 cm",
+    image: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=80",
+    funFacts: [
+      "Predates written Chinese by at least 2,000 years",
+      "The drill hole at the curve shows it was worn suspended — likely a shaman's pendant",
+      "Hongshan jade-working technology required sand abrasives and bamboo drills — no metal tools existed",
+      "Featured on a Chinese postage stamp as a national treasure icon",
+    ],
+    relatedSlugs: ["jade-burial-suit", "gold-mask-sanxingdui"],
+    nameZh: "红山文化玉龙",
+    wikidataId: "Q1076844",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Hongshan_culture",
+    topicSlugs: ["jade-and-immortality", "mythic-animals-and-cosmic-order", "prehistoric-jade-cultures"],
+    externalCollections: [
+      {
+        museum: "National Museum of China",
+        country: "China",
+        collectionUrl: "https://en.chnmuseum.cn",
+        isPrimaryHolder: true,
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Hongshan culture",
+        url: "https://en.wikipedia.org/wiki/Hongshan_culture",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "fuhao-owl-zun",
+    name: "Owl-Shaped Zun of Lady Fuhao",
+    dynasty: "Late Shang Dynasty",
+    period: "c. 1200 BC",
+    museumSlug: "national-museum-of-china",
+    museumName: "National Museum of China",
+    category: "Bronze",
+    material: "Bronze with intaglio decoration",
+    description:
+      "A pair of owl-shaped bronze ritual wine vessels from the tomb of Lady Fuhao, the only archaeologically verified female military commander in Chinese history.",
+    story:
+      "Lady Fuhao (妇好) was a consort of King Wu Ding of the Shang Dynasty and one of China's earliest known military leaders. Oracle bone inscriptions record that she commanded up to 13,000 troops in battle. Her undisturbed tomb, discovered in 1976 at Yinxu (Anyang), contained over 1,900 objects — the most intact Shang royal burial ever found. Among them, this pair of owl zun (尊) stands out for its artistic power: a fierce, stocky owl with alert ears, wide eyes, tail forming a third support leg, and surface covered in thunder-pattern (leiwen) motifs. The owl was a protective spirit in Shang belief, associated with night warfare and ancestral guardianship. The vessel's interior bears the inscription '妇好' confirming ownership.",
+    significance:
+      "The most famous object from the only archaeologically confirmed tomb of a Shang Dynasty royal woman, linking women's military power, bronze ritual art, and ancestor worship.",
+    dimensions: "45.9 cm height, weight 16.7 kg",
+    image: "https://images.unsplash.com/photo-1569587112025-0d460e81a126?w=800&q=80",
+    funFacts: [
+      "Lady Fuhao's tomb contained 468 bronzes — more than any other Shang burial",
+      "Oracle bones record that she led a successful military campaign against the Tu Fang people",
+      "The owl was considered an auspicious battle spirit in Shang culture",
+      "Her tomb was the only unlooted Shang royal burial ever discovered",
+    ],
+    relatedSlugs: ["simuwu-ding", "bronze-standing-figure-sanxingdui"],
+    nameZh: "妇好鸮尊",
+    wikidataId: "Q10921803",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Fu_Hao",
+    topicSlugs: ["bronze-dings-through-the-ages", "warriors-weapons-and-empire", "mythic-animals-and-cosmic-order"],
+    externalCollections: [
+      {
+        museum: "National Museum of China",
+        country: "China",
+        collectionUrl: "https://en.chnmuseum.cn",
+        isPrimaryHolder: true,
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Fu Hao",
+        url: "https://en.wikipedia.org/wiki/Fu_Hao",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "dunhuang-flying-apsara",
+    name: "Dunhuang Flying Apsara Mural (Cave 320)",
+    dynasty: "Tang Dynasty",
+    period: "c. 705–781 AD (High Tang)",
+    museumSlug: "dunhuang-research-academy",
+    museumName: "Dunhuang Research Academy (Mogao Caves)",
+    category: "Painting",
+    material: "Mineral pigment on plaster wall",
+    description:
+      "The iconic flying apsara (feitian 飞天) murals of the Mogao Caves — bodiless celestial figures trailing ribbons through clouds — represent the pinnacle of Buddhist cave art and China's most recognized mural tradition.",
+    story:
+      "The Mogao Caves (Dunhuang) contain over 4,500 square meters of mural paintings spanning a millennium (4th–14th century). Among them, the 'flying apsara' figures — celestial musicians and dancers who scatter flowers and play instruments while soaring without wings — became Dunhuang's visual signature. Cave 320's High Tang apsaras are widely considered the finest: weightless bodies curve in S-shaped arabesques, trailing scarves draw flowing lines across the plaster sky, and faces carry the full-fleshed Tang ideal of beauty. These figures synthesize Indian Buddhist iconography, Central Asian decorative arts, and Chinese line-drawing (baimiao) technique into something entirely new. The apsaras became so iconic that the Chinese space program named its first commercial rocket 'Feitian' (Flying Apsara) after them.",
+    significance:
+      "The most globally recognized symbol of the Dunhuang Mogao Caves, designated a UNESCO World Heritage Site in 1987 — and one of the most searched terms in Chinese art globally.",
+    dimensions: "Wall section approximately 3.2 × 1.8 meters",
+    image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&q=80",
+    funFacts: [
+      "There are 4,500+ flying apsara figures across 270 caves at Dunhuang",
+      "The Chinese space program's first crewed mission patch featured the flying apsara motif",
+      "Dunhuang apsaras are wingless — they fly by spiritual force alone, unlike Western angels",
+      "The caves were sealed and lost for nearly 900 years before rediscovery in 1900",
+    ],
+    relatedSlugs: ["beast-head-agate-cup", "along-the-river-during-qingming-festival"],
+    nameZh: "敦煌飞天壁画",
+    wikidataId: "Q913884",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Mogao_Caves",
+    topicSlugs: ["tang-silk-road-treasures", "dunhuang-cave-art"],
+    externalCollections: [
+      {
+        museum: "Dunhuang Research Academy (Mogao Caves)",
+        country: "China",
+        collectionUrl: "https://www.mogaoku.net",
+        isPrimaryHolder: true,
+      },
+      {
+        museum: "The British Museum",
+        country: "UK",
+        collectionUrl: "https://www.britishmuseum.org/collection/search?keyword=dunhuang",
+        isPrimaryHolder: false,
+        note: "Stein Collection: manuscripts and silk paintings from Cave 17",
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Mogao Caves",
+        url: "https://en.wikipedia.org/wiki/Mogao_Caves",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "tang-sancai-camel",
+    name: "Tang Sancai Three-Color Glazed Camel with Musicians",
+    dynasty: "Tang Dynasty",
+    period: "c. 723 AD",
+    museumSlug: "national-museum-of-china",
+    museumName: "National Museum of China",
+    category: "Ceramics",
+    material: "Earthenware with lead-fluxed sancai (three-color) glaze",
+    description:
+      "A tomb figurine depicting a Bactrian camel carrying a musical troupe — a masterpiece of Tang funerary art that captures the cosmopolitan energy of Silk Road trade in a single object.",
+    story:
+      "This tomb figure shows a Bactrian (two-humped) camel standing tall, carrying a platform of musicians between its humps. The musicians — some with Central Asian features — play instruments while one figure sings with raised face. The piece is a perfect time capsule of Tang Dynasty internationalism: Sogdian and Persian merchants, Central Asian musicians, caravans loaded with luxury goods, and a court culture fascinated by 'exotic' entertainment from the West. Tang sancai pottery was made for burial, not daily use — its soft lead glaze cannot hold water. The dripped amber, green, and cream glazes run together in controlled randomness, a technique admired worldwide. This particular piece, excavated from a Tang tomb near Xi'an, is considered the finest known sancai camel with musicians.",
+    significance:
+      "The single most iconic image of Tang Dynasty Silk Road cosmopolitanism — a visual shorthand for the most globally connected period in pre-modern Chinese history.",
+    dimensions: "48.5 cm height",
+    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+    funFacts: [
+      "Tang sancai was a funerary ware — too fragile for daily use",
+      "The musicians include figures playing pipa (lute), flute, and harp",
+      "Bactrian camels could carry 250 kg across the Gobi Desert",
+      "Tang Xi'an had over 1 million residents and 10,000+ foreign merchants",
+    ],
+    relatedSlugs: ["beast-head-agate-cup", "terracotta-warriors"],
+    nameZh: "唐三彩骆驼载乐俑",
+    wikidataId: "Q7682683",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Tang_sancai",
+    topicSlugs: ["tang-silk-road-treasures", "music-ritual-and-performance"],
+    externalCollections: [
+      {
+        museum: "National Museum of China",
+        country: "China",
+        collectionUrl: "https://en.chnmuseum.cn",
+        isPrimaryHolder: true,
+      },
+      {
+        museum: "The Metropolitan Museum of Art",
+        country: "USA",
+        collectionUrl: "https://www.metmuseum.org/art/collection/search?q=Tang+sancai",
+        isPrimaryHolder: false,
+        note: "Multiple sancai tomb figures in Chinese galleries",
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Tang sancai",
+        url: "https://en.wikipedia.org/wiki/Tang_sancai",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "nine-dragon-wall-forbidden-city",
+    name: "Nine-Dragon Wall of the Forbidden City",
+    dynasty: "Qing Dynasty (Qianlong era)",
+    period: "1771 AD",
+    museumSlug: "the-palace-museum",
+    museumName: "The Palace Museum (Forbidden City)",
+    category: "Sculpture",
+    material: "Glazed ceramic tiles (liuli) on brick wall",
+    description:
+      "A monumental wall of 270 glazed tiles depicting nine writhing dragons amid clouds and waves — one of only three surviving nine-dragon walls in China and the most visited architectural artwork in the Forbidden City.",
+    story:
+      "Built in 1771 during Emperor Qianlong's reign, the wall stands 3.5 meters tall and 29.4 meters long, facing the entrance of the Palace of Tranquil Longevity (Ningshou Gong). Nine coiling dragons — each in a different color and posture — chase flaming pearls against a background of stylized clouds, mountains, and sea waves. The number nine was reserved exclusively for the emperor: as the highest single yang digit, it symbolized supreme sovereign power. In Qing dynasty protocol, only the emperor could use nine-dragon imagery on architectural screens, robes, and ritual objects. The wall functions both as spirit screen (yingbi) to ward off evil and as political billboard — a permanent declaration of imperial cosmological authority visible to all who approached the inner court.",
+    significance:
+      "The supreme example of dragon imagery as state power — the most photographed architectural detail in the Forbidden City and a globally searched icon of Chinese imperial symbolism.",
+    dimensions: "3.5 m height × 29.4 m length × 1.2 m thickness",
+    image: "https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?w=800&q=80",
+    funFacts: [
+      "Contains exactly 270 glazed ceramic tiles",
+      "One tile was secretly replaced with wood (now visible by its paint) after a craftsman broke the original during construction",
+      "Only three nine-dragon walls survive in China (the others are in Datong and Beihai Park)",
+      "The nine colors represent the completeness of the imperial cosmos",
+    ],
+    relatedSlugs: ["along-the-river-during-qingming-festival", "blue-white-porcelain-plum-vase"],
+    nameZh: "故宫九龙壁",
+    wikidataId: "Q3512015",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Nine-Dragon_Wall",
+    topicSlugs: ["imperial-power-and-court-life", "mythic-animals-and-cosmic-order", "forbidden-city-imperial-collection"],
+    externalCollections: [
+      {
+        museum: "The Palace Museum (Forbidden City)",
+        country: "China",
+        collectionUrl: "https://en.dpm.org.cn",
+        isPrimaryHolder: true,
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Nine-Dragon Wall",
+        url: "https://en.wikipedia.org/wiki/Nine-Dragon_Wall",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "ru-ware-lotus-bowl",
+    name: "Ru Ware Sky-Blue Lotus Bowl",
+    dynasty: "Northern Song Dynasty",
+    period: "c. 1086–1106 AD",
+    museumSlug: "the-palace-museum",
+    museumName: "The Palace Museum (Forbidden City)",
+    category: "Ceramics",
+    material: "Stoneware with sky-blue (tianqing) crackled glaze",
+    description:
+      "A nearly flawless example of Ru ware — the rarest and most prized ceramic type in all of Chinese art. Fewer than 90 pieces survive worldwide.",
+    story:
+      "Ru ware was produced for less than 20 years (c. 1086–1106) exclusively for the Northern Song imperial court before the kilns were destroyed during the Jurchen invasion. Its sky-blue crackled glaze, applied razor-thin over a dark body, has been compared to 'the sky after rain' — a phrase attributed to Emperor Huizong himself. The lotus-petal form (lianhua) adds Buddhist symbolism to what is already the most restrained, intellectual ceramic glaze in Chinese history. Because so few pieces survived the fall of Northern Song, Ru ware has been obsessively collected by every subsequent dynasty. A single Ru ware brush washer sold at auction in 2017 for USD 37.7 million — the highest price ever achieved for Chinese ceramics.",
+    significance:
+      "The rarest imperial ceramic in Chinese art — fewer than 90 authenticated pieces exist — representing the ultimate Song Dynasty aesthetic of 'less is more.'",
+    dimensions: "10.4 cm diameter, 3.5 cm height",
+    image: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&q=80",
+    funFacts: [
+      "Fewer than 90 pieces of Ru ware survive — about 21 are in the Palace Museum",
+      "A Ru ware brush washer sold for USD 37.7 million at Sotheby's in 2017",
+      "Emperor Huizong reportedly described the ideal color as 'sky after rain'",
+      "The glaze contains trace amounts of agate powder for its unique light-scattering effect",
+    ],
+    relatedSlugs: ["blue-white-porcelain-plum-vase", "along-the-river-during-qingming-festival"],
+    nameZh: "汝窑天青釉莲花碗",
+    wikidataId: "Q3452441",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Ru_ware",
+    topicSlugs: ["song-city-life-and-painting", "imperial-power-and-court-life", "forbidden-city-imperial-collection"],
+    externalCollections: [
+      {
+        museum: "The Palace Museum (Forbidden City)",
+        country: "China",
+        collectionUrl: "https://en.dpm.org.cn",
+        isPrimaryHolder: true,
+      },
+      {
+        museum: "National Palace Museum (Taipei)",
+        country: "Taiwan",
+        collectionUrl: "https://www.npm.gov.tw",
+        isPrimaryHolder: false,
+        note: "Holds 21 pieces — the largest public collection of Ru ware",
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Ru ware",
+        url: "https://en.wikipedia.org/wiki/Ru_ware",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "changxin-palace-lamp",
+    name: "Changxin Palace Lamp",
+    dynasty: "Western Han Dynasty",
+    period: "c. 172 BC",
+    museumSlug: "hebei-provincial-museum",
+    museumName: "Hebei Provincial Museum",
+    category: "Bronze",
+    material: "Gilt bronze",
+    description:
+      "A gilt-bronze lamp shaped as a kneeling court lady holding a lantern — simultaneously a functional smoke-filtering lamp, a portrait sculpture, and a masterpiece of Han Dynasty engineering and art.",
+    story:
+      "Discovered in 1968 in the tomb of Dou Wan (wife of Prince Liu Sheng) at Mancheng, Hebei, this lamp is both a technical marvel and a work of art. The figure of a palace maid kneels with one arm raised, her wide sleeve forming a windshield and smoke channel. The hollow arm conducts lamp smoke downward into the figure's body cavity, which held water to dissolve soot — an ancient pollution-control system. The lamp can be disassembled into components for cleaning. An inscription reveals the piece was made for the Changxin Palace (長信宮), residence of Empress Dowager Dou, grandmother of Emperor Wu of Han. The lamp passed through at least three owners before burial.",
+    significance:
+      "The most famous example of Han Dynasty functional art — celebrated as both green engineering (smoke filtration) and portraiture that anticipates naturalism by centuries.",
+    dimensions: "48 cm height, weight 15.85 kg",
+    image: "https://images.unsplash.com/photo-1589556763013-39f7e7c4e1b2?w=800&q=80",
+    funFacts: [
+      "Functions as an ancient air purifier — smoke travels through the sleeve and dissolves in water inside the body",
+      "Can be completely disassembled into 6 parts for cleaning",
+      "Bears inscriptions from three successive owners before burial",
+      "Buried with the same prince (Liu Sheng) whose jade burial suit is another national treasure",
+    ],
+    relatedSlugs: ["jade-burial-suit", "simuwu-ding"],
+    nameZh: "长信宫灯",
+    wikidataId: "Q3672474",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Changxin_Palace_lamp",
+    topicSlugs: ["imperial-power-and-court-life", "jade-and-immortality"],
+    externalCollections: [
+      {
+        museum: "Hebei Provincial Museum",
+        country: "China",
+        collectionUrl: "http://www.hebeimuseum.org.cn",
+        isPrimaryHolder: true,
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Changxin Palace lamp",
+        url: "https://en.wikipedia.org/wiki/Changxin_Palace_lamp",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "bronze-galloping-horse",
+    name: "Bronze Galloping Horse (Horse Treading on a Flying Swallow)",
+    dynasty: "Eastern Han Dynasty",
+    period: "c. 25–220 AD",
+    museumSlug: "gansu-provincial-museum",
+    museumName: "Gansu Provincial Museum",
+    category: "Bronze",
+    material: "Bronze",
+    description:
+      "A galloping horse balanced on one hoof atop a flying swallow — China's official tourism logo since 1983 and one of the most dynamically engineered bronzes in world art history.",
+    story:
+      "Discovered in 1969 in a Eastern Han tomb at Wuwei, Gansu Province, this 34.5 cm bronze captures the impossible instant when a horse at full gallop overtakes a swallow in flight, pressing its rear hoof onto the bird's back. The entire sculpture balances on that single point of contact — a feat of bronze casting, weight distribution, and artistic imagination. The horse's three airborne legs, flying mane, open mouth, and tail streaming behind create a snapshot of pure velocity. The identity of the bird beneath is debated — swallow, hawk, or mythical creature — but the aerodynamic metaphor is clear: this horse is faster than flight itself. In 1983, the National Tourism Administration adopted the silhouette as China's official tourism symbol, making it one of the most reproduced artworks in the country.",
+    significance:
+      "China's official tourism logo since 1983 — a 2,000-year-old sculpture that achieves through balance and illusion what photography would later capture through shutter speed.",
+    dimensions: "34.5 cm height, 45 cm length, weight 7.15 kg",
+    image: "https://images.unsplash.com/photo-1582560475093-04d21d4747f4?w=800&q=80",
+    funFacts: [
+      "Has been China's official tourism symbol since 1983",
+      "The entire sculpture balances on one hoof touching a swallow — a single contact point",
+      "Nicknamed 'Bronze Running Horse' or 'Flying Horse of Gansu'",
+      "Found in the tomb of a Han Dynasty general at Leitai, Wuwei",
+    ],
+    relatedSlugs: ["terracotta-warriors", "beast-head-agate-cup"],
+    nameZh: "铜奔马（马踏飞燕）",
+    wikidataId: "Q1155597",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Flying_Horse_of_Gansu",
+    topicSlugs: ["warriors-weapons-and-empire", "mythic-animals-and-cosmic-order"],
+    externalCollections: [
+      {
+        museum: "Gansu Provincial Museum",
+        country: "China",
+        collectionUrl: "http://www.gansumuseum.com",
+        isPrimaryHolder: true,
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Flying Horse of Gansu",
+        url: "https://en.wikipedia.org/wiki/Flying_Horse_of_Gansu",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
 ];
 
 export const categories = [
@@ -785,15 +1166,18 @@ export const categories = [
 
 export const dynasties = [
   "All",
+  "Neolithic (Hongshan Culture)",
   "Late Shang Dynasty",
   "Western Zhou Dynasty",
   "Spring and Autumn Period",
   "Warring States Period",
   "Qin Dynasty",
   "Western Han Dynasty",
-  "Northern Song Dynasty",
+  "Eastern Han Dynasty",
   "Tang Dynasty",
+  "Northern Song Dynasty",
   "Yuan Dynasty",
+  "Qing Dynasty (Qianlong era)",
 ];
 
 export function getArtifactBySlug(slug: string): Artifact | undefined {

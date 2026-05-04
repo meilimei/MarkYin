@@ -260,6 +260,93 @@ export const museums: Museum[] = [
     },
     wikidataId: "Q1815891",
   },
+  {
+    slug: "dunhuang-research-academy",
+    name: "Dunhuang Research Academy (Mogao Caves)",
+    city: "Dunhuang",
+    province: "Gansu",
+    description:
+      "The guardian institution of the Mogao Caves — 735 rock-cut grottoes containing over 45,000 sq meters of murals and 2,400+ painted sculptures spanning a millennium of Buddhist art along the Silk Road.",
+    longDescription:
+      "The Mogao Caves (莫高窟), carved into desert cliffs outside Dunhuang beginning in 366 AD, form the world's largest treasury of Buddhist art. Over a thousand years, successive dynasties added caves, murals, and sculptures, creating a visual encyclopedia of Chinese Buddhist belief, Silk Road exchange, and artistic evolution. The Dunhuang Research Academy (founded 1944) manages conservation, digital documentation, and public access. UNESCO designated the site a World Heritage property in 1987. The caves contain paintings ranging from Northern Wei austerity through Tang opulence to Yuan-Ming eclecticism, alongside the famous 'Library Cave' (Cave 17), where 50,000 manuscripts sealed for 900 years were rediscovered in 1900.",
+    image: "/images/museums/dunhuang-mogao.jpg",
+    imageCredit: {
+      source: "commons",
+      author: "Dunhuang Research Academy",
+      license: "CC BY-SA 4.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Mogao_Caves.jpg",
+    },
+    artifactCount: 45000,
+    highlights: [
+      "Flying Apsara Murals (Cave 320)",
+      "Reclining Buddha (Cave 158)",
+      "Library Cave manuscripts (Cave 17)",
+    ],
+    visitInfo: {
+      hours: "8:30 AM - 6:00 PM (varies by season)",
+      admission: "238 CNY (peak) / 140 CNY (off-peak)",
+      website: "https://www.mogaoku.net",
+    },
+    wikidataId: "Q913884",
+  },
+  {
+    slug: "hebei-provincial-museum",
+    name: "Hebei Provincial Museum",
+    city: "Shijiazhuang",
+    province: "Hebei",
+    description:
+      "Home to treasures from the Mancheng Han tombs including the Changxin Palace Lamp and Jade Burial Suit of Prince Liu Sheng — Hebei's premier museum covers 5,000 years from prehistoric Cishan culture to modern times.",
+    longDescription:
+      "Hebei Provincial Museum's crown jewels are the artifacts from the Mancheng tombs of Prince Liu Sheng and his wife Dou Wan (discovered 1968). These intact Western Han royal burials yielded the famous jade burial suit sewn with gold wire, the Changxin Palace Lamp, the Boshan incense burner, and over 2,800 other objects. The museum also holds major Warring States lacquerware, Northern Dynasties Buddhist sculpture, and Ding ware ceramics from Hebei's own kiln tradition.",
+    image: "/images/museums/hebei-museum.jpg",
+    imageCredit: {
+      source: "commons",
+      author: "Hebei Museum",
+      license: "CC BY-SA 4.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Hebei_Museum.jpg",
+    },
+    artifactCount: 240000,
+    highlights: [
+      "Changxin Palace Lamp",
+      "Jade Burial Suit of Liu Sheng",
+      "Boshan Incense Burner",
+    ],
+    visitInfo: {
+      hours: "9:00 AM - 5:00 PM (Closed Mondays)",
+      admission: "Free",
+      website: "http://www.hebeimuseum.org.cn",
+    },
+    wikidataId: "Q10906279",
+  },
+  {
+    slug: "gansu-provincial-museum",
+    name: "Gansu Provincial Museum",
+    city: "Lanzhou",
+    province: "Gansu",
+    description:
+      "Home of the Bronze Galloping Horse (马踏飞燕) — China's official tourism symbol — plus major Silk Road artifacts, prehistoric painted pottery, and Tibetan Buddhist art from the Hexi Corridor.",
+    longDescription:
+      "Gansu Provincial Museum's most famous artifact — the Bronze Galloping Horse of Wuwei — is so iconic that its silhouette has represented Chinese tourism since 1983. Beyond this single masterpiece, the museum holds exceptional Silk Road material: Han Dynasty wooden slips from Juyan, Tang silver vessels from Zhangye, Majiayao painted pottery (the finest Neolithic ceramics in Northwest China), and Buddhist art from the cave temples along the Hexi Corridor. The museum offers a comprehensive narrative of how the Silk Road passed through Gansu for over 2,000 years.",
+    image: "/images/museums/gansu-museum.jpg",
+    imageCredit: {
+      source: "commons",
+      author: "Gansu Museum",
+      license: "CC BY-SA 4.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Gansu_Provincial_Museum.jpg",
+    },
+    artifactCount: 350000,
+    highlights: [
+      "Bronze Galloping Horse (马踏飞燕)",
+      "Majiayao Painted Pottery",
+      "Han Wooden Slips from Juyan",
+    ],
+    visitInfo: {
+      hours: "9:00 AM - 5:00 PM (Closed Mondays)",
+      admission: "Free",
+      website: "http://www.gansumuseum.com",
+    },
+    wikidataId: "Q6208285",
+  },
 ];
 
 export function getMuseumBySlug(slug: string): Museum | undefined {

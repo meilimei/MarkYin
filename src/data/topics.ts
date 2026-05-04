@@ -322,6 +322,97 @@ export const topics: Topic[] = [
       },
     ],
   },
+  {
+    slug: "dunhuang-cave-art",
+    title: "Dunhuang Cave Art & the Silk Road",
+    subtitle: "A Millennium of Buddhist Murals at the Edge of the Desert",
+    category: "region",
+    summary:
+      "The Mogao Caves at Dunhuang contain over 45,000 square meters of murals spanning 1,000 years — the world's greatest single collection of Buddhist art and a visual record of Silk Road cultural exchange.",
+    longDescription:
+      "Carved into desert cliffs beginning in 366 AD, the 735 Mogao Caves document the entire arc of Chinese Buddhist art — from austere Northern Wei figures to the opulent flying apsaras of the High Tang to the eclectic styles of Yuan-Ming patronage. The caves sat at the western end of the Hexi Corridor, where caravans rested before crossing the Taklamakan Desert, making Dunhuang a crossroads of Indian, Central Asian, Tibetan, and Chinese artistic traditions. In 1900, a Taoist monk stumbled upon the sealed 'Library Cave' (Cave 17), revealing 50,000 manuscripts, silk paintings, and printed texts — including the world's oldest dated printed book (the Diamond Sutra, 868 AD). Today, the Dunhuang Research Academy leads digital preservation efforts, creating millimeter-accurate 3D scans to protect murals from tourism damage and sandstorm erosion.",
+    heroImage: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&q=80",
+    artifactSlugs: [
+      "dunhuang-flying-apsara",
+      "beast-head-agate-cup",
+      "tang-sancai-camel",
+    ],
+    relatedWorkSlugs: ["black-myth-wukong", "genshin-impact-liyue"],
+    sources: [
+      {
+        label: "Wikipedia — Mogao Caves",
+        url: "https://en.wikipedia.org/wiki/Mogao_Caves",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "UNESCO — Mogao Caves",
+        url: "https://whc.unesco.org/en/list/440",
+        type: "academic",
+      },
+    ],
+  },
+  {
+    slug: "forbidden-city-imperial-collection",
+    title: "The Forbidden City & Imperial Collections",
+    subtitle: "600 Years of Power, Art, and Architecture Behind Vermilion Walls",
+    category: "theme",
+    summary:
+      "The Forbidden City held the imperial throne for 24 emperors across two dynasties and today houses 1.8 million artifacts — the most comprehensive collection of Chinese art and the world's most visited museum.",
+    longDescription:
+      "Built between 1406 and 1420 by Emperor Yongle of the Ming Dynasty, the Forbidden City was both the political nerve center and cultural warehouse of imperial China for over 500 years. Its 9,999 rooms accumulated centuries of tribute: Song Dynasty Ru ware treasured by Qianlong, calligraphy scrolls passed down since the Tang, jade carvings spanning millennia, and the nine-dragon walls and golden thrones that symbolized cosmic authority. Under the Qing, Emperor Qianlong (r. 1735–1796) became Chinese history's most obsessive collector, acquiring and cataloguing objects on a scale never seen before.\n\nThe Palace Museum, established in 1925 after the last emperor's expulsion, opened this treasury to the public. Today it is the world's most visited museum (17+ million visitors per year), and its artifacts — from Ru ware lotus bowls to the Nine-Dragon Wall — anchor the global understanding of Chinese material culture.",
+    heroImage: "https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?w=800&q=80",
+    artifactSlugs: [
+      "nine-dragon-wall-forbidden-city",
+      "ru-ware-lotus-bowl",
+      "along-the-river-during-qingming-festival",
+      "blue-white-porcelain-plum-vase",
+    ],
+    relatedWorkSlugs: ["story-of-yanxi-palace", "empresses-in-the-palace"],
+    sources: [
+      {
+        label: "Wikipedia — Forbidden City",
+        url: "https://en.wikipedia.org/wiki/Forbidden_City",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "Palace Museum Official Site",
+        url: "https://en.dpm.org.cn",
+        type: "official-cn",
+      },
+    ],
+  },
+  {
+    slug: "prehistoric-jade-cultures",
+    title: "Prehistoric Jade Cultures of China",
+    subtitle: "5,000 Years Before the Bronze Age: Jade, Ritual, and the Origins of Chinese Civilization",
+    category: "material",
+    summary:
+      "Long before bronze or writing, Neolithic communities across China carved jade into dragons, discs, and ritual objects — establishing the material's sacred status that would endure for 7,000 years.",
+    longDescription:
+      "China's jade tradition is the oldest continuous craft tradition in the world. The Hongshan culture of Inner Mongolia (c. 4700–2900 BC) produced C-shaped jade dragons, cloud-form pendants, and ritual bi discs thousands of years before the Shang Dynasty invented writing. Simultaneously, the Liangzhu culture of the Yangtze Delta (c. 3300–2300 BC) created monumental jade cong tubes and bi discs deposited in elite tombs — objects so laboriously made (up to years of grinding with sand abrasives) that they implied a stratified society with dedicated specialist workshops. These two Neolithic jade cultures — one northern, one southern — established jade as China's supreme ritual material. When the Bronze Age arrived, jade did not disappear: it was incorporated into every subsequent dynasty's court ritual, burial practice, and philosophical system. The Confucian equation of jade with virtue ('a gentleman's morality is like jade') merely codified what Neolithic shamans had practiced for millennia.",
+    heroImage: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=80",
+    artifactSlugs: [
+      "hongshan-jade-dragon",
+      "jade-burial-suit",
+    ],
+    relatedWorkSlugs: ["black-myth-wukong", "creation-of-the-gods"],
+    sources: [
+      {
+        label: "Wikipedia — Chinese jade",
+        url: "https://en.wikipedia.org/wiki/Chinese_jade",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "Wikipedia — Hongshan culture",
+        url: "https://en.wikipedia.org/wiki/Hongshan_culture",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
 ];
 
 export const topicCategories: { value: TopicCategory | "all"; label: string }[] = [

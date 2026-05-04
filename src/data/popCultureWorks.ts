@@ -480,6 +480,110 @@ export const popCultureWorks: PopCultureWork[] = [
       },
     ],
   },
+  {
+    slug: "story-of-yanxi-palace",
+    title: "Story of Yanxi Palace",
+    titleZh: "延禧攻略",
+    medium: "tv",
+    year: 2018,
+    studio: "Huanyu Film / iQiyi",
+    region: "China",
+    summary:
+      "With over 15 billion views on iQiyi alone, Story of Yanxi Palace became the most-Googled TV show worldwide in 2018 — a Qing Dynasty drama praised for its obsessively accurate reproduction of Forbidden City material culture.",
+    culturalContext:
+      "Unlike most costume dramas, Story of Yanxi Palace invested extraordinary effort in material accuracy. The production team consulted Palace Museum curators, recreated Qing embroidery techniques (including the lost art of ronghua velvet flowers), sourced historically accurate Suzhou silk for costumes, and modeled props on real imperial collection objects. Viewers worldwide became fascinated by the Qianlong-era material world: jade hairpins, enamelware, dragon robes, Ru ware tea cups, inkstones, and the architectural details of the Forbidden City itself.\n\nThe drama single-handedly drove a measurable increase in Palace Museum tourism and sparked global interest in Qing Dynasty decorative arts — searches for 'Forbidden City artifacts' spiked worldwide during its broadcast.",
+    heroImage:
+      "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&q=80",
+    artifactRefs: [
+      {
+        artifactSlug: "nine-dragon-wall-forbidden-city",
+        connection:
+          "The drama repeatedly frames characters against the Forbidden City's architectural details — the Nine-Dragon Wall appears in establishing shots and functions as a symbol of imperial cosmological power throughout the series.",
+      },
+      {
+        artifactSlug: "ru-ware-lotus-bowl",
+        connection:
+          "Qing emperors obsessively collected Song Dynasty Ru ware. In the drama, references to imperial tea ware and celadon bowls reflect the Qianlong court's documented fixation on Song aesthetics.",
+      },
+      {
+        artifactSlug: "changxin-palace-lamp",
+        connection:
+          "The drama's attention to historical lighting — oil lamps, candle stands, lanterns — connects to a long Chinese tradition of lamp design as both functional art and court status symbol, exemplified by the Han Dynasty Changxin Palace Lamp.",
+      },
+      {
+        artifactSlug: "along-the-river-during-qingming-festival",
+        connection:
+          "Court painting and calligraphy appear throughout the series as markers of cultivation and political alliance — the tradition of monumental scroll painting as imperial possession reaches back to the Song court.",
+      },
+    ],
+    topicSlugs: [
+      "imperial-power-and-court-life",
+      "song-city-life-and-painting",
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Story of Yanxi Palace",
+        url: "https://en.wikipedia.org/wiki/Story_of_Yanxi_Palace",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "SCMP — How authentic are Yanxi Palace accessories",
+        url: "https://www.scmp.com/magazines/style/news-trends/article/2166904/story-yanxi-palace-how-authentic-are-accessories-worn",
+        type: "academic",
+      },
+    ],
+  },
+  {
+    slug: "nirvana-in-fire",
+    title: "Nirvana in Fire",
+    titleZh: "琅琊榜",
+    medium: "tv",
+    year: 2015,
+    studio: "Daylight Entertainment / Shandong TV",
+    region: "China",
+    summary:
+      "Rated 9.4/10 on Douban (China's IMDb), Nirvana in Fire is widely considered the greatest Chinese political drama ever made — a story of court intrigue, loyalty, and justice set during the Northern and Southern Dynasties.",
+    culturalContext:
+      "Set in a fictionalized version of the Liang Dynasty (502–557 AD), the series drew its visual design from Southern Dynasties material culture: flowing scholar robes, bamboo-strip documents, celadon wares, bronze weaponry, incense rituals, and mountain hermitage architecture. The production design avoids the over-decorated Qing aesthetic common in Chinese TV, favoring an austere scholarly style closer to Six Dynasties painting.\n\nFor global viewers who discovered the show on streaming platforms, it served as an introduction to a less familiar period of Chinese history — a time of fragmented kingdoms, philosophical debate, military rivalries, and the beginnings of Chinese landscape aesthetics that would flower in the Tang and Song.",
+    heroImage:
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&q=80",
+    artifactRefs: [
+      {
+        artifactSlug: "sword-of-goujian",
+        connection:
+          "The show's world runs on sword prestige, military honor, and named blades as extensions of a warrior's identity — a tradition stretching back to Spring and Autumn swords like the Sword of Goujian.",
+      },
+      {
+        artifactSlug: "bianzhong-marquis-yi",
+        connection:
+          "Court ceremony, music, and ritual hierarchy are central to the drama's political architecture — the same world of bronze-bell court music that the Marquis Yi set preserves.",
+      },
+      {
+        artifactSlug: "da-ke-ding",
+        connection:
+          "Political legitimacy in the show depends on titles, ancestral rites, and imperial grants — the inscribed bronze tradition of recording such authority reaches back to Western Zhou vessels like the Da Ke Ding.",
+      },
+      {
+        artifactSlug: "changxin-palace-lamp",
+        connection:
+          "The show's meticulous interior design — screen walls, inkstones, oil lamps, incense burners — reflects the material culture of elite Chinese households that the Changxin Lamp exemplifies at its most refined.",
+      },
+    ],
+    topicSlugs: [
+      "warriors-weapons-and-empire",
+      "imperial-power-and-court-life",
+      "music-ritual-and-performance",
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Nirvana in Fire",
+        url: "https://en.wikipedia.org/wiki/Nirvana_in_Fire",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
 ];
 
 export const mediumLabels: Record<Medium, string> = {
