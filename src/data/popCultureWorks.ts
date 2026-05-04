@@ -584,6 +584,50 @@ export const popCultureWorks: PopCultureWork[] = [
       },
     ],
   },
+  {
+    slug: "chinese-zodiac-cz12",
+    title: "Chinese Zodiac (CZ12)",
+    titleZh: "十二生肖",
+    medium: "film",
+    year: 2012,
+    studio: "JCE Movies / Emperor Motion Pictures",
+    region: "China / Hong Kong",
+    summary:
+      "Jackie Chan's passion project about the hunt for the twelve Yuanmingyuan zodiac bronze heads — a high-budget action-adventure film that brought the story of China's most famous looted treasures to global audiences.",
+    culturalContext:
+      "Jackie Chan has called CZ12 the most personally meaningful film of his career. The story follows 'Asian Hawk' (a callback to Chan's 1980s Armour of God franchise) as he races across the globe to recover the twelve bronze zodiac animal heads stolen from the Old Summer Palace in 1860. The film dramatizes the real-world repatriation saga — the auction house controversies, patriotic billionaire donors, and ethical debates about cultural heritage — while wrapping it in Chan's signature physical comedy and stunt choreography.\n\nThe film's release coincided with a period of heightened Chinese public attention to repatriation issues (the 2009 Christie's auction of the rat and rabbit heads). It grossed over $140 million and introduced the Yuanmingyuan story to audiences worldwide who had never heard of the Old Summer Palace or the Second Opium War.",
+    heroImage:
+      "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&q=80",
+    artifactRefs: [
+      {
+        artifactSlug: "yuanmingyuan-zodiac-bronze-heads",
+        connection:
+          "The entire film's plot revolves around recovering the twelve zodiac bronze heads looted from the Yuanmingyuan — dramatizing the real-world repatriation saga.",
+      },
+      {
+        artifactSlug: "nine-dragon-wall-forbidden-city",
+        connection:
+          "The film invokes imperial Chinese architectural and artistic motifs throughout, framing the zodiac heads within the broader context of Qing Dynasty material culture.",
+      },
+      {
+        artifactSlug: "bronze-galloping-horse",
+        connection:
+          "The horse zodiac head connects to China's broader bronze horse tradition — the film references multiple Chinese bronze masterworks as endangered cultural heritage.",
+      },
+    ],
+    topicSlugs: [
+      "treasures-lost-and-returned",
+      "imperial-power-and-court-life",
+    ],
+    sources: [
+      {
+        label: "Wikipedia — CZ12 (Chinese Zodiac)",
+        url: "https://en.wikipedia.org/wiki/CZ12",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
 ];
 
 export const mediumLabels: Record<Medium, string> = {

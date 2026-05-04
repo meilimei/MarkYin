@@ -376,6 +376,35 @@ export const museums: Museum[] = [
     },
     wikidataId: "Q3783729",
   },
+  {
+    slug: "famen-temple-museum",
+    name: "Famen Temple Museum",
+    city: "Baoji",
+    province: "Shaanxi",
+    description:
+      "Built around the Famen Temple crypt discovery, this museum preserves Tang Dynasty imperial Buddhist treasures including the Buddha finger bone relic, secret-color porcelain, silk textiles, and the world's oldest complete tea set.",
+    longDescription:
+      "Famen Temple, near Xi'an, became world-famous in 1987 when the collapsed pagoda revealed a sealed Tang Dynasty underground crypt. The crypt had been closed in 874 AD and preserved more than 2,000 objects donated by Tang emperors, including four Buddhist finger bone relics, gold and silver vessels, mise (secret-color) celadon, silk textiles, and the gilt silver tea set that transformed the study of Tang tea culture. The Famen Temple Museum presents the site as both an archaeological discovery and a living Buddhist pilgrimage destination.",
+    image: "/images/museums/famen-temple-museum.jpg",
+    imageCredit: {
+      source: "commons",
+      author: "Famen Temple Museum",
+      license: "CC BY-SA 4.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Famen_Temple.jpg",
+    },
+    artifactCount: 2000,
+    highlights: [
+      "Buddha Finger Bone Relic",
+      "Gilt Silver Tea Set",
+      "Secret-Color Celadon Wares",
+    ],
+    visitInfo: {
+      hours: "8:30 AM - 5:30 PM",
+      admission: "120 CNY",
+      website: "http://www.famensi.com",
+    },
+    wikidataId: "Q848644",
+  },
 ];
 
 export function getMuseumBySlug(slug: string): Museum | undefined {

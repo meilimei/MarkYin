@@ -1342,6 +1342,208 @@ export const artifacts: Artifact[] = [
       },
     ],
   },
+  {
+    slug: "dwelling-in-fuchun-mountains",
+    name: "Dwelling in the Fuchun Mountains",
+    dynasty: "Yuan Dynasty",
+    period: "1348–1350 AD",
+    museumSlug: "the-palace-museum",
+    museumName: "National Palace Museum (Taipei) / Zhejiang Provincial Museum",
+    category: "Painting",
+    material: "Ink on paper (handscroll)",
+    description:
+      "The greatest Chinese landscape painting ever created — a 7-meter handscroll by Yuan master Huang Gongwang that was burned in two in 1650 and remains divided between Taipei and Hangzhou to this day.",
+    story:
+      "Huang Gongwang (1269–1354) began painting at age 50 and spent his last years wandering the Fuchun River valley south of Hangzhou. Between 1348 and 1350, he distilled this experience into a single handscroll: a continuous journey through misty peaks, gentle riverbanks, fishermen's huts, and groves of pine and bamboo. The painting became the most treasured work in Chinese art history, collected by emperor after emperor. In 1650, its owner — a dying collector named Wu Hongyu — ordered it burned as a funeral offering. His nephew snatched it from the flames, but not before it broke in two. The shorter piece ('Remaining Mountain') is now in Zhejiang Provincial Museum; the longer piece ('Master Wuyong Scroll') is in Taipei's National Palace Museum. In 2011, a historic joint exhibition briefly reunited the two halves for the first time in 361 years.",
+    significance:
+      "The single most revered Chinese painting in existence — its 1650 burning and cross-strait division make it a symbol of China's divided cultural heritage, with enormous search volume among art enthusiasts.",
+    dimensions: "Total original: approximately 33 × 689 cm; surviving scrolls: 31.8 × 51.4 cm and 33 × 636.9 cm",
+    image: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=800&q=80",
+    funFacts: [
+      "Huang Gongwang didn't start painting until age 50 — and created this at 80",
+      "The painting was literally snatched from a funeral pyre in 1650",
+      "The two surviving halves were reunited in a 2011 exhibition after 361 years apart",
+      "Emperor Qianlong wrote over 50 inscriptions on his copy — which turned out to be a forgery",
+    ],
+    relatedSlugs: ["along-the-river-during-qingming-festival", "ru-ware-lotus-bowl"],
+    nameZh: "富春山居图",
+    wikidataId: "Q2326858",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Dwelling_in_the_Fuchun_Mountains",
+    topicSlugs: ["song-city-life-and-painting", "forbidden-city-imperial-collection", "lost-masterpieces-of-chinese-painting"],
+    externalCollections: [
+      {
+        museum: "National Palace Museum (Taipei)",
+        country: "Taiwan",
+        collectionUrl: "https://www.npm.gov.tw",
+        isPrimaryHolder: true,
+        note: "Holds the 'Master Wuyong Scroll' (longer portion)",
+      },
+      {
+        museum: "Zhejiang Provincial Museum",
+        country: "China",
+        collectionUrl: "https://www.zhejiangmuseum.com",
+        isPrimaryHolder: false,
+        note: "Holds the 'Remaining Mountain' (shorter portion)",
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Dwelling in the Fuchun Mountains",
+        url: "https://en.wikipedia.org/wiki/Dwelling_in_the_Fuchun_Mountains",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "admonitions-scroll",
+    name: "Admonitions of the Instructress to the Court Ladies",
+    dynasty: "Eastern Jin Dynasty (Tang copy)",
+    period: "Original c. 380 AD; surviving copy c. 6th–8th century",
+    museumSlug: "the-palace-museum",
+    museumName: "The British Museum",
+    category: "Painting",
+    material: "Ink and color on silk (handscroll)",
+    description:
+      "Attributed to Gu Kaizhi, this is the most important early Chinese figure painting in existence — a political allegory on virtue and female conduct that has been in the British Museum since 1903.",
+    story:
+      "The Admonitions Scroll illustrates a 3rd-century text by Zhang Hua advising court ladies on proper conduct. Attributed to Gu Kaizhi (c. 344–406), the greatest painter of the Eastern Jin, the surviving copy is likely a faithful Tang Dynasty reproduction of his lost original. Its graceful 'spring silkworm spitting silk' brush line — thin, even, and flowing — defined Chinese figure painting for a millennium. The scroll entered the Qing imperial collection and bears seals of emperors including Qianlong. In 1900, during the Boxer Rebellion, British officer Captain Clarence Johnson acquired it (circumstances disputed). It entered the British Museum in 1903 and has remained there ever since, making it one of the most debated objects in the Chinese repatriation conversation.",
+    significance:
+      "The oldest surviving Chinese figure painting and a central object in the global debate over museum repatriation — permanently searched by art historians, China scholars, and cultural heritage advocates.",
+    dimensions: "24.8 × 348.2 cm",
+    image: "https://images.unsplash.com/photo-1580130379624-3a069adbffc5?w=800&q=80",
+    funFacts: [
+      "The painting's 'spring silkworm' brush line influenced Chinese figure painting for 1,000 years",
+      "Acquired by a British officer during the Boxer Rebellion — circumstances remain controversial",
+      "Emperor Qianlong added seals and inscriptions, believing it to be Gu Kaizhi's original",
+      "The British Museum and Palace Museum in Beijing each claim the most important version",
+    ],
+    relatedSlugs: ["along-the-river-during-qingming-festival", "dwelling-in-fuchun-mountains"],
+    nameZh: "女史箴图",
+    wikidataId: "Q2609118",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Admonitions_Scroll",
+    topicSlugs: ["imperial-power-and-court-life", "treasures-lost-and-returned", "lost-masterpieces-of-chinese-painting"],
+    externalCollections: [
+      {
+        museum: "The British Museum",
+        country: "UK",
+        collectionUrl: "https://www.britishmuseum.org/collection/object/A_1903-0408-0-1",
+        isPrimaryHolder: true,
+      },
+      {
+        museum: "The Palace Museum (Forbidden City)",
+        country: "China",
+        collectionUrl: "https://en.dpm.org.cn",
+        isPrimaryHolder: false,
+        note: "Holds a Song Dynasty copy",
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Admonitions Scroll",
+        url: "https://en.wikipedia.org/wiki/Admonitions_Scroll",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "nymph-of-luo-river",
+    name: "Nymph of the Luo River (Luo Shen Fu Tu)",
+    dynasty: "Eastern Jin Dynasty (Song copies)",
+    period: "Original c. 380 AD; surviving copies 11th–12th century",
+    museumSlug: "the-palace-museum",
+    museumName: "The Palace Museum (Forbidden City)",
+    category: "Painting",
+    material: "Ink and color on silk (handscroll)",
+    description:
+      "A narrative scroll depicting the tragic love between the poet Cao Zhi and the goddess of the Luo River — one of the most romantic stories in Chinese literature and one of the most copied paintings in history.",
+    story:
+      "Based on the prose poem 'Rhapsody on the Nymph of the Luo River' by Cao Zhi (192–232 AD), this scroll tells a story of impossible love: the prince encounters a divine beauty by the river, they are drawn together, but she must return to the spirit world. The original painting is attributed to Gu Kaizhi; multiple Song Dynasty copies survive (in the Palace Museum, the Freer Gallery, and the Liaoning Provincial Museum). The Beijing Palace Museum version is considered finest — its continuous narrative unrolls across the silk like a film storyboard, with Cao Zhi appearing multiple times as the story progresses. The painting became the template for all subsequent Chinese narrative handscroll painting and continues to inspire modern adaptations in anime, games, and dance performances.",
+    significance:
+      "The foundation work of Chinese narrative painting — a love story that has been continuously reimagined for 1,800 years, from Song Dynasty silk to 2024 viral dance performances.",
+    dimensions: "27.1 × 572.8 cm (Palace Museum version)",
+    image: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=800&q=80",
+    funFacts: [
+      "The poet Cao Zhi wrote the original rhapsody after being denied the throne by his brother",
+      "Some scholars believe the 'nymph' was actually Cao Zhi's sister-in-law — a forbidden love allegory",
+      "At least 4 major Song Dynasty copies survive — the painting was endlessly reproduced",
+      "A 2021 Chinese dance performance 'Luo Shen Shui Fu' based on this painting went viral with 2+ billion views",
+    ],
+    relatedSlugs: ["along-the-river-during-qingming-festival", "admonitions-scroll"],
+    nameZh: "洛神赋图",
+    wikidataId: "Q7298523",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Nymph_of_the_Luo_River_(painting)",
+    topicSlugs: ["song-city-life-and-painting", "forbidden-city-imperial-collection", "lost-masterpieces-of-chinese-painting"],
+    externalCollections: [
+      {
+        museum: "The Palace Museum (Forbidden City)",
+        country: "China",
+        collectionUrl: "https://en.dpm.org.cn",
+        isPrimaryHolder: true,
+      },
+      {
+        museum: "Freer Gallery of Art (Smithsonian)",
+        country: "USA",
+        collectionUrl: "https://asia.si.edu",
+        isPrimaryHolder: false,
+        note: "Holds a Song Dynasty copy",
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Nymph of the Luo River (painting)",
+        url: "https://en.wikipedia.org/wiki/Nymph_of_the_Luo_River_(painting)",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "famen-temple-gilt-silver-tea-set",
+    name: "Famen Temple Gilt Silver Tea Set",
+    dynasty: "Tang Dynasty",
+    period: "c. 869 AD (Xiantong era)",
+    museumSlug: "famen-temple-museum",
+    museumName: "Famen Temple Museum",
+    category: "Gold",
+    material: "Gilt silver with chased and repoussé decoration",
+    description:
+      "The world's oldest and most complete surviving tea set — a gilt silver service including grinder, sieve, container, salt cellar, and bowls — sealed in the Famen Temple crypt in 874 AD as an offering to the Buddha's finger bone relic.",
+    story:
+      "In 1987, after a rainstorm collapsed part of the Famen Temple pagoda near Xi'an, archaeologists discovered a sealed underground crypt containing treasures donated by Tang emperors to the temple's most sacred relic: a finger bone of the Buddha. Among over 2,000 objects were four sets of Buddhist finger bone relics, hundreds of silk textiles, celadon secret-color (mise) porcelain wares, gold and silver vessels, and this extraordinary tea service — a complete set for grinding, sieving, measuring, and drinking tea according to the Lu Yu method described in the Classic of Tea (Cha Jing, 760 AD). The set proves that by the late Tang, tea culture had reached imperial-level sophistication, with dedicated luxury equipment rivaling modern fine tableware.",
+    significance:
+      "The single most important archaeological discovery for the history of tea — proving Tang Dynasty imperial tea culture's extraordinary sophistication and directly connecting to today's global tea trend.",
+    dimensions: "Tea grinder: 28.3 cm length; storage jar: 24.7 cm height",
+    image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800&q=80",
+    funFacts: [
+      "Sealed underground in 874 AD as a Buddhist offering — undisturbed for 1,113 years",
+      "Contains the world's oldest known tea grinder (chamo) and sieve",
+      "The crypt also held 'secret-color' (mise) celadon — a legendary porcelain type thought to be mythical until this discovery",
+      "The finger bone of the Buddha is now China's most sacred Buddhist relic",
+    ],
+    relatedSlugs: ["beast-head-agate-cup", "tang-sancai-camel"],
+    nameZh: "法门寺鎏金银茶具",
+    wikidataId: "Q848644",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Famen_Temple",
+    topicSlugs: ["tang-silk-road-treasures"],
+    externalCollections: [
+      {
+        museum: "Famen Temple Museum",
+        country: "China",
+        collectionUrl: "http://www.famensi.com",
+        isPrimaryHolder: true,
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Famen Temple",
+        url: "https://en.wikipedia.org/wiki/Famen_Temple",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
 ];
 
 export const categories = [

@@ -472,6 +472,37 @@ export const topics: Topic[] = [
       },
     ],
   },
+  {
+    slug: "lost-masterpieces-of-chinese-painting",
+    title: "Lost Masterpieces of Chinese Painting",
+    subtitle: "Burned Scrolls, Imperial Copies, and Divided Collections",
+    category: "theme",
+    summary:
+      "China's most famous paintings often survive as copies, fragments, or politically charged treasures abroad — from the Admonitions Scroll in London to the divided halves of Dwelling in the Fuchun Mountains.",
+    longDescription:
+      "Chinese painting history is also a history of survival. Silk rots, paper burns, dynasties collapse, collectors add seals, and masterpieces are copied so many times that the copy becomes the historical witness. The Admonitions Scroll survives not as Gu Kaizhi's original but as an early copy now in the British Museum; Nymph of the Luo River is known through multiple Song Dynasty versions; Dwelling in the Fuchun Mountains was burned in 1650 and split between Hangzhou and Taipei. These works are high-value search targets because they combine art history, palace collecting, repatriation debates, and dramatic backstories. They also explain why Chinese painting prizes transmission, inscription, and connoisseurship as much as the image itself.",
+    heroImage: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=800&q=80",
+    artifactSlugs: [
+      "dwelling-in-fuchun-mountains",
+      "admonitions-scroll",
+      "nymph-of-luo-river",
+      "along-the-river-during-qingming-festival",
+    ],
+    relatedWorkSlugs: ["story-of-yanxi-palace", "genshin-impact-liyue"],
+    sources: [
+      {
+        label: "Wikipedia — Chinese painting",
+        url: "https://en.wikipedia.org/wiki/Chinese_painting",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "Smarthistory — Dwelling in the Fuchun Mountains",
+        url: "https://smarthistory.org/huang-gongwang-dwelling-in-the-fuchun-mountains/",
+        type: "academic",
+      },
+    ],
+  },
 ];
 
 export const topicCategories: { value: TopicCategory | "all"; label: string }[] = [
