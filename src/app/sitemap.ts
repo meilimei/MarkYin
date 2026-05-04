@@ -47,6 +47,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: absoluteUrl("/field-guides"),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
       url: absoluteUrl("/black-myth-real-museum-guide"),
       lastModified: now,
       changeFrequency: "monthly",

@@ -236,10 +236,10 @@ export default function HomePage() {
               </h3>
             </div>
             <Link
-              href="/inspirations"
+              href="/field-guides"
               className="hidden sm:inline-flex items-center gap-1 text-sm font-medium text-primary-600 hover:text-primary-700"
             >
-              All inspirations <ArrowRight className="h-4 w-4" />
+              All field guides <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">

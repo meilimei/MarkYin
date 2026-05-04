@@ -60,7 +60,12 @@ export const popCultureWorks: PopCultureWork[] = [
           "The haunting gold-mask silhouette of Sanxingdui is a recurring visual motif in the game's ritual and shrine environments.",
       },
     ],
-    topicSlugs: ["sanxingdui-mysteries", "bronze-dings-through-the-ages"],
+    topicSlugs: [
+      "sanxingdui-mysteries",
+      "bronze-dings-through-the-ages",
+      "mythic-animals-and-cosmic-order",
+      "warriors-weapons-and-empire",
+    ],
     sources: [
       {
         label: "Official Black Myth: Wukong site",
@@ -117,6 +122,8 @@ export const popCultureWorks: PopCultureWork[] = [
       "tang-silk-road-treasures",
       "blue-and-white-porcelain",
       "bronze-dings-through-the-ages",
+      "song-city-life-and-painting",
+      "mythic-animals-and-cosmic-order",
     ],
     sources: [
       {
@@ -161,7 +168,13 @@ export const popCultureWorks: PopCultureWork[] = [
           "Blue-and-white porcelain appears as tableware, decor, and gift items throughout the series, consistent with the Qing imperial passion for Yuan and Ming porcelain.",
       },
     ],
-    topicSlugs: ["jade-and-immortality", "blue-and-white-porcelain"],
+    topicSlugs: [
+      "jade-and-immortality",
+      "blue-and-white-porcelain",
+      "imperial-power-and-court-life",
+      "music-ritual-and-performance",
+      "song-city-life-and-painting",
+    ],
     sources: [
       {
         label: "Wikipedia — Empresses in the Palace",
@@ -197,7 +210,12 @@ export const popCultureWorks: PopCultureWork[] = [
           "The mythological 'world tree' imagery in the film's cosmic scenes resonates with the Sanxingdui Sacred Bronze Tree — both drawing from an ancient pan-Chinese cosmology of a tree connecting heaven and earth.",
       },
     ],
-    topicSlugs: ["sanxingdui-mysteries", "bronze-dings-through-the-ages"],
+    topicSlugs: [
+      "sanxingdui-mysteries",
+      "bronze-dings-through-the-ages",
+      "mythic-animals-and-cosmic-order",
+      "warriors-weapons-and-empire",
+    ],
     sources: [
       {
         label: "Wikipedia — Ne Zha 2",
@@ -233,11 +251,230 @@ export const popCultureWorks: PopCultureWork[] = [
           "The inscribed ritual vessels passed between noble houses in the film mirror the real function of inscribed bronze vessels like the Da Ke Ding in Zhou Dynasty political life.",
       },
     ],
-    topicSlugs: ["bronze-dings-through-the-ages"],
+    topicSlugs: [
+      "bronze-dings-through-the-ages",
+      "imperial-power-and-court-life",
+      "warriors-weapons-and-empire",
+    ],
     sources: [
       {
         label: "Wikipedia — Creation of the Gods I",
         url: "https://en.wikipedia.org/wiki/Creation_of_the_Gods_I:_Kingdom_of_Storms",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "mulan-disney",
+    title: "Mulan",
+    titleZh: "花木兰",
+    medium: "film",
+    year: 1998,
+    studio: "Walt Disney Feature Animation",
+    region: "United States / China",
+    summary:
+      "Disney's Mulan remains one of the most globally recognized gateways into Chinese legend, turning the Ballad of Mulan into a cross-cultural story of family, disguise, warfare, and imperial service.",
+    culturalContext:
+      "Mulan's world is visually compressed from many periods of Chinese history rather than reconstructed from one dynasty. The film borrows imperial court ceremony, massed military formations, ancestral tablets, cavalry imagery, and sword symbolism to create a legible China for global audiences.\n\nThat compression makes it especially useful as a museum gateway. The real object record separates what the film blends together: Qin tomb armies for mass military spectacle, Warring States swords for elite weapon culture, Tang luxury goods for cosmopolitan court style, and Song painting for the idea of Chinese cities as dense visual worlds.",
+    heroImage:
+      "https://images.unsplash.com/photo-1528181304800-259b08848526?w=1200&q=80",
+    artifactRefs: [
+      {
+        artifactSlug: "terracotta-warriors",
+        connection:
+          "The film's most memorable military images — ranked soldiers, imperial command, mass mobilization — echo the visual power of the Terracotta Army, the ultimate image of Chinese soldiers turned into state spectacle.",
+      },
+      {
+        artifactSlug: "sword-of-goujian",
+        connection:
+          "Mulan's sword is a moral object as much as a weapon. The Sword of Goujian shows how Chinese blades could function as royal identity, technical marvel, and legendary symbol at once.",
+      },
+      {
+        artifactSlug: "beast-head-agate-cup",
+        connection:
+          "The film's courtly banquet and gift-giving vocabulary fits the long history of Chinese luxury objects shaped by Silk Road exchange, represented here by the Tang beast-head agate cup.",
+      },
+    ],
+    topicSlugs: [
+      "warriors-weapons-and-empire",
+      "tang-silk-road-treasures",
+      "imperial-power-and-court-life",
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Mulan (1998 film)",
+        url: "https://en.wikipedia.org/wiki/Mulan_(1998_film)",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "Wikipedia — Hua Mulan",
+        url: "https://en.wikipedia.org/wiki/Hua_Mulan",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "the-untamed",
+    title: "The Untamed",
+    titleZh: "陈情令",
+    medium: "tv",
+    year: 2019,
+    studio: "Tencent Penguin Pictures / New Style Media",
+    region: "China",
+    summary:
+      "The Untamed turned xianxia cultivation drama into a global fandom phenomenon, making swords, flutes, ritual objects, sect emblems, and mountain compounds instantly recognizable to viewers far beyond China.",
+    culturalContext:
+      "Like most xianxia, The Untamed does not recreate a single historical period. It uses a composite visual language built from real Chinese material culture: ritual music, jade tokens, sword prestige, clan halls, funeral rites, painted screens, and mountain hermitage imagery.\n\nThe result is not archaeology, but it is not arbitrary fantasy either. The series works because its props and settings carry recognizable historical weight. Bronze bells help explain why music can be ritual power; jade explains why tokens and pendants matter; ancient swords explain why a blade can stand for lineage and moral identity.",
+    heroImage:
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&q=80",
+    artifactRefs: [
+      {
+        artifactSlug: "sword-of-goujian",
+        connection:
+          "The show's named swords inherit the Chinese idea of the blade as biography. The Sword of Goujian is the clearest surviving object that joins technical perfection, royal identity, and legend.",
+      },
+      {
+        artifactSlug: "bianzhong-marquis-yi",
+        connection:
+          "The Untamed's use of music as spiritual technology fits a much older Chinese belief that tuned bronze sound could order bodies, courts, and the cosmos.",
+      },
+      {
+        artifactSlug: "jade-burial-suit",
+        connection:
+          "Jade tokens, pendants, and protective objects in cultivation fiction descend from the same belief system that made Han elites wrap their dead in jade.",
+      },
+      {
+        artifactSlug: "along-the-river-during-qingming-festival",
+        connection:
+          "The show's market towns and bridges use a familiar Chinese pictorial grammar of crowded streets, shops, and river crossings that reaches back to Song urban scrolls.",
+      },
+    ],
+    topicSlugs: [
+      "warriors-weapons-and-empire",
+      "music-ritual-and-performance",
+      "jade-and-immortality",
+      "song-city-life-and-painting",
+    ],
+    sources: [
+      {
+        label: "Wikipedia — The Untamed",
+        url: "https://en.wikipedia.org/wiki/The_Untamed_(TV_series)",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "Wikipedia — Xianxia",
+        url: "https://en.wikipedia.org/wiki/Xianxia",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "total-war-three-kingdoms",
+    title: "Total War: Three Kingdoms",
+    titleZh: "全面战争：三国",
+    medium: "game",
+    year: 2019,
+    studio: "Creative Assembly / Sega",
+    region: "United Kingdom / China",
+    summary:
+      "Total War: Three Kingdoms introduced millions of strategy players to Chinese historical warfare, court intrigue, faction legitimacy, and the Romance of the Three Kingdoms heroic tradition.",
+    culturalContext:
+      "Although set after the Han dynasty, the game depends on a deeper visual memory of ancient Chinese statecraft: bronze legitimacy, weapon prestige, massed formations, court ritual, and the long afterlife of Warring States and Qin military imagery.\n\nThe archaeological record helps separate the game's historical layers. The Terracotta Army shows the disciplined visual grammar of imperial soldiers; the Sword of Goujian shows elite weapon culture before the Han; inscribed bronzes show how political authority was recorded and performed long before the Three Kingdoms period itself.",
+    heroImage:
+      "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=1200&q=80",
+    artifactRefs: [
+      {
+        artifactSlug: "terracotta-warriors",
+        connection:
+          "The game's ranked armies and battlefield formations draw on the same visual shock as the Qin Terracotta Army: state power multiplied into thousands of bodies.",
+      },
+      {
+        artifactSlug: "sword-of-goujian",
+        connection:
+          "Hero weapons in Three Kingdoms storytelling inherit the prestige of earlier named blades like the Sword of Goujian, where metallurgy and legend fuse.",
+      },
+      {
+        artifactSlug: "da-ke-ding",
+        connection:
+          "Faction legitimacy in the game depends on titles, grants, and ritual authority — exactly the political world documented in Western Zhou bronze inscriptions like the Da Ke Ding.",
+      },
+      {
+        artifactSlug: "bianzhong-marquis-yi",
+        connection:
+          "Court ceremony, music, and ritual display form the background of elite power; the Marquis Yi bells show the depth of that ceremonial technology.",
+      },
+    ],
+    topicSlugs: [
+      "warriors-weapons-and-empire",
+      "imperial-power-and-court-life",
+      "music-ritual-and-performance",
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Total War: Three Kingdoms",
+        url: "https://en.wikipedia.org/wiki/Total_War:_Three_Kingdoms",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "Wikipedia — Romance of the Three Kingdoms",
+        url: "https://en.wikipedia.org/wiki/Romance_of_the_Three_Kingdoms",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "kung-fu-panda",
+    title: "Kung Fu Panda",
+    titleZh: "功夫熊猫",
+    medium: "film",
+    year: 2008,
+    studio: "DreamWorks Animation",
+    region: "United States / China",
+    summary:
+      "Kung Fu Panda transformed Chinese martial-arts imagery, animal symbolism, temple architecture, food culture, and scroll mythology into one of the world's most recognizable animated franchises.",
+    culturalContext:
+      "The franchise is playful, but its visual language is built from real Chinese motifs: animal archetypes, sacred scrolls, mountain monasteries, bronze ritual weight, dragon symbolism, and the idea that objects can transmit lineage.\n\nThat makes it a surprisingly effective bridge into museum material. The Dragon Warrior title is not just a joke about animals; it sits inside a long tradition where dragons, beasts, and hybrid forms encode authority. Bronze masks, sacred trees, ritual cauldrons, and animal-shaped luxury objects all explain why the film's animals feel mythic rather than merely cute.",
+    heroImage:
+      "https://images.unsplash.com/photo-1550418290-a8d86ad674a6?w=1200&q=80",
+    artifactRefs: [
+      {
+        artifactSlug: "sacred-bronze-tree",
+        connection:
+          "The franchise's sacred mountain and cosmic lineage imagery resonates with the Sanxingdui Bronze Tree, one of China's most powerful surviving images of a world axis.",
+      },
+      {
+        artifactSlug: "gold-mask-sanxingdui",
+        connection:
+          "The stylized faces and supernatural animal energy of the films fit the same deep tradition of mask, spirit, and ritual presence visible at Sanxingdui.",
+      },
+      {
+        artifactSlug: "simuwu-ding",
+        connection:
+          "The heavy bronze vessels and temple interiors in the franchise draw from the visual vocabulary of Shang-Zhou ritual bronzes like the Simuwu Ding.",
+      },
+      {
+        artifactSlug: "beast-head-agate-cup",
+        connection:
+          "Animal-shaped luxury objects such as the Tang beast-head agate cup show how Chinese art repeatedly transformed beasts into vessels of status and story.",
+      },
+    ],
+    topicSlugs: [
+      "mythic-animals-and-cosmic-order",
+      "sanxingdui-mysteries",
+      "bronze-dings-through-the-ages",
+      "tang-silk-road-treasures",
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Kung Fu Panda",
+        url: "https://en.wikipedia.org/wiki/Kung_Fu_Panda",
         type: "wiki",
         license: "CC-BY-SA 3.0",
       },

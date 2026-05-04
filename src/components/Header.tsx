@@ -6,6 +6,7 @@ import { Menu, X, Globe } from "lucide-react";
 import SearchBox from "@/components/SearchBox";
 
 const navigation = [
+  { name: "Field Guides", href: "/field-guides" },
   { name: "Inspirations", href: "/inspirations" },
   { name: "Themes", href: "/topics" },
   { name: "Artifacts", href: "/artifacts" },

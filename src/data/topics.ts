@@ -136,6 +136,192 @@ export const topics: Topic[] = [
       },
     ],
   },
+  {
+    slug: "imperial-power-and-court-life",
+    title: "Imperial Power and Court Life",
+    subtitle: "How objects made authority visible inside the palace",
+    category: "theme",
+    summary:
+      "From bronze cauldrons and jade suits to porcelain vases and court paintings, imperial China turned objects into a language of rank, legitimacy, and ritual performance.",
+    longDescription:
+      "Chinese imperial power was never abstract. It had weight, color, material, and placement. A ding on an ancestral altar declared the ruler's legitimacy; a jade burial suit promised that elite bodies could be preserved beyond death; a blue-and-white porcelain vase signaled access to imperial kilns; a monumental handscroll turned the capital itself into a possession of the throne.\n\nCourt life was governed by this material grammar. Who could use yellow, who could own a dragon motif, who could present jade, who could stand near the ancestral vessels — every rule transformed an object into politics.\n\nThis theme gathers objects that made power visible, showing how China's courts used art not as decoration but as a working technology of government.",
+    heroImage:
+      "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&q=80",
+    artifactSlugs: [
+      "simuwu-ding",
+      "da-ke-ding",
+      "jade-burial-suit",
+      "blue-white-porcelain-plum-vase",
+      "along-the-river-during-qingming-festival",
+    ],
+    relatedWorkSlugs: [
+      "empresses-in-the-palace",
+      "creation-of-the-gods",
+      "ne-zha-2",
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Chinese ritual bronzes",
+        url: "https://en.wikipedia.org/wiki/Chinese_ritual_bronzes",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "Wikipedia — Chinese imperial art",
+        url: "https://en.wikipedia.org/wiki/Chinese_art",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "warriors-weapons-and-empire",
+    title: "Warriors, Weapons, and Empire",
+    subtitle: "The material culture of conquest, defense, and military memory",
+    category: "theme",
+    summary:
+      "Chinese military heritage is not only swords and soldiers. It includes bronze technology, mass production, tomb armies, court ritual, and the stories later dynasties told about heroic violence.",
+    longDescription:
+      "The Sword of Goujian, the Terracotta Army, and the bronze bells of Marquis Yi all belong to the same world: the age when competing states turned metallurgy, logistics, and ritual into military power. A sword was not merely a weapon; it was a claim of royal identity. A tomb army was not merely funerary decoration; it was a promise that imperial command continued after death.\n\nLater Chinese literature and popular culture repeatedly return to this period because it made power tangible. The polished blade, the ranked formation, the bronze inscription, the ceremonial bell — each object teaches us how early empires imagined discipline and destiny.\n\nThis theme follows the objects that turned warfare into memory.",
+    heroImage:
+      "https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&q=80",
+    artifactSlugs: [
+      "sword-of-goujian",
+      "terracotta-warriors",
+      "bianzhong-marquis-yi",
+      "da-ke-ding",
+      "simuwu-ding",
+    ],
+    relatedWorkSlugs: [
+      "black-myth-wukong",
+      "creation-of-the-gods",
+      "ne-zha-2",
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Warring States period",
+        url: "https://en.wikipedia.org/wiki/Warring_States_period",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "Wikipedia — Terracotta Army",
+        url: "https://en.wikipedia.org/wiki/Terracotta_Army",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "music-ritual-and-performance",
+    title: "Music, Ritual, and Performance",
+    subtitle: "Sound, ceremony, and spectacle from Bronze Age courts to Tang banquets",
+    category: "theme",
+    summary:
+      "Ancient Chinese performance culture linked music, ritual, drinking, procession, and court display into a single sensory world preserved in bells, cups, paintings, and tomb goods.",
+    longDescription:
+      "In early China, music was governance. Bronze bells tuned to precise pitches were buried with rulers because sound ordered the cosmos and the court. Banquet vessels carried ritual alcohol not simply for pleasure but for sacrifice, diplomacy, and rank. Later paintings of markets and festivals show performance spreading beyond the court into urban life.\n\nThe artifacts in this theme remind us that Chinese heritage was never silent. Bells, cups, processions, poems, and painted crowds all belonged to a shared culture of performance. To understand the object is to imagine the sound and movement around it.\n\nThis theme follows the ceremonial life of Chinese art from tomb orchestra to palace banquet to public festival.",
+    heroImage:
+      "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=1200&q=80",
+    artifactSlugs: [
+      "bianzhong-marquis-yi",
+      "beast-head-agate-cup",
+      "along-the-river-during-qingming-festival",
+      "blue-white-porcelain-plum-vase",
+    ],
+    relatedWorkSlugs: [
+      "empresses-in-the-palace",
+      "genshin-impact-liyue",
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Bianzhong",
+        url: "https://en.wikipedia.org/wiki/Bianzhong",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "Wikipedia — Chinese musicology",
+        url: "https://en.wikipedia.org/wiki/Music_of_China",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "song-city-life-and-painting",
+    title: "Song City Life and Painting",
+    subtitle: "Markets, bridges, scrolls, and the invention of urban China",
+    category: "dynasty",
+    summary:
+      "The Song dynasty made everyday life worthy of monumental art. Its scrolls preserve streets, bridges, shops, boats, workers, and festival crowds with astonishing documentary density.",
+    longDescription:
+      "Before the Song dynasty, court art usually turned toward rulers, ritual, mountains, and gods. Song painters widened the field of vision. They made the city itself an artistic subject: bridges bending under traffic, boats lining the river, peddlers selling small goods, restaurants, temples, and ordinary people moving through a dense urban world.\n\nAlong the River During the Qingming Festival is the supreme example of that transformation. It is not only a masterpiece of painting; it is a map of commerce, engineering, festival life, and social hierarchy. Later dynasties copied it because it offered an image of civilization as movement.\n\nThis theme uses the surviving objects to explore how Chinese art learned to look at the street.",
+    heroImage:
+      "https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=1200&q=80",
+    artifactSlugs: [
+      "along-the-river-during-qingming-festival",
+      "blue-white-porcelain-plum-vase",
+      "beast-head-agate-cup",
+    ],
+    relatedWorkSlugs: [
+      "empresses-in-the-palace",
+      "genshin-impact-liyue",
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Along the River During the Qingming Festival",
+        url: "https://en.wikipedia.org/wiki/Along_the_River_During_the_Qingming_Festival",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "Wikipedia — Song dynasty",
+        url: "https://en.wikipedia.org/wiki/Song_dynasty",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "mythic-animals-and-cosmic-order",
+    title: "Mythic Animals and Cosmic Order",
+    subtitle: "Dragons, beasts, trees, masks, and the invisible structure of the universe",
+    category: "theme",
+    summary:
+      "Chinese art repeatedly turns animals and hybrid beings into maps of the cosmos — from Sanxingdui birds and bronze masks to Shang taotie, jade beasts, and porcelain dragons.",
+    longDescription:
+      "The animal in Chinese art is rarely just an animal. Birds perch on cosmic trees; dragons mark imperial authority; taotie masks guard ritual vessels; beasts become handles, cups, guardians, and signs of worlds beyond the human. These forms survive because they compress cosmology into shape.\n\nSanxingdui makes this logic visible at its most mysterious. Its masks, trees, and hybrid beings do not match later Chinese iconography, yet they share the same premise: the unseen world can be approached through symbolic animals and supernatural bodies. Shang bronzes, Tang agate cups, and Yuan porcelain all carry that logic forward.\n\nThis theme gathers artifacts where animal imagery becomes a way of thinking about power, protection, and the structure of heaven and earth.",
+    heroImage:
+      "https://images.unsplash.com/photo-1569587112025-0d460e81a126?w=1200&q=80",
+    artifactSlugs: [
+      "sacred-bronze-tree",
+      "gold-mask-sanxingdui",
+      "bronze-standing-figure-sanxingdui",
+      "simuwu-ding",
+      "beast-head-agate-cup",
+      "blue-white-porcelain-plum-vase",
+    ],
+    relatedWorkSlugs: [
+      "black-myth-wukong",
+      "ne-zha-2",
+      "genshin-impact-liyue",
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Taotie",
+        url: "https://en.wikipedia.org/wiki/Taotie",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "Wikipedia — Chinese dragon",
+        url: "https://en.wikipedia.org/wiki/Chinese_dragon",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
 ];
 
 export const topicCategories: { value: TopicCategory | "all"; label: string }[] = [

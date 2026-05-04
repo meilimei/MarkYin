@@ -35,6 +35,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2.5">
               {[
+                { name: "Field Guides", href: "/field-guides" },
                 { name: "Inspirations", href: "/inspirations" },
                 { name: "Themes", href: "/topics" },
                 { name: "All Artifacts", href: "/artifacts" },
@@ -63,11 +64,15 @@ export default function Footer() {
               {[
                 {
                   name: "Black Myth: Wukong",
-                  href: "/inspirations/black-myth-wukong",
+                  href: "/black-myth-real-museum-guide",
                 },
                 {
                   name: "Genshin Impact: Liyue",
-                  href: "/inspirations/genshin-impact-liyue",
+                  href: "/genshin-liyue-real-museum-guide",
+                },
+                {
+                  name: "Ne Zha 2 Guide",
+                  href: "/ne-zha-2-real-museum-guide",
                 },
                 {
                   name: "Sanxingdui Mysteries",
