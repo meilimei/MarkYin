@@ -668,11 +668,11 @@ export const artifacts: Artifact[] = [
       "The emperor's actual tomb has never been opened",
       "Ancient texts claim the tomb contains rivers of liquid mercury — soil tests confirm elevated mercury levels",
     ],
-    relatedSlugs: ["simuwu-ding", "sword-of-goujian"],
+    relatedSlugs: ["qin-bronze-chariot", "simuwu-ding", "sword-of-goujian"],
     nameZh: "秦始皇陵兵马俑",
     wikidataId: "Q47672",
     wikipediaUrl: "https://en.wikipedia.org/wiki/Terracotta_Army",
-    topicSlugs: [],
+    topicSlugs: ["qin-empire-terracotta-army", "warriors-weapons-and-empire"],
     externalCollections: [
       {
         museum: "Emperor Qinshihuang's Mausoleum Site Museum",
@@ -1544,6 +1544,200 @@ export const artifacts: Artifact[] = [
       },
     ],
   },
+  {
+    slug: "qin-bronze-chariot",
+    name: "Bronze Chariot and Horses of Qin Shi Huang",
+    dynasty: "Qin Dynasty",
+    period: "c. 210 BC",
+    museumSlug: "terracotta-warriors-museum",
+    museumName: "Emperor Qinshihuang's Mausoleum Site Museum",
+    category: "Bronze",
+    material: "Cast bronze with gold and silver fittings",
+    description:
+      "Two half-life-size bronze chariots excavated near Qin Shi Huang's mausoleum — the most complex bronze vehicles ever found in ancient China, assembled from thousands of individually cast parts.",
+    story:
+      "In 1980, archaeologists working 20 meters west of Qin Shi Huang's tomb mound uncovered two collapsed bronze chariots buried in a wooden coffin-like pit. After eight years of restoration, the vehicles emerged as masterpieces of Qin engineering: chariots, horses, drivers, reins, umbrellas, crossbow fittings, and decorative harnesses all cast in bronze and detailed with gold and silver. Chariot No. 1 is an open inspection carriage; Chariot No. 2 is a covered imperial carriage, possibly representing the emperor's soul vehicle for the afterlife. The construction required extraordinary modular casting precision — one carriage contains more than 3,000 separate components, with moving parts such as hinges, axles, and umbrella mechanisms still intelligible after 2,200 years.",
+    significance:
+      "The bronze chariots reveal the First Emperor's afterlife not as a static army but as a complete imperial procession, making them essential companions to the Terracotta Warriors and a high-search Xi'an tourism highlight.",
+    dimensions: "Chariot No. 2: approximately 3.17 m length; horses about 65–67 cm high",
+    image: "https://images.unsplash.com/photo-1528181304800-259b08848526?w=800&q=80",
+    funFacts: [
+      "Each chariot is roughly half life-size but contains thousands of separate cast components",
+      "The reins are made from tiny bronze links that imitate leather straps",
+      "The covered carriage includes a working umbrella-like canopy structure",
+      "They were restored from more than 1,500 broken fragments",
+    ],
+    relatedSlugs: ["terracotta-warriors", "bronze-galloping-horse"],
+    nameZh: "秦始皇陵铜车马",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Terracotta_Army#Bronze_chariots",
+    topicSlugs: ["qin-empire-terracotta-army", "warriors-weapons-and-empire"],
+    externalCollections: [
+      {
+        museum: "Emperor Qinshihuang's Mausoleum Site Museum",
+        country: "China",
+        collectionUrl: "https://www.bmy.com.cn",
+        isPrimaryHolder: true,
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Terracotta Army: Bronze chariots",
+        url: "https://en.wikipedia.org/wiki/Terracotta_Army#Bronze_chariots",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "jinsha-sun-bird-gold-foil",
+    name: "Sun Bird Gold Foil of Jinsha",
+    dynasty: "Ancient Shu (Jinsha culture)",
+    period: "c. 1200–650 BC",
+    museumSlug: "jinsha-site-museum",
+    museumName: "Jinsha Site Museum",
+    category: "Gold",
+    material: "Hammered gold foil",
+    description:
+      "A paper-thin gold ornament from the Jinsha site in Chengdu: four birds fly around a rotating sun, now adopted as the official logo of China Cultural Heritage.",
+    story:
+      "Discovered in 2001 at the Jinsha archaeological site in Chengdu, this circular gold foil weighs only about 20 grams yet carries immense symbolic power. The design shows four birds revolving around a sun with twelve rays — an image usually interpreted as a solar worship emblem of the ancient Shu people. Jinsha succeeded Sanxingdui as a major Bronze Age center in the Chengdu Plain, inheriting its gold-working, jade, ivory, and sacrificial traditions but expressing them in a more compact, refined visual language. In 2005, China's State Administration of Cultural Heritage selected the Sun Bird as the official symbol of Chinese cultural heritage, making it one of the most widely reproduced archaeological images in the country.",
+    significance:
+      "The bridge between Sanxingdui and later Sichuan culture — and a perfect SEO connector for Chengdu travel, Jinsha Museum, ancient Shu civilization, and games set in Sichuan such as Wuchang: Fallen Feathers.",
+    dimensions: "12.5 cm diameter; 0.02 cm thickness",
+    image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&q=80",
+    funFacts: [
+      "It is only about 0.2 mm thick — thinner than a credit card by a wide margin",
+      "The four birds and twelve rays are often linked to calendrical or solar symbolism",
+      "It became the official logo of China Cultural Heritage in 2005",
+      "Jinsha was discovered accidentally during real estate construction in Chengdu",
+    ],
+    relatedSlugs: ["gold-mask-sanxingdui", "sacred-bronze-tree"],
+    nameZh: "金沙太阳神鸟金饰",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Jinsha_site",
+    topicSlugs: ["ancient-shu-sichuan-heritage", "sanxingdui-mysteries", "mythic-animals-and-cosmic-order"],
+    externalCollections: [
+      {
+        museum: "Jinsha Site Museum",
+        country: "China",
+        collectionUrl: "https://www.jinshasitemuseum.com",
+        isPrimaryHolder: true,
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Jinsha site",
+        url: "https://en.wikipedia.org/wiki/Jinsha_site",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "oracle-bones-yinxu",
+    name: "Oracle Bones of Yinxu",
+    dynasty: "Late Shang Dynasty",
+    period: "c. 1250–1046 BC",
+    museumSlug: "yinxu-museum",
+    museumName: "Yinxu Museum",
+    category: "Bone / Writing",
+    material: "Inscribed ox scapulae and turtle plastrons",
+    description:
+      "The earliest substantial corpus of Chinese writing: divination inscriptions carved into bones and turtle shells at the Shang capital of Yinxu, recording royal questions about war, harvest, childbirth, weather, and ancestors.",
+    story:
+      "Oracle bones were first recognized in 1899 when scholar Wang Yirong noticed strange carved marks on 'dragon bones' sold in Beijing pharmacies. The trail led to Anyang, Henan — the last capital of the Shang Dynasty. There, archaeologists uncovered more than 150,000 inscribed bones and shells used in royal divination. Shang kings asked ancestors and high gods about everything from military campaigns and hunting trips to toothaches and eclipses. A diviner drilled hollows into the bone, applied heat until cracks formed, then interpreted the cracks as answers. The inscriptions preserve names of kings, queens, enemies, places, rituals, and calendars, making them the bedrock source for early Chinese history. They also prove that modern Chinese characters descend from an unbroken writing tradition more than 3,000 years old.",
+    significance:
+      "The birth certificate of Chinese writing — essential for understanding Shang Dynasty culture, Creation of the Gods, and the archaeological reality behind mythic Bronze Age China.",
+    dimensions: "Various; many fragments 5–30 cm",
+    image: "https://images.unsplash.com/photo-1455885666463-9b28f591265b?w=800&q=80",
+    funFacts: [
+      "They were sold as medicinal 'dragon bones' before scholars recognized the writing",
+      "Many inscriptions name Lady Fuhao, the Shang queen and military commander",
+      "The script is directly ancestral to modern Chinese characters",
+      "Oracle bones helped prove that the Shang Dynasty was historical, not legendary",
+    ],
+    relatedSlugs: ["simuwu-ding", "fuhao-owl-zun"],
+    nameZh: "殷墟甲骨文",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Oracle_bone",
+    topicSlugs: ["oracle-bones-and-shang-writing", "bronze-dings-through-the-ages"],
+    externalCollections: [
+      {
+        museum: "Yinxu Museum",
+        country: "China",
+        collectionUrl: "https://en.wikipedia.org/wiki/Yinxu",
+        isPrimaryHolder: true,
+      },
+      {
+        museum: "National Museum of China",
+        country: "China",
+        collectionUrl: "https://en.chnmuseum.cn",
+        isPrimaryHolder: false,
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Oracle bone",
+        url: "https://en.wikipedia.org/wiki/Oracle_bone",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "Wikipedia — Yinxu",
+        url: "https://en.wikipedia.org/wiki/Yinxu",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "leshan-giant-buddha",
+    name: "Leshan Giant Buddha",
+    dynasty: "Tang Dynasty",
+    period: "713–803 AD",
+    museumSlug: "leshan-giant-buddha-scenic-area",
+    museumName: "Leshan Giant Buddha Scenic Area",
+    category: "Sculpture",
+    material: "Carved red sandstone cliff",
+    description:
+      "A 71-meter seated Maitreya Buddha carved into a Sichuan cliff at the confluence of three rivers — the largest pre-modern stone Buddha in the world and a UNESCO World Heritage site.",
+    story:
+      "The Leshan Giant Buddha was initiated by the monk Haitong in 713 AD, who hoped that carving a colossal Buddha at the meeting point of the Min, Dadu, and Qingyi rivers would calm dangerous waters that threatened passing boats. Construction continued for 90 years through the Tang Dynasty. The builders removed so much stone from the cliff that river currents reportedly changed, reducing turbulence as intended. The sculpture is not just huge: it includes an ingenious drainage system hidden in the hair curls, ears, chest, and arms, channeling rainwater away from the body and slowing erosion. Today, it anchors one of China's most popular heritage tourism routes and increasingly appears in game and fantasy discussions about Sichuan landscapes.",
+    significance:
+      "A monumental bridge between Buddhist art, Sichuan travel, and game-world environment design — especially relevant to Wuchang: Fallen Feathers and broader interest in Chinese heritage tourism.",
+    dimensions: "71 m height; head 14.7 m high; shoulders 28 m wide",
+    image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&q=80",
+    funFacts: [
+      "Its ears are about 7 meters long — taller than a two-story house",
+      "The hidden drainage system is one reason the sculpture survived for over 1,200 years",
+      "The excavated stone altered the riverbed and may have reduced dangerous currents",
+      "It faces Mount Emei across the river, forming a major Buddhist pilgrimage landscape",
+    ],
+    relatedSlugs: ["dunhuang-flying-apsara", "jinsha-sun-bird-gold-foil"],
+    nameZh: "乐山大佛",
+    wikidataId: "Q19786",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Leshan_Giant_Buddha",
+    topicSlugs: ["ancient-shu-sichuan-heritage"],
+    externalCollections: [
+      {
+        museum: "Leshan Giant Buddha Scenic Area",
+        country: "China",
+        collectionUrl: "https://en.wikipedia.org/wiki/Leshan_Giant_Buddha",
+        isPrimaryHolder: true,
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Leshan Giant Buddha",
+        url: "https://en.wikipedia.org/wiki/Leshan_Giant_Buddha",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "UNESCO — Mount Emei Scenic Area, including Leshan Giant Buddha",
+        url: "https://whc.unesco.org/en/list/779/",
+        type: "academic",
+      },
+    ],
+  },
 ];
 
 export const categories = [
@@ -1559,11 +1753,13 @@ export const categories = [
   "Bronze / Musical Instrument",
   "Lacquer",
   "Silk / Textile",
+  "Bone / Writing",
 ];
 
 export const dynasties = [
   "All",
   "Neolithic (Hongshan Culture)",
+  "Ancient Shu (Jinsha culture)",
   "Late Shang Dynasty",
   "Western Zhou Dynasty",
   "Spring and Autumn Period",

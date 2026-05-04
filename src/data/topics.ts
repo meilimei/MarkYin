@@ -32,8 +32,9 @@ export const topics: Topic[] = [
       "bronze-standing-figure-sanxingdui",
       "gold-mask-sanxingdui",
       "sacred-bronze-tree",
+      "jinsha-sun-bird-gold-foil",
     ],
-    relatedWorkSlugs: ["black-myth-wukong"],
+    relatedWorkSlugs: ["black-myth-wukong", "wuchang-fallen-feathers"],
     sources: [
       {
         label: "Sanxingdui Museum Official",
@@ -59,7 +60,7 @@ export const topics: Topic[] = [
       "When a Zhou Dynasty king asked a messenger how heavy the Nine Tripods of the Zhou were, he was not asking about metallurgy. He was asking whether the kingdom was his to take. To possess the dings was to possess the Mandate of Heaven.\n\nFrom the monumental Simuwu Ding of the late Shang — the heaviest ancient bronze vessel ever discovered — to the inscription-rich Da Ke Ding of the Western Zhou, dings are among the most concentrated vessels of Chinese political, religious, and artistic evolution. Their inscriptions are primary sources for Bronze Age history; their forms trace the shift from ritual awe to refined aristocratic taste.\n\nThis theme walks through the evolution of the ding across a millennium, from the supernatural heft of Shang ritual to the literary elegance of Zhou court life.",
     heroImage:
       "https://images.unsplash.com/photo-1569587112025-0d460e81a126?w=1200&q=80",
-    artifactSlugs: ["simuwu-ding", "da-ke-ding"],
+    artifactSlugs: ["simuwu-ding", "da-ke-ding", "oracle-bones-yinxu"],
     relatedWorkSlugs: ["creation-of-the-gods", "genshin-impact-liyue"],
     sources: [
       {
@@ -500,6 +501,101 @@ export const topics: Topic[] = [
         label: "Smarthistory — Dwelling in the Fuchun Mountains",
         url: "https://smarthistory.org/huang-gongwang-dwelling-in-the-fuchun-mountains/",
         type: "academic",
+      },
+    ],
+  },
+  {
+    slug: "qin-empire-terracotta-army",
+    title: "Qin Empire, Terracotta Army & Xi'an Heritage",
+    subtitle: "The First Emperor's Underground State",
+    category: "dynasty",
+    summary:
+      "The Terracotta Army is only one part of Qin Shi Huang's vast afterlife empire — a ritual-military landscape of clay soldiers, bronze chariots, weapons, acrobats, officials, and an unopened imperial tomb.",
+    longDescription:
+      "For global travelers, the Terracotta Warriors are often the first Chinese archaeological site they search for. But the larger Qin mausoleum is more than a clay army. It is a buried model of empire: infantry units, cavalry, chariots, bronze waterfowl, court officials, entertainers, and two astonishing bronze carriages that suggest the emperor continued to rule, travel, inspect, and command after death. Recent overseas exhibitions of newly excavated Shaanxi material have kept the topic in search trends, especially among museum and travel audiences planning Xi'an itineraries under China's expanded visa-free transit policy. This topic connects the blockbuster image of the warriors to the technical and political world that made them possible.",
+    heroImage: "https://images.unsplash.com/photo-1528181304800-259b08848526?w=800&q=80",
+    artifactSlugs: [
+      "terracotta-warriors",
+      "qin-bronze-chariot",
+      "sword-of-goujian",
+    ],
+    relatedWorkSlugs: ["mulan-disney"],
+    sources: [
+      {
+        label: "Wikipedia — Terracotta Army",
+        url: "https://en.wikipedia.org/wiki/Terracotta_Army",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "Wikipedia — Qin Shi Huang",
+        url: "https://en.wikipedia.org/wiki/Qin_Shi_Huang",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "ancient-shu-sichuan-heritage",
+    title: "Ancient Shu & Sichuan Heritage",
+    subtitle: "Sanxingdui, Jinsha, Leshan, and the Cultural Geography Behind New Chinese Games",
+    category: "region",
+    summary:
+      "Sichuan's heritage is not peripheral to Chinese civilization — Sanxingdui, Jinsha, and Leshan form a 3,000-year arc of bronze ritual, gold sun worship, Buddhist monumentality, and contemporary game-world design.",
+    longDescription:
+      "The Chengdu Plain produced one of the most visually distinctive cultures of Bronze Age East Asia. Sanxingdui's towering bronze figures, gold masks, and sacred trees shattered old assumptions that Chinese civilization flowed only from the Yellow River. Jinsha, discovered in Chengdu in 2001, continued the ancient Shu tradition with gold foil sun-birds, jade, ivory, and sacrificial deposits. Centuries later, Tang Dynasty Buddhism carved the Leshan Giant Buddha into Sichuan's red cliffs, creating a monumental sacred landscape at the meeting of three rivers. In 2026, this regional heritage is newly relevant to global audiences because Chinese games such as Wuchang: Fallen Feathers translate Sichuan's geography, ruins, and supernatural atmosphere into interactive fantasy worlds.",
+    heroImage: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&q=80",
+    artifactSlugs: [
+      "bronze-standing-figure-sanxingdui",
+      "gold-mask-sanxingdui",
+      "sacred-bronze-tree",
+      "jinsha-sun-bird-gold-foil",
+      "leshan-giant-buddha",
+    ],
+    relatedWorkSlugs: ["black-myth-wukong", "wuchang-fallen-feathers"],
+    sources: [
+      {
+        label: "Wikipedia — Sanxingdui",
+        url: "https://en.wikipedia.org/wiki/Sanxingdui",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "Wikipedia — Jinsha site",
+        url: "https://en.wikipedia.org/wiki/Jinsha_site",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "oracle-bones-and-shang-writing",
+    title: "Oracle Bones & Shang Writing",
+    subtitle: "The Oldest Chinese Sentences We Can Still Read",
+    category: "material",
+    summary:
+      "Oracle bones from Yinxu preserve the earliest large body of Chinese writing — royal questions burned into turtle shells and ox bones more than 3,000 years ago.",
+    longDescription:
+      "Before bronze inscriptions, before bamboo books, before paper, Shang kings wrote on bone. Oracle-bone inscriptions are short, practical, and astonishingly intimate: Will it rain? Will the harvest succeed? Will the queen give birth? Should we attack? Will ancestor X protect us? Their rediscovery at Anyang turned the Shang Dynasty from legend into documented history and anchored the continuous development of Chinese characters. This topic is especially useful for readers drawn by Creation of the Gods, because it separates mythic Shang from archaeological Shang: the world of divination, royal lineages, Lady Fuhao, ancestral sacrifice, and bronze ritual that lies beneath later fantasy.",
+    heroImage: "https://images.unsplash.com/photo-1455885666463-9b28f591265b?w=800&q=80",
+    artifactSlugs: [
+      "oracle-bones-yinxu",
+      "simuwu-ding",
+      "fuhao-owl-zun",
+    ],
+    relatedWorkSlugs: ["creation-of-the-gods"],
+    sources: [
+      {
+        label: "Wikipedia — Oracle bone",
+        url: "https://en.wikipedia.org/wiki/Oracle_bone",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "Wikipedia — Yinxu",
+        url: "https://en.wikipedia.org/wiki/Yinxu",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
       },
     ],
   },

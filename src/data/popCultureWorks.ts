@@ -250,11 +250,22 @@ export const popCultureWorks: PopCultureWork[] = [
         connection:
           "The inscribed ritual vessels passed between noble houses in the film mirror the real function of inscribed bronze vessels like the Da Ke Ding in Zhou Dynasty political life.",
       },
+      {
+        artifactSlug: "oracle-bones-yinxu",
+        connection:
+          "The film's oracle-bone imagery and divination scenes draw from the real Yinxu inscriptions that record Shang royal questions about war, harvest, weather, and ancestors.",
+      },
+      {
+        artifactSlug: "fuhao-owl-zun",
+        connection:
+          "Lady Fuhao's verified military and ritual status provides a real archaeological counterpart to the film's powerful Shang court figures.",
+      },
     ],
     topicSlugs: [
       "bronze-dings-through-the-ages",
       "imperial-power-and-court-life",
       "warriors-weapons-and-empire",
+      "oracle-bones-and-shang-writing",
     ],
     sources: [
       {
@@ -625,6 +636,61 @@ export const popCultureWorks: PopCultureWork[] = [
         url: "https://en.wikipedia.org/wiki/CZ12",
         type: "wiki",
         license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "wuchang-fallen-feathers",
+    title: "Wuchang: Fallen Feathers",
+    titleZh: "明末：渊虚之羽",
+    medium: "game",
+    year: 2025,
+    studio: "Leenzee Games",
+    region: "China",
+    summary:
+      "A Chinese soulslike action RPG set in the chaotic final years of the Ming Dynasty, trending again in 2026 through PlayStation Plus and renewed global interest in Chinese-made historical fantasy games.",
+    culturalContext:
+      "Wuchang: Fallen Feathers builds its dark fantasy world from Sichuan geography, Ming-period collapse, regional folk religion, temple ruins, and the archaeological aura of ancient Shu. Its world of corrupted bodies, mountain shrines, bronze-gold ritual imagery, and monumental Buddhist landscapes makes it a natural bridge between game audiences and real Sichuan heritage sites: Sanxingdui, Jinsha, and Leshan. Unlike generic fantasy China, Wuchang is regionally specific — it uses Shu as a cultural geography rather than a vague aesthetic label.\n\nThe game's 2026 resurgence in PlayStation Plus discussions creates a timely SEO path from 'Wuchang game' searches into museum content: Sanxingdui bronze figures, Jinsha gold foil, Leshan Giant Buddha tourism, and Sichuan's deeper archaeological timeline.",
+    heroImage:
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&q=80",
+    artifactRefs: [
+      {
+        artifactSlug: "bronze-standing-figure-sanxingdui",
+        connection:
+          "Wuchang's supernatural Shu atmosphere echoes the ritual stillness and alien monumentality of Sanxingdui bronze figures.",
+      },
+      {
+        artifactSlug: "gold-mask-sanxingdui",
+        connection:
+          "Gold masks and face-covering ritual imagery help explain the game's fascination with transformed identity, corruption, and sacred power.",
+      },
+      {
+        artifactSlug: "jinsha-sun-bird-gold-foil",
+        connection:
+          "The Jinsha Sun Bird connects the game's Sichuan setting to the ancient Shu solar-symbol tradition that followed Sanxingdui.",
+      },
+      {
+        artifactSlug: "leshan-giant-buddha",
+        connection:
+          "The game's Sichuan landscapes and Buddhist ruin atmosphere resonate with the real monumental terrain of Leshan and Mount Emei.",
+      },
+    ],
+    topicSlugs: [
+      "ancient-shu-sichuan-heritage",
+      "sanxingdui-mysteries",
+      "warriors-weapons-and-empire",
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Wuchang: Fallen Feathers",
+        url: "https://en.wikipedia.org/wiki/Wuchang:_Fallen_Feathers",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "PlayStation Blog — May 2026 monthly games",
+        url: "https://blog.playstation.com/2026/04/29/playstation-plus-monthly-games-for-may-ea-sports-fc-26-wuchang-fallen-feathers-nine-sols/",
+        type: "academic",
       },
     ],
   },

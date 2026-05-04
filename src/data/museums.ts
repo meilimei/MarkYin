@@ -405,6 +405,93 @@ export const museums: Museum[] = [
     },
     wikidataId: "Q848644",
   },
+  {
+    slug: "jinsha-site-museum",
+    name: "Jinsha Site Museum",
+    city: "Chengdu",
+    province: "Sichuan",
+    description:
+      "Built directly over the Jinsha archaeological site, this Chengdu museum preserves the Sun Bird gold foil, jade, ivory, and sacrificial remains of the ancient Shu civilization that followed Sanxingdui.",
+    longDescription:
+      "Jinsha was discovered in 2001 during urban construction in Chengdu, revealing a major ancient Shu ritual center active roughly 1200–650 BC. The site yielded gold masks, jade weapons, stone figures, ivory deposits, and the famous Sun Bird gold foil that later became China's official cultural heritage symbol. Together with Sanxingdui, Jinsha proves that the Chengdu Plain had a sophisticated Bronze Age civilization with its own ritual system, artistic language, and solar-bird iconography.",
+    image: "/images/museums/jinsha-site-museum.jpg",
+    imageCredit: {
+      source: "commons",
+      author: "Jinsha Site Museum",
+      license: "CC BY-SA 4.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Jinsha_Site_Museum.jpg",
+    },
+    artifactCount: 6000,
+    highlights: [
+      "Sun Bird Gold Foil",
+      "Gold Mask Fragments",
+      "Jade Ritual Objects",
+    ],
+    visitInfo: {
+      hours: "9:00 AM - 6:00 PM",
+      admission: "70 CNY",
+      website: "https://www.jinshasitemuseum.com",
+    },
+    wikidataId: "Q6202076",
+  },
+  {
+    slug: "yinxu-museum",
+    name: "Yinxu Museum",
+    city: "Anyang",
+    province: "Henan",
+    description:
+      "The museum of the last Shang capital, preserving oracle bones, royal tomb finds, bronze ritual vessels, and the archaeological evidence behind China's earliest readable writing.",
+    longDescription:
+      "Yinxu, near modern Anyang, was the last capital of the Shang Dynasty and one of the foundational sites of Chinese archaeology. Excavations have revealed palace foundations, royal tombs, sacrificial pits, bronze workshops, chariot burials, and more than 150,000 oracle-bone inscriptions. These inscriptions record royal divination and provide the earliest substantial body of Chinese writing. The museum connects the world of Lady Fuhao, Shang bronze ritual, oracle-bone divination, and the historically grounded background behind later mythic works such as Creation of the Gods.",
+    image: "/images/museums/yinxu-museum.jpg",
+    imageCredit: {
+      source: "commons",
+      author: "Yinxu Museum",
+      license: "CC BY-SA 4.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Yinxu_Museum.jpg",
+    },
+    artifactCount: 4000,
+    highlights: [
+      "Oracle Bone Inscriptions",
+      "Fuhao Tomb Finds",
+      "Shang Bronze Ritual Vessels",
+    ],
+    visitInfo: {
+      hours: "8:00 AM - 6:00 PM",
+      admission: "70 CNY",
+      website: "https://en.wikipedia.org/wiki/Yinxu",
+    },
+    wikidataId: "Q505831",
+  },
+  {
+    slug: "leshan-giant-buddha-scenic-area",
+    name: "Leshan Giant Buddha Scenic Area",
+    city: "Leshan",
+    province: "Sichuan",
+    description:
+      "A UNESCO World Heritage landscape centered on the 71-meter Tang Dynasty Leshan Giant Buddha, carved into red sandstone cliffs where three rivers meet.",
+    longDescription:
+      "The Leshan Giant Buddha Scenic Area is one of China's most visited Buddhist heritage destinations. The colossal seated Maitreya was carved between 713 and 803 AD to calm dangerous river currents at the meeting of the Min, Dadu, and Qingyi rivers. The site combines engineering, pilgrimage, cliff sculpture, river travel, and Mount Emei Buddhist culture. Its monumental landscape has renewed relevance for global audiences interested in Chinese fantasy games and Sichuan heritage routes.",
+    image: "/images/museums/leshan-giant-buddha.jpg",
+    imageCredit: {
+      source: "commons",
+      author: "UNESCO / Wikimedia Commons",
+      license: "CC BY-SA 4.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Leshan_Giant_Buddha.jpg",
+    },
+    artifactCount: 1,
+    highlights: [
+      "Leshan Giant Buddha",
+      "Hidden Drainage System",
+      "Mount Emei Buddhist Landscape",
+    ],
+    visitInfo: {
+      hours: "8:00 AM - 6:00 PM",
+      admission: "80 CNY",
+      website: "https://whc.unesco.org/en/list/779/",
+    },
+    wikidataId: "Q19786",
+  },
 ];
 
 export function getMuseumBySlug(slug: string): Museum | undefined {
