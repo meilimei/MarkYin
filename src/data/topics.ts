@@ -413,6 +413,65 @@ export const topics: Topic[] = [
       },
     ],
   },
+  {
+    slug: "chinese-lacquer-art",
+    title: "Chinese Lacquer Art & Intangible Heritage",
+    subtitle: "7,000 Years of the World's Oldest Plastic — From Neolithic Bowls to Li Ziqi's Viral Videos",
+    category: "material",
+    summary:
+      "Chinese lacquerware is the world's oldest continuous craft tradition — 7,000 years of coating, carving, and inlaying tree sap into objects of extraordinary beauty, now trending globally thanks to viral videos and renewed interest in intangible cultural heritage.",
+    longDescription:
+      "Lacquer (qi 漆) is the refined sap of the Toxicodendron vernicifluum tree, native to East Asia. Applied in thin coats that cure to a hard, waterproof, lustrous surface, it has been used in China since at least 5000 BC — predating bronze, porcelain, and silk as a prestige material. The Mawangdui lacquer coffins (168 BC) represent the pinnacle of Han Dynasty lacquer, while Song and Ming carved lacquer (diaoqi) achieved sculptural complexity rivaling jade. In 2024–2026, Chinese influencer Li Ziqi's comeback videos — showing her harvesting lacquer sap, building up dozens of coats by hand, and carving traditional designs — went viral globally on Douyin and YouTube, reigniting worldwide interest. China's intangible cultural heritage (ICH) protection program now lists dozens of lacquer traditions, and young artisans are blending traditional techniques with contemporary design.",
+    heroImage: "https://images.unsplash.com/photo-1569587112025-0d460e81a126?w=800&q=80",
+    artifactSlugs: [
+      "mawangdui-lacquer-coffins",
+      "mawangdui-silk-banner",
+      "changxin-palace-lamp",
+    ],
+    relatedWorkSlugs: ["story-of-yanxi-palace", "black-myth-wukong"],
+    sources: [
+      {
+        label: "Wikipedia — Chinese lacquerware",
+        url: "https://en.wikipedia.org/wiki/Chinese_lacquerware",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "CGTN — China Crafted: Mawangdui lacquer",
+        url: "https://news.cgtn.com/news/2026-01-16/China-Crafted-A-digital-journey-into-ancient-Chinese-artifacts--1JXuFa8i7G8/share_amp.html",
+        type: "academic",
+      },
+    ],
+  },
+  {
+    slug: "treasures-lost-and-returned",
+    title: "Treasures Lost & Returned: China's Repatriation Story",
+    subtitle: "From the Burning of the Old Summer Palace to the 2026 US Repatriation — 160 Years of Recovery",
+    category: "theme",
+    summary:
+      "Over 10 million Chinese cultural relics are held outside China. The ongoing saga of recovery — through diplomacy, auction purchases, donations, and legal claims — is one of the most emotionally charged stories in global cultural heritage.",
+    longDescription:
+      "The systematic loss of Chinese cultural heritage began with the Opium Wars (1839–1860), accelerated during the warlord era and Japanese occupation, and continued through Cold War-era smuggling networks. The 1860 sacking of the Yuanmingyuan (Old Summer Palace) became the defining trauma — its zodiac bronze heads scattered worldwide. Since the 1990s, China has mounted an increasingly sophisticated repatriation campaign: the Poly Group purchased looted bronzes at auction, billionaire Stanley Ho donated zodiac heads, and government-to-government agreements (like the 2009 US-China MOU) have facilitated returns. In early 2026, the US returned 41 cultural relics to China, continuing a pattern of 504 objects returned in 15 batches. The repatriation debate touches on questions of universal museums, colonial legacies, nationalist sentiment, and the ethics of the international art market.",
+    heroImage: "https://images.unsplash.com/photo-1548013146-72479768bada?w=800&q=80",
+    artifactSlugs: [
+      "yuanmingyuan-zodiac-bronze-heads",
+      "nine-dragon-wall-forbidden-city",
+    ],
+    relatedWorkSlugs: ["creation-of-the-gods", "ne-zha-2"],
+    sources: [
+      {
+        label: "Wikipedia — Old Summer Palace",
+        url: "https://en.wikipedia.org/wiki/Old_Summer_Palace",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "SCMP — US returns cultural relics to China (2026)",
+        url: "https://www.scmp.com/news/china/diplomacy/article/3301005/us-hands-over-41-cultural-relics-china-under-deal-return-artefacts",
+        type: "academic",
+      },
+    ],
+  },
 ];
 
 export const topicCategories: { value: TopicCategory | "all"; label: string }[] = [

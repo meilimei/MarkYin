@@ -1149,6 +1149,199 @@ export const artifacts: Artifact[] = [
       },
     ],
   },
+  {
+    slug: "mawangdui-silk-banner",
+    name: "T-Shaped Silk Funeral Banner of Lady Dai",
+    dynasty: "Western Han Dynasty",
+    period: "c. 168 BC",
+    museumSlug: "hunan-provincial-museum",
+    museumName: "Hunan Provincial Museum",
+    category: "Painting",
+    material: "Mineral pigment and ink on silk",
+    description:
+      "A 2,200-year-old painted silk banner from the tomb of Lady Dai (Xin Zhui) at Mawangdui — the finest surviving example of Han Dynasty painting and a cosmological map of heaven, earth, and the underworld.",
+    story:
+      "Draped over the innermost coffin of Lady Dai, this T-shaped silk banner (feiyi 非衣) is a visual guide for the soul's journey after death. Reading from top to bottom, it depicts three realms: the heavenly world (sun, moon, dragons, celestial gates), the earthly realm (Lady Dai herself, attended by servants, receiving ritual offerings), and the underworld (a giant figure standing on intertwined fish, supporting the earth above). The painting is executed with extraordinary finesse — flowing brushwork, vibrant mineral pigments (cinnabar red, azurite blue, malachite green), and a compositional sophistication that rivals anything in Western art for another thousand years. Discovered in 1972 when the Mawangdui tombs were excavated during a Cold War bomb-shelter construction project, the banner's near-perfect preservation shocked archaeologists.",
+    significance:
+      "The most important surviving painting from pre-imperial and early imperial China — a cosmological masterpiece that redefined understanding of Han Dynasty art, religion, and afterlife beliefs.",
+    dimensions: "205 cm length, 92 cm width at top",
+    image: "https://images.unsplash.com/photo-1580130379624-3a069adbffc5?w=800&q=80",
+    funFacts: [
+      "Discovered during a Cold War bomb-shelter excavation in 1972",
+      "Lady Dai's body was so well preserved that her skin was still elastic and blood type could be determined",
+      "The banner's three-realm cosmology matches descriptions in the Chu Ci (Songs of the South)",
+      "Over 1,400 objects were found in Lady Dai's tomb including silk manuscripts, lacquerware, and food",
+    ],
+    relatedSlugs: ["changxin-palace-lamp", "jade-burial-suit"],
+    nameZh: "马王堆一号汉墓T形帛画",
+    wikidataId: "Q6003476",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Mawangdui",
+    topicSlugs: ["jade-and-immortality", "imperial-power-and-court-life"],
+    externalCollections: [
+      {
+        museum: "Hunan Provincial Museum",
+        country: "China",
+        collectionUrl: "https://www.hnmuseum.com",
+        isPrimaryHolder: true,
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Mawangdui",
+        url: "https://en.wikipedia.org/wiki/Mawangdui",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+      {
+        label: "Smarthistory — Tomb of Lady Dai",
+        url: "https://smarthistory.org/tomb-of-lady-dai/",
+        type: "academic",
+      },
+    ],
+  },
+  {
+    slug: "mawangdui-lacquer-coffins",
+    name: "Mawangdui Nested Lacquer Coffins of Lady Dai",
+    dynasty: "Western Han Dynasty",
+    period: "c. 168 BC",
+    museumSlug: "hunan-provincial-museum",
+    museumName: "Hunan Provincial Museum",
+    category: "Sculpture",
+    material: "Wood with polychrome lacquer, silk, and feather appliqué",
+    description:
+      "Four nested coffins — each more lavishly decorated than the last — that preserved Lady Dai's body for over 2,100 years in near-perfect condition, representing the pinnacle of Han Dynasty lacquer craftsmanship.",
+    story:
+      "Lady Dai (Xin Zhui), wife of the Marquis of Dai, died around 163 BC. Her body was placed inside four nested coffins, each sealed with lacquer. The outermost is plain black lacquer; the second features swirling cloud and mythical beast motifs in red and black; the third shows feathered immortals and auspicious animals against black lacquer; the innermost is wrapped in embroidered silk and adorned with feather appliqué. This layered system, combined with charcoal and white clay packing, created an airtight micro-environment that preserved her body so perfectly that when discovered in 1972, her skin was still elastic, joints still movable, and Type A blood was still identifiable. The lacquer technique — building up dozens of thin coats over months — demonstrates industrial-scale craft specialization in the Han Dynasty.",
+    significance:
+      "The world's most famous ancient preservation case and the supreme example of Chinese lacquer art — trending again in 2026 as Li Ziqi's viral lacquerware videos reignite global interest in this 7,000-year-old craft tradition.",
+    dimensions: "Outermost coffin: 256 cm length, 118 cm width",
+    image: "https://images.unsplash.com/photo-1569587112025-0d460e81a126?w=800&q=80",
+    funFacts: [
+      "Lady Dai's last meal (melon seeds) was still identifiable in her stomach after 2,100 years",
+      "The lacquer coffins required hundreds of coats applied over months — each coat needs 24+ hours to cure",
+      "Chinese lacquer tradition is 7,000 years old — older than ceramics or bronze",
+      "Li Ziqi's 2024 lacquerware comeback video got tens of millions of views, reigniting global interest",
+    ],
+    relatedSlugs: ["mawangdui-silk-banner", "changxin-palace-lamp", "jade-burial-suit"],
+    nameZh: "马王堆汉墓漆棺",
+    wikidataId: "Q6003476",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Xin_Zhui",
+    topicSlugs: ["jade-and-immortality", "chinese-lacquer-art"],
+    externalCollections: [
+      {
+        museum: "Hunan Provincial Museum",
+        country: "China",
+        collectionUrl: "https://www.hnmuseum.com",
+        isPrimaryHolder: true,
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Xin Zhui (Lady Dai)",
+        url: "https://en.wikipedia.org/wiki/Xin_Zhui",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "yuanmingyuan-zodiac-bronze-heads",
+    name: "Yuanmingyuan Zodiac Bronze Fountain Heads",
+    dynasty: "Qing Dynasty (Qianlong era)",
+    period: "c. 1760 AD",
+    museumSlug: "national-museum-of-china",
+    museumName: "National Museum of China (various holders)",
+    category: "Bronze",
+    material: "Cast bronze (European-Chinese hybrid technique)",
+    description:
+      "Twelve bronze animal heads from the zodiac fountain of the Old Summer Palace (Yuanmingyuan) — looted during the 1860 Anglo-French sacking and now the world's most famous symbols of Chinese cultural heritage repatriation.",
+    story:
+      "Designed by Jesuit missionary Giuseppe Castiglione for Emperor Qianlong, the Haiyantang (Sea of Calm) fountain featured 12 bronze zodiac animal heads that spouted water in sequence, each marking a two-hour period of the traditional Chinese clock. In 1860, British and French troops burned the Yuanmingyuan during the Second Opium War and looted its treasures. The zodiac heads scattered across private collections worldwide. Over the following 160 years, seven heads have been recovered — through auction purchases (some for tens of millions of dollars), donations by patriotic businessmen (notably the Poly Group and the Macau casino magnate Stanley Ho), and government negotiations. Five heads remain missing. The repatriation saga has become China's most emotionally charged cultural heritage story, referenced in films (Jackie Chan's Chinese Zodiac, 2012), government policy, and school textbooks.",
+    significance:
+      "The single most recognizable symbol of cultural heritage loss and repatriation worldwide — a story that connects the Opium Wars, imperial plunder, auction house ethics, and modern Chinese national identity.",
+    dimensions: "Each head approximately 50 cm height",
+    image: "https://images.unsplash.com/photo-1548013146-72479768bada?w=800&q=80",
+    funFacts: [
+      "7 of 12 heads have been recovered; 5 (dragon, snake, goat, rooster, dog) remain missing",
+      "The rat and rabbit heads sold for €15.7 million each at Christie's in 2009 before being donated back",
+      "Jackie Chan's 2012 film Chinese Zodiac (CZ12) was directly inspired by the zodiac heads saga",
+      "The heads were designed by an Italian Jesuit — a rare East-West collaborative artwork",
+    ],
+    relatedSlugs: ["nine-dragon-wall-forbidden-city", "bronze-galloping-horse"],
+    nameZh: "圆明园十二生肖兽首铜像",
+    wikidataId: "Q2671234",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Old_Summer_Palace_Zodiac",
+    topicSlugs: ["imperial-power-and-court-life", "treasures-lost-and-returned"],
+    externalCollections: [
+      {
+        museum: "Poly Art Museum (Beijing)",
+        country: "China",
+        collectionUrl: "https://www.polypm.com.cn",
+        isPrimaryHolder: true,
+        note: "Holds the ox, tiger, and monkey heads",
+      },
+      {
+        museum: "National Museum of China",
+        country: "China",
+        collectionUrl: "https://en.chnmuseum.cn",
+        isPrimaryHolder: false,
+        note: "Holds the pig head (donated by Stanley Ho, 2003)",
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Old Summer Palace zodiac heads",
+        url: "https://en.wikipedia.org/wiki/Old_Summer_Palace#Zodiac_heads",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
+  {
+    slug: "mawangdui-silk-manuscripts",
+    name: "Mawangdui Silk Manuscripts (Boshu)",
+    dynasty: "Western Han Dynasty",
+    period: "c. 168 BC",
+    museumSlug: "hunan-provincial-museum",
+    museumName: "Hunan Provincial Museum",
+    category: "Painting",
+    material: "Ink on silk",
+    description:
+      "Over 50 texts written on silk — including lost versions of the Dao De Jing, medical treatises, astronomical charts, and military maps — the single most important manuscript discovery in Chinese archaeology.",
+    story:
+      "From Tomb 3 at Mawangdui (burial of Lady Dai's son) came a library written on silk: two previously unknown versions of Laozi's Dao De Jing (with chapters in reverse order from all known editions), detailed medical texts describing acupuncture meridians and herbal formulas, the oldest known Chinese astronomical chart (showing 29 comet forms), military maps of Changsha kingdom territory, and philosophical texts by schools of thought that had been lost for 2,000 years. The Mawangdui manuscripts revolutionized scholarship on early Chinese philosophy, science, and cartography. They proved that the intellectual world of the early Han was far richer and more diverse than the received Confucian canon suggested. The discovery is often compared in significance to the Dead Sea Scrolls.",
+    significance:
+      "China's Dead Sea Scrolls — manuscript discoveries that rewrote the history of Chinese philosophy, medicine, astronomy, and cartography, trending again with CGTN's 2026 'China Crafted' series on Mawangdui.",
+    dimensions: "Various; largest map approximately 96 × 96 cm",
+    image: "https://images.unsplash.com/photo-1580130379624-3a069adbffc5?w=800&q=80",
+    funFacts: [
+      "Contains two versions of the Dao De Jing older than any previously known text",
+      "The astronomical chart shows 29 forms of comets — the world's earliest systematic comet catalog",
+      "Medical texts describe acupuncture meridians centuries before the canonical Huangdi Neijing",
+      "Often called 'China's Dead Sea Scrolls' for their impact on scholarship",
+    ],
+    relatedSlugs: ["mawangdui-silk-banner", "mawangdui-lacquer-coffins"],
+    nameZh: "马王堆帛书",
+    wikidataId: "Q6003476",
+    wikipediaUrl: "https://en.wikipedia.org/wiki/Mawangdui_Silk_Texts",
+    topicSlugs: ["imperial-power-and-court-life"],
+    externalCollections: [
+      {
+        museum: "Hunan Provincial Museum",
+        country: "China",
+        collectionUrl: "https://www.hnmuseum.com",
+        isPrimaryHolder: true,
+      },
+    ],
+    sources: [
+      {
+        label: "Wikipedia — Mawangdui Silk Texts",
+        url: "https://en.wikipedia.org/wiki/Mawangdui_Silk_Texts",
+        type: "wiki",
+        license: "CC-BY-SA 3.0",
+      },
+    ],
+  },
 ];
 
 export const categories = [
@@ -1162,6 +1355,8 @@ export const categories = [
   "Sculpture",
   "Jade & Gemstone",
   "Bronze / Musical Instrument",
+  "Lacquer",
+  "Silk / Textile",
 ];
 
 export const dynasties = [

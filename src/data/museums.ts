@@ -347,6 +347,35 @@ export const museums: Museum[] = [
     },
     wikidataId: "Q6208285",
   },
+  {
+    slug: "hunan-provincial-museum",
+    name: "Hunan Provincial Museum",
+    city: "Changsha",
+    province: "Hunan",
+    description:
+      "Home of the legendary Mawangdui Han Tomb treasures — Lady Dai's perfectly preserved body, the T-shaped silk banner, lacquer coffins, and silk manuscripts that rewrote the history of early China.",
+    longDescription:
+      "Hunan Provincial Museum reopened in 2017 after a major renovation, with the Mawangdui Han Tombs gallery as its crown jewel. The three tombs, excavated in 1972–1974, yielded over 3,000 artifacts from the burial of Lady Dai (Xin Zhui), her husband the Marquis of Dai, and their son. The museum's collection includes the famous T-shaped silk funeral banner, four nested lacquer coffins, over 50 silk manuscripts (including lost versions of the Dao De Jing), musical instruments, food remains, and Lady Dai's astonishingly preserved body. The 2026 CGTN documentary series 'China Crafted' has renewed global interest in the Mawangdui lacquerware and silk collections.",
+    image: "/images/museums/hunan-museum.jpg",
+    imageCredit: {
+      source: "commons",
+      author: "Hunan Museum",
+      license: "CC BY-SA 4.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Hunan_Provincial_Museum.jpg",
+    },
+    artifactCount: 180000,
+    highlights: [
+      "T-Shaped Silk Funeral Banner",
+      "Nested Lacquer Coffins of Lady Dai",
+      "Mawangdui Silk Manuscripts",
+    ],
+    visitInfo: {
+      hours: "9:00 AM - 5:00 PM (Closed Mondays)",
+      admission: "Free",
+      website: "https://www.hnmuseum.com",
+    },
+    wikidataId: "Q3783729",
+  },
 ];
 
 export function getMuseumBySlug(slug: string): Museum | undefined {
