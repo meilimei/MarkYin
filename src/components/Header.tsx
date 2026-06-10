@@ -11,6 +11,8 @@ const navigation = [
   { name: "Themes", href: "/topics" },
   { name: "Artifacts", href: "/artifacts" },
   { name: "Museums", href: "/museums" },
+  { name: "Collections", href: "/collections" },
+  { name: "Compare", href: "/compare" },
   { name: "Abroad", href: "/treasures-abroad" },
   { name: "Dynasties", href: "/dynasties" },
 ];

@@ -13,11 +13,13 @@ import {
   Sparkles,
   Layers,
   Globe,
+  HelpCircle,
 } from "lucide-react";
 import {
   artifacts,
   getArtifactBySlug,
   getRelatedArtifacts,
+  type Artifact,
 } from "@/data/artifacts";
 import {
   getWorksForArtifactSlug,
@@ -30,9 +32,52 @@ import WorkCard from "@/components/WorkCard";
 import TopicCard from "@/components/TopicCard";
 import AdBanner from "@/components/AdBanner";
 import { absoluteUrl } from "@/lib/site";
+import {
+  absoluteImageUrl,
+  buildBreadcrumbJsonLd,
+  buildPublisherJsonLd,
+} from "@/lib/seo";
 
 interface PageProps {
   params: { slug: string };
+}
+
+interface Faq {
+  q: string;
+  a: string;
+}
+
+function buildArtifactFaqs(artifact: Artifact): Faq[] {
+  const primaryCollection =
+    artifact.externalCollections?.find((col) => col.isPrimaryHolder) ??
+    artifact.externalCollections?.[0];
+
+  const whereToSee = primaryCollection
+    ? `${artifact.name} is held by ${primaryCollection.museum} in ${primaryCollection.country}. ${primaryCollection.note ? `${primaryCollection.note} ` : ""}Check the linked collection record or museum website before visiting because display rotations can change.`
+    : `${artifact.name} is associated with ${artifact.museumName}. Check the museum's current exhibition information before planning a visit.`;
+
+  return [
+    {
+      q: `What is ${artifact.name}?`,
+      a: artifact.description,
+    },
+    {
+      q: `When was ${artifact.name} made?`,
+      a: `${artifact.name} dates to ${artifact.period}, during the ${artifact.dynasty}.`,
+    },
+    {
+      q: `Where can I see ${artifact.name}?`,
+      a: whereToSee,
+    },
+    {
+      q: `Why is ${artifact.name} important?`,
+      a: artifact.significance,
+    },
+    {
+      q: `What is ${artifact.name} made of?`,
+      a: `${artifact.name} is classified as ${artifact.category.toLowerCase()} and made of ${artifact.material}.`,
+    },
+  ];
 }
 
 export async function generateStaticParams() {
@@ -79,6 +124,9 @@ export default function ArtifactDetailPage({ params }: PageProps) {
   const relatedArtifacts = getRelatedArtifacts(artifact.relatedSlugs);
   const works = getWorksForArtifactSlug(artifact.slug);
   const topics = getTopicsForArtifactSlug(artifact.slug);
+  const faqs = buildArtifactFaqs(artifact);
+  const pageUrl = absoluteUrl(`/artifacts/${artifact.slug}`);
+  const imageUrl = absoluteImageUrl(artifact.image);
 
   const sameAs: string[] = [];
   if (artifact.wikipediaUrl) sameAs.push(artifact.wikipediaUrl);
@@ -120,11 +168,50 @@ export default function ArtifactDetailPage({ params }: PageProps) {
     ],
   };
 
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Artifacts", path: "/artifacts" },
+    { name: artifact.name, path: `/artifacts/${artifact.slug}` },
+  ]);
+
+  const visualArtworkJsonLd = {
+    "@type": "VisualArtwork",
+    "@id": `${pageUrl}#artifact`,
+    name: artifact.name,
+    alternateName: artifact.nameZh,
+    description: artifact.description,
+    artMedium: artifact.material,
+    artform: artifact.category,
+    dateCreated: artifact.period,
+    image: imageUrl,
+    locationCreated: { "@type": "Country", name: "China" },
+    isPartOf: {
+      "@type": "Museum",
+      name: artifact.museumName,
+      url: absoluteUrl(`/museums/${artifact.museumSlug}`),
+    },
+    ...(sameAs.length > 0 && { sameAs }),
+  };
+
+  const faqJsonLd = {
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a },
+    })),
+  };
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [breadcrumbJsonLd, visualArtworkJsonLd, artifactJsonLd, faqJsonLd],
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(artifactJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       {/* Breadcrumb */}
       <div className="bg-ink-50 border-b border-ink-100">
@@ -249,6 +336,37 @@ export default function ArtifactDetailPage({ params }: PageProps) {
               <p className="text-ink-700 leading-relaxed">
                 {artifact.significance}
               </p>
+            </section>
+
+            {/* FAQ */}
+            <section className="mb-10">
+              <h2 className="font-display text-2xl font-bold text-ink-900 mb-4 flex items-center gap-2">
+                <HelpCircle className="h-6 w-6 text-primary-500" />
+                Frequently Asked Questions
+              </h2>
+              <div className="space-y-3">
+                {faqs.map((faq, index) => (
+                  <details
+                    key={faq.q}
+                    className="group bg-white border border-ink-100 rounded-xl overflow-hidden transition-shadow hover:shadow-sm open:shadow-sm"
+                  >
+                    <summary className="cursor-pointer list-none px-5 py-4 flex items-start justify-between gap-3">
+                      <span className="font-display text-base font-semibold text-ink-900 leading-snug">
+                        {index + 1}. {faq.q}
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        className="mt-1 text-ink-400 group-open:rotate-45 transition-transform text-xl leading-none"
+                      >
+                        +
+                      </span>
+                    </summary>
+                    <p className="px-5 pb-5 text-sm text-ink-600 leading-relaxed">
+                      {faq.a}
+                    </p>
+                  </details>
+                ))}
+              </div>
             </section>
 
             {/* Fun Facts */}

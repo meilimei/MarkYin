@@ -14,6 +14,7 @@ import { artifacts } from "@/data/artifacts";
 import { museums } from "@/data/museums";
 import { popCultureWorks } from "@/data/popCultureWorks";
 import { topics } from "@/data/topics";
+import { comparisonGuides } from "@/data/comparisons";
 import ArtifactCard from "@/components/ArtifactCard";
 import MuseumCard from "@/components/MuseumCard";
 import WorkCard from "@/components/WorkCard";
@@ -28,6 +29,7 @@ export default function HomePage() {
   const featuredMuseums = museums.slice(0, 4);
   const heroWorks = popCultureWorks.slice(0, 4);
   const featuredTopic = topics[0];
+  const compareSpotlights = comparisonGuides.slice(0, 3);
   const websiteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -111,10 +113,10 @@ export default function HomePage() {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-24 pt-12 border-t border-white/10 max-w-4xl mx-auto">
             {[
-              { icon: Sparkles, label: "Artifacts", value: "12+" },
+              { icon: Sparkles, label: "Artifacts", value: `${artifacts.length}` },
               { icon: Layers, label: "Themes", value: `${topics.length}` },
               { icon: BookOpen, label: "Inspirations", value: `${popCultureWorks.length}` },
-              { icon: Landmark, label: "Museums", value: `${museums.length}+` },
+              { icon: Landmark, label: "Museums", value: `${museums.length}` },
             ].map((stat) => (
               <div key={stat.label} className="text-center group">
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/5 mb-4 group-hover:bg-primary-500/20 transition-colors">
@@ -369,6 +371,80 @@ export default function HomePage() {
             </Link>
           </div>
           <TopicCard topic={featuredTopic} featured />
+        </div>
+      </section>
+
+      {/* Compare Strip */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="flex items-center justify-between mb-8">
+          <div>
+            <div className="inline-flex items-center gap-2 bg-primary-50 px-3 py-1 rounded-full text-xs font-medium text-primary-700 mb-3">
+              <Sparkles className="h-3.5 w-3.5" />
+              Side-by-side reading
+            </div>
+            <h2 className="font-display text-3xl font-bold text-ink-900">
+              Compare the objects
+            </h2>
+            <p className="text-ink-500 mt-1">
+              Fast contrasts that turn one search into a longer session
+            </p>
+          </div>
+          <Link
+            href="/compare"
+            className="hidden sm:inline-flex items-center gap-1 text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors"
+          >
+            All comparisons <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          {compareSpotlights.map((guide) => {
+            const left = artifacts.find((a) => a.slug === guide.leftArtifactSlug);
+            const right = artifacts.find((a) => a.slug === guide.rightArtifactSlug);
+            return (
+              <Link
+                key={guide.slug}
+                href={`/compare/${guide.slug}`}
+                className="group rounded-2xl overflow-hidden bg-white border border-ink-100 shadow-sm hover:shadow-xl hover:border-primary-200 transition-all"
+              >
+                <div className="grid grid-cols-2">
+                  <div className="aspect-[4/3] overflow-hidden bg-ink-50">
+                    {left ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={left.image}
+                        alt={left.name}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    ) : null}
+                  </div>
+                  <div className="aspect-[4/3] overflow-hidden bg-ink-100">
+                    {right ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={right.image}
+                        alt={right.name}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    ) : null}
+                  </div>
+                </div>
+                <div className="p-5">
+                  <p className="text-xs uppercase tracking-widest text-primary-600 font-semibold mb-2">
+                    Compare
+                  </p>
+                  <h3 className="font-display text-lg font-bold text-ink-900 leading-tight mb-2 group-hover:text-primary-700 transition-colors">
+                    {guide.title}
+                  </h3>
+                  <p className="text-sm text-ink-500 leading-relaxed mb-4">
+                    {guide.summary}
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary-600 group-hover:gap-2 transition-all">
+                    Open comparison <ArrowRight className="h-4 w-4" />
+                  </span>
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </section>
 

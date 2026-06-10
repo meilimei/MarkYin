@@ -40,6 +40,8 @@ export default function Footer() {
                 { name: "Themes", href: "/topics" },
                 { name: "All Artifacts", href: "/artifacts" },
                 { name: "Museums", href: "/museums" },
+                { name: "Collections", href: "/collections" },
+                { name: "Compare", href: "/compare" },
                 { name: "Treasures Abroad", href: "/treasures-abroad" },
                 { name: "Dynasties", href: "/dynasties" },
               ].map((link) => (

@@ -1,5 +1,6 @@
+import Link from "next/link";
 import { Metadata } from "next";
-import { Globe } from "lucide-react";
+import { ArrowRight, Globe } from "lucide-react";
 import { abroadArtifacts } from "@/data/abroadArtifacts";
 import AbroadCard from "@/components/AbroadCard";
 import AdBanner from "@/components/AdBanner";
@@ -67,6 +68,15 @@ export default function TreasuresAbroadPage() {
             <span className="inline-flex items-center gap-1.5">
               Public-domain / CC0 imagery
             </span>
+          </div>
+          <div className="mt-6">
+            <Link
+              href="/collections"
+              className="inline-flex items-center gap-1 text-sm font-semibold text-primary-600 hover:text-primary-700 transition-colors"
+            >
+              Browse museum collection guides
+              <ArrowRight className="h-4 w-4" />
+            </Link>
           </div>
         </div>
       </section>

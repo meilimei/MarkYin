@@ -4,6 +4,8 @@ import { museums } from "@/data/museums";
 import { popCultureWorks } from "@/data/popCultureWorks";
 import { topics } from "@/data/topics";
 import { abroadArtifacts } from "@/data/abroadArtifacts";
+import { collectionGuides } from "@/data/collectionGuides";
+import { comparisonGuides } from "@/data/comparisons";
 import { absoluteUrl } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -42,6 +44,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: absoluteUrl("/treasures-abroad"),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: absoluteUrl("/collections"),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: absoluteUrl("/compare"),
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.9,
@@ -151,6 +165,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
+  const collectionRoutes: MetadataRoute.Sitemap = collectionGuides.map(
+    (guide) => ({
+      url: absoluteUrl(`/collections/${guide.slug}`),
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    }),
+  );
+
+  const comparisonRoutes: MetadataRoute.Sitemap = comparisonGuides.map(
+    (guide) => ({
+      url: absoluteUrl(`/compare/${guide.slug}`),
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    }),
+  );
+
   return [
     ...staticRoutes,
     ...inspirationRoutes,
@@ -158,5 +190,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...artifactRoutes,
     ...museumRoutes,
     ...abroadRoutes,
+    ...collectionRoutes,
+    ...comparisonRoutes,
   ];
 }

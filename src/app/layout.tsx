@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -84,15 +83,6 @@ export default function RootLayout({
         <Footer />
         <ConsentBanner />
         <Analytics />
-        {ADSENSE_PUB_ID ? (
-          <Script
-            id="adsense-init"
-            async
-            strategy="afterInteractive"
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUB_ID}`}
-            crossOrigin="anonymous"
-          />
-        ) : null}
       </body>
     </html>
   );

@@ -4,9 +4,9 @@
 # Authorized Digital Sellers (IAB Tech Lab spec):
 # https://iabtechlab.com/ads-txt/
 #
-# After Google AdSense approves the site, replace the line below with the
-# real publisher ID issued by AdSense (e.g.,
-# google.com, pub-1234567890123456, DIRECT, f08c47fec0942fa0).
-# Until then this file is a placeholder so the URL path returns 200.
+# After Google AdSense approves the site, uncomment the line below and replace
+# pub-1234567890123456 with the real publisher ID issued by AdSense.
+# Keeping the example commented prevents the live site from declaring a fake
+# seller record before approval.
 
-google.com, pub-PLACEHOLDER, DIRECT, f08c47fec0942fa0
+# google.com, pub-1234567890123456, DIRECT, f08c47fec0942fa0
