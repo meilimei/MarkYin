@@ -7,12 +7,12 @@ import { absoluteUrl, SITE_NAME } from "@/lib/site";
 export const metadata: Metadata = {
   title: `Field Guides — Pop Culture Mapped to Real Chinese Artifacts | ${SITE_NAME}`,
   description:
-    "Long-form China Heritage field guides mapping Black Myth: Wukong, Genshin Impact's Liyue, Ne Zha 2, and Empresses in the Palace to real museum objects.",
+    "Long-form China Heritage field guides mapping Black Myth: Wukong, Wuchang: Fallen Feathers, Genshin Impact's Liyue, Ne Zha 2, and Empresses in the Palace to real museum objects.",
   alternates: { canonical: "/field-guides" },
   openGraph: {
     title: "China Heritage Field Guides",
     description:
-      "Games, films, and Chinese dramas decoded through real museum objects.",
+      "Games, films, and Chinese dramas decoded through real museum objects and heritage sites.",
     url: absoluteUrl("/field-guides"),
     type: "website",
     images: [

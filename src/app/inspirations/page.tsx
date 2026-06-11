@@ -8,14 +8,14 @@ import { absoluteUrl } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Inspirations — Real Artifacts Behind the Games and Films You Love",
   description:
-    "From Black Myth: Wukong to Genshin Impact's Liyue, discover the real Chinese artifacts that inspired the games, films, and TV shows captivating global audiences.",
+    "From Black Myth: Wukong to Wuchang: Fallen Feathers and Genshin Impact's Liyue, discover the real Chinese artifacts behind global games, films, and TV shows.",
   alternates: {
     canonical: "/inspirations",
   },
   openGraph: {
     title: "Inspirations — Real Artifacts Behind the Games and Films You Love",
     description:
-      "The real Chinese cultural heritage behind modern games, films, and TV — traced back to the museum collections that inspired them.",
+      "The real Chinese cultural heritage behind modern games, films, and TV - traced back to the museum collections and heritage sites that inspired them.",
     url: absoluteUrl("/inspirations"),
     type: "website",
   },
@@ -65,10 +65,10 @@ export default function InspirationsPage() {
               The Real Artifacts Behind the Worlds You Love
             </h1>
             <p className="text-lg text-ink-200 leading-relaxed">
-              Black Myth: Wukong&apos;s bronze gods. Genshin Impact&apos;s Liyue Harbor.
-              The Forbidden City in Empresses in the Palace. Every modern
-              Chinese myth is built on real artifacts — and we can show you
-              exactly which ones.
+              Black Myth: Wukong&apos;s bronze gods. Wuchang: Fallen
+              Feathers&apos;s Sichuan ruins. Genshin Impact&apos;s Liyue Harbor.
+              Every modern Chinese myth is built on real artifacts and real
+              places - and we can show you exactly which ones.
             </p>
           </div>
         </div>

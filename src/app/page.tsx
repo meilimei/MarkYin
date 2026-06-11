@@ -244,7 +244,7 @@ export default function HomePage() {
               All field guides <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             <Link
               href="/genshin-liyue-real-museum-guide"
               className="group relative block rounded-2xl overflow-hidden bg-gradient-to-br from-primary-900 via-ink-900 to-imperial-950 text-white p-6 hover:shadow-xl transition-shadow"
@@ -337,6 +337,38 @@ export default function HomePage() {
                   Dragon robes, jade hairpins, cobalt tea cups — every
                   recurring object in 2011&apos;s Qing palace
                   mega-drama, traced back to a real museum piece.
+                </p>
+                <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary-200 group-hover:gap-2 transition-all">
+                  Read the guide <ArrowRight className="h-4 w-4" />
+                </span>
+              </div>
+            </Link>
+
+            <Link
+              href="/wuchang-fallen-feathers-real-museum-guide"
+              className="group relative block rounded-2xl overflow-hidden bg-gradient-to-br from-primary-950 via-ink-900 to-imperial-950 text-white p-6 hover:shadow-xl transition-shadow"
+            >
+              <div
+                className="absolute inset-0 opacity-15 mix-blend-overlay"
+                style={{
+                  backgroundImage:
+                    "url('/images/artifacts/gold-mask-sanxingdui.jpg')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+                aria-hidden
+              />
+              <div className="relative">
+                <div className="inline-flex items-center gap-2 text-primary-200 mb-3 text-xs font-semibold uppercase tracking-widest">
+                  <Mountain className="h-4 w-4" />
+                  Wuchang | Sichuan
+                </div>
+                <h4 className="font-display text-lg md:text-xl font-bold leading-tight mb-3">
+                  Every Visual in Wuchang, Mapped to Sichuan
+                </h4>
+                <p className="text-sm text-ink-300 leading-relaxed mb-4">
+                  Sanxingdui masks, Jinsha&apos;s Sun Bird, and Leshan&apos;s
+                  mountain Buddha behind the dark fantasy world.
                 </p>
                 <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary-200 group-hover:gap-2 transition-all">
                   Read the guide <ArrowRight className="h-4 w-4" />

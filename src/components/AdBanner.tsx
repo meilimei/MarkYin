@@ -29,6 +29,7 @@ const AD_SLOT_IDS: Record<string, string | undefined> = {
   "inspirations-middle": process.env.NEXT_PUBLIC_ADSENSE_SLOT_INSPIRATIONS_MIDDLE,
   "inspiration-middle": process.env.NEXT_PUBLIC_ADSENSE_SLOT_INSPIRATION_MIDDLE,
   "inspiration-sidebar": process.env.NEXT_PUBLIC_ADSENSE_SLOT_INSPIRATION_SIDEBAR,
+  "field-guide-mid": process.env.NEXT_PUBLIC_ADSENSE_SLOT_FIELD_GUIDE_MID,
   "collection-guide-top": process.env.NEXT_PUBLIC_ADSENSE_SLOT_COLLECTION_GUIDE_TOP,
   "collection-guide-sidebar":
     process.env.NEXT_PUBLIC_ADSENSE_SLOT_COLLECTION_GUIDE_SIDEBAR,

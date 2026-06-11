@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   ArrowLeft,
+  ArrowRight,
   ExternalLink,
   Gamepad2,
   Tv,
@@ -255,7 +256,7 @@ export default function InspirationDetailPage({ params }: PageProps) {
               </section>
             )}
 
-            {/* Long-form bait spotlight (Black Myth / Liyue only) */}
+            {/* Long-form bait spotlight (Black Myth / Liyue / Wuchang) */}
             {work.slug === "black-myth-wukong" && (
               <section className="mb-10">
                 <Link
@@ -298,6 +299,30 @@ export default function InspirationDetailPage({ params }: PageProps) {
                   </p>
                   <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary-300">
                     Read the field guide →
+                  </span>
+                </Link>
+              </section>
+            )}
+            {work.slug === "wuchang-fallen-feathers" && (
+              <section className="mb-10">
+                <Link
+                  href="/wuchang-fallen-feathers-real-museum-guide"
+                  className="block bg-gradient-to-br from-imperial-950 via-ink-900 to-primary-900 text-white rounded-2xl p-7 md:p-9 hover:shadow-xl transition-shadow"
+                >
+                  <p className="text-xs uppercase tracking-widest text-primary-300 font-semibold mb-3">
+                    Field guide | 11 min read
+                  </p>
+                  <h3 className="font-display text-2xl md:text-3xl font-bold mb-3 leading-tight">
+                    Want the real Sichuan heritage behind Wuchang?
+                  </h3>
+                  <p className="text-ink-300 leading-relaxed mb-4">
+                    Sanxingdui bronze bodies, Jinsha&apos;s Sun Bird, Leshan&apos;s
+                    mountain Buddha, and a practical Sichuan route from game
+                    mood to real places.
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary-300">
+                    Read the field guide
+                    <ArrowRight className="h-4 w-4" />
                   </span>
                 </Link>
               </section>
@@ -454,6 +479,11 @@ function buildFaqs(
     faqs.push({
       q: `Where can I learn more about Chinese material culture after Liyue?`,
       a: `Start with our long-form field guide, "Every Liyue Visual in Genshin Impact, Mapped to a Real Museum Object" — it walks the seven major visual lineages of Liyue (karst landscape painting, Song urban culture, the bronze cauldron, the Adepti, costumes, porcelain, jade) and points at 23 specific objects you can visit.`,
+    });
+  } else if (work.slug === "wuchang-fallen-feathers") {
+    faqs.push({
+      q: `Where can I learn more about Chinese material culture after Wuchang: Fallen Feathers?`,
+      a: `Start with our long-form field guide, "Every Visual in Wuchang: Fallen Feathers, Mapped to Real Sichuan Heritage" - it follows Sanxingdui bronze bodies, the Jinsha Sun Bird, the Leshan Giant Buddha, and a practical Sichuan route from game mood to real places.`,
     });
   } else {
     faqs.push({

@@ -43,6 +43,30 @@ export const fieldGuides: FieldGuide[] = [
     ],
   },
   {
+    slug: "wuchang-fallen-feathers-real-museum-guide",
+    title:
+      "Every Visual in Wuchang: Fallen Feathers, Mapped to Real Sichuan Heritage",
+    shortTitle: "Wuchang: Fallen Feathers",
+    subtitle: "Sanxingdui, Jinsha, and Leshan behind the dark fantasy world",
+    description:
+      "Sanxingdui bronze bodies, gold masks, Jinsha's Sun Bird, and the Leshan Giant Buddha - the real Sichuan heritage route behind Leenzee's soulslike RPG.",
+    href: "/wuchang-fallen-feathers-real-museum-guide",
+    image: "/images/artifacts/gold-mask-sanxingdui.jpg",
+    fandom: "Wuchang: Fallen Feathers",
+    medium: "game",
+    year: 2025,
+    readTime: "11 minute read",
+    lineages: 4,
+    objects: 7,
+    tags: ["Wuchang", "Sanxingdui", "Jinsha", "Leshan"],
+    highlights: [
+      "Sanxingdui bronze bodies and gold masks",
+      "Jinsha's Sun Bird and ancient Shu solar imagery",
+      "Leshan Giant Buddha and mountain-scale Buddhism",
+      "A practical Sichuan route from game mood to real places",
+    ],
+  },
+  {
     slug: "genshin-liyue-real-museum-guide",
     title: "Every Liyue Visual in Genshin Impact, Mapped to a Real Museum Object",
     shortTitle: "Genshin Impact — Liyue",

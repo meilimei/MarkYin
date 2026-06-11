@@ -73,6 +73,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
     },
     {
+      url: absoluteUrl("/wuchang-fallen-feathers-real-museum-guide"),
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
+    {
       url: absoluteUrl("/genshin-liyue-real-museum-guide"),
       lastModified: now,
       changeFrequency: "monthly",
